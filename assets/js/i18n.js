@@ -21,7 +21,7 @@
   const DEFAULT = "en";
   // Bump together with the ?v= query in index.html / guide.html when releasing,
   // so browsers never mix cached files from different versions.
-  const ASSET_VERSION = "20261021b";
+  const ASSET_VERSION = "20261022a";
   const STORAGE_KEY = "vf-lang";
 
   let lang = DEFAULT;

@@ -5,6 +5,7 @@ Usage (from the project root):
     python3 tools/verify_sources.py            # link check + content check
     python3 tools/verify_sources.py --links    # link check only
     python3 tools/verify_sources.py --ieee     # also compare IEEE journals with the IEEE Xplore metadata
+   python3 tools/verify_sources.py --report report.md   # also write a Markdown report (used by the weekly workflow)
 
 1. Link check: every cited URL is requested; HTTP status codes are summarised.
    403/429/503 usually mean the site blocks automated requests (SCImago, ACM DL,
@@ -75,11 +76,31 @@ def to_text(raw):
 def date_variants(ds):
     d = datetime.date.fromisoformat(ds)
     m, m3, dd = MONTHS[d.month - 1], MONTHS[d.month - 1][:3], d.day
-    out = [ds, f"{m} {dd}", f"{m3} {dd:02d}", f"{m3} {dd}", f"{m3}. {dd}", f"{dd} {m}", f"{dd} {m3}",
+    out = [ds, f"{m} {dd}", f"{m} {dd:02d}", f"{m3} {dd:02d}", f"{m3} {dd}", f"{m3}. {dd}", f"{dd} {m}", f"{dd} {m3}",
            f"{dd:02d} {m3}", f"{d.month}/{dd}/{d.year}", f"{d.month:02d}/{dd:02d}/{d.year}"]
     for suf in ("st", "nd", "rd", "th"):
         out += [f"{m} {dd}{suf}", f"{dd}{suf} {m}"]
     return [x.lower() for x in out]
+
+
+def date_in_text(text, ds):
+    """True if the date appears in `text` (already lowercased), as a single date or as the
+    start/end of a range such as "Sep 8–12", "10–14 May 2027" or "8th-12th of August"."""
+    if any(x in text for x in date_variants(ds)):
+        return True
+    d = datetime.date.fromisoformat(ds)
+    mon = f"(?:{MONTHS[d.month - 1].lower()}|{MONTHS[d.month - 1][:3].lower()})\\.?"
+    day = f"0?{d.day}(?:st|nd|rd|th)?"
+    num = "\\d{1,2}(?:st|nd|rd|th)?"
+    dash = "\\s*[-–—]\\s*"
+    patterns = [
+        f"{mon}\\s+{day}{dash}{num}\\b",              # Sep 8–12 (start)
+        f"{mon}\\s+{num}{dash}{day}\\b",              # Oct 24-31 (end)
+        f"\\b{day}{dash}{num}\\s+(?:of\\s+)?{mon}",     # 8–12 September (start)
+        f"\\b{num}{dash}{day}\\s+(?:of\\s+)?{mon}",     # 3-10 July (end)
+        f"\\b{day}\\s+(?:to|through|until)\\s+{num}\\s+{mon}",  # 22 to 26 March
+    ]
+    return any(re.search(p, text) for p in patterns)
 
 
 def num_variants(x):
@@ -117,7 +138,7 @@ def collect_urls(venues):
 
 def collect_checks(venues):
     """(venue id, description, url, variants)"""
-    checks = []
+    checks = []  # variants=None means "date": matched with date_in_text
     for v in venues:
         vid = v["id"]
         if v["type"] == "conference":
@@ -126,10 +147,10 @@ def collect_checks(venues):
                   ((c.get("workshops") or {}).get("deadlines") or [])
             for d in dls:
                 if d.get("source"):
-                    checks.append((vid, f"deadline {d['phase']} {d['date']}", d["source"]["url"], date_variants(d["date"])))
+                    checks.append((vid, f"deadline {d['phase']} {d['date']}", d["source"]["url"], d["date"]))
             e = c.get("edition") or {}
             if e.get("start") and e.get("source"):
-                checks.append((vid, f"event start {e['start']}", e["source"]["url"], date_variants(e["start"])))
+                checks.append((vid, f"event start {e['start']}", e["source"]["url"], e["start"]))
             for a in c.get("acceptance") or []:
                 vals = [x for x in (a.get("submitted"), a.get("accepted")) if x] or ([a["rate"]] if a.get("rate") is not None else [])
                 for x in vals:
@@ -143,12 +164,77 @@ def collect_checks(venues):
                     checks.append((vid, f"{kind} {m['value']}", m["source"]["url"], num_variants(float(m["value"]))))
             for si in j.get("specialIssues") or []:
                 if si.get("deadline"):
-                    checks.append((vid, f"special issue {si['deadline']['date']}", si["source"]["url"], date_variants(si["deadline"]["date"])))
+                    checks.append((vid, f"special issue {si['deadline']['date']}", si["source"]["url"], si["deadline"]["date"]))
     return checks
 
 
+SUBMISSION_PHASES = {"abstract", "paper", "commitment"}
+
+
+def shift_years(ds, years):
+    d = datetime.date.fromisoformat(ds)
+    try:
+        return d.replace(year=d.year + years)
+    except ValueError:  # 29 Feb on a non-leap year
+        return d.replace(year=d.year + years, day=28)
+
+
+def estimated_soon(venues, days):
+    """Conferences whose next submission deadline is only estimated and falls within `days` days:
+    the official dates are probably about to be published."""
+    today = datetime.date.today()
+    out = []
+    for v in venues:
+        c = v.get("conference")
+        if not c or c.get("rolling"):
+            continue
+        official = [d for d in c.get("deadlines") or [] if d["phase"] in SUBMISSION_PHASES]
+        if any(datetime.date.fromisoformat(d["date"]) >= today for d in official):
+            continue
+        base = official or [d for d in ((c.get("previousCycle") or {}).get("deadlines") or []) if d["phase"] in SUBMISSION_PHASES]
+        if not base:
+            continue
+        rec = c.get("recurrence", 1)
+        k = rec
+        while max(shift_years(d["date"], k) for d in base) < today and k < 40:
+            k += rec
+        upcoming = sorted(x for x in (shift_years(d["date"], k) for d in base) if x >= today)
+        if upcoming and (upcoming[0] - today).days <= days:
+            out.append((v["id"], v["acronym"], upcoming[0].isoformat(), v["website"]))
+    return sorted(out, key=lambda x: x[2])
+
+
+def load_known(path):
+    """Known false positives, already checked by hand: tools/known-issues.json."""
+    if not path or not Path(path).exists():
+        return set(), set()
+    k = json.loads(Path(path).read_text(encoding="utf-8"))
+    return ({(x["venue"], x["check"]) for x in k.get("notFound", [])}, {x["url"] for x in k.get("unreachable", [])})
+
+
+def write_report(path, unreachable, missing, ieee_diffs, soon):
+    lines = ["Automated weekly check of the data against the cited sources (`tools/verify_sources.py`).", ""]
+    if unreachable:
+        lines += ["## Unreachable links", "", "| Status | URL | Venues |", "|---|---|---|"]
+        lines += [f"| {st} | {u} | {', '.join(vs)} |" for u, st, vs in unreachable] + [""]
+    if missing:
+        lines += ["## Values not found in their source", "",
+                  "The page may have changed (new edition, corrected date) or may write the value differently.", "",
+                  "| Venue | Check | Source |", "|---|---|---|"]
+        lines += [f"| {vid} | {what} | {url} |" for vid, what, url in missing] + [""]
+    if ieee_diffs:
+        lines += ["## IEEE Xplore values that changed", ""] + [f"- {d}" for d in ieee_diffs] + [""]
+    if soon:
+        lines += ["## Estimated deadlines coming up", "",
+                  "The next deadline of these conferences is only estimated and is close: the official dates may be out.", "",
+                  "| Venue | Estimated date | Website |", "|---|---|---|"]
+        lines += [f"| {acr} (`{vid}`) | {date} | {web} |" for vid, acr, date, web in soon] + [""]
+    lines += ["False positives that were checked by hand can be added to `tools/known-issues.json`."]
+    Path(path).write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def ieee_check(venues):
-    ok = bad = 0
+    ok, diffs = 0, []
     for v in venues:
         if v["type"] != "journal" or v["journal"]["publisher"] != "IEEE":
             continue
@@ -175,10 +261,10 @@ def ieee_check(venues):
             if api == ours:
                 ok += 1
             else:
-                bad += 1
+                diffs.append(f"{v['id']} | {name}: IEEE Xplore={api!r}, data={ours!r}")
                 print(f"  DIFFERENT {v['acronym']} {name}: IEEE Xplore={api!r} data={ours!r}  (IEEE updates IF/CiteScore every June)")
-    print(f"IEEE: {ok} matching values, {bad} differences")
-    return bad
+    print(f"IEEE: {ok} matching values, {len(diffs)} differences")
+    return diffs
 
 
 def main():
@@ -186,7 +272,12 @@ def main():
     ap.add_argument("--links", action="store_true", help="link check only")
     ap.add_argument("--ieee", action="store_true", help="also compare IEEE journals with IEEE Xplore")
     ap.add_argument("--workers", type=int, default=12)
+    ap.add_argument("--known", default=str(Path(__file__).resolve().parent / "known-issues.json"),
+                    help="JSON file with known false positives to ignore (default: tools/known-issues.json)")
+    ap.add_argument("--report", help="write a Markdown report of the problems to this file")
+    ap.add_argument("--soon-days", type=int, default=60, help="window for the estimated-deadline reminder (days)")
     args = ap.parse_args()
+    known_missing, known_unreachable = load_known(args.known)
 
     venues = load_venues()
     urls = collect_urls(venues)
@@ -202,35 +293,49 @@ def main():
             time.sleep(1)
     status = {u: r[0] for u, r in results.items()}
     print("   results:", dict(collections.Counter("blocked (anti-bot)" if s in BLOCKED else s for s in status.values())))
-    broken = [u for u, s in status.items() if s not in BLOCKED and not s.startswith(("2", "3"))]
+    broken = [u for u, s in status.items() if s not in BLOCKED and not s.startswith(("2", "3")) and u not in known_unreachable]
     for u in sorted(broken):
         print(f"   UNREACHABLE [{status[u]}] {u}  <- {', '.join(sorted(urls[u]))}")
-    problems = len(broken)
+    unreachable = [(u, status[u], sorted(urls[u])) for u in sorted(broken)]
+    missing, ieee_diffs = [], []
 
     if not args.links:
         checks = collect_checks(venues)
         print(f"2) Content check: {len(checks)} values…")
         texts = {u: to_text(r[1]) for u, r in results.items() if r[0] == "200"}
-        stat, missing = collections.Counter(), []
+        stat = collections.Counter()
         for vid, what, url, variants in checks:
             t = texts.get(url)
             if t is None:
                 stat["source not readable (blocked, error or PDF without pypdf)"] += 1
-            elif any(x in t for x in variants):
+            elif (date_in_text(t, variants) if isinstance(variants, str) else any(x in t for x in variants)):
                 stat["OK"] += 1
+            elif (vid, what) in known_missing:
+                stat["known false positive"] += 1
             else:
                 stat["NOT FOUND"] += 1
                 missing.append((vid, what, url))
         print("   results:", dict(stat))
         for vid, what, url in missing:
             print(f"   NOT FOUND {vid} | {what} | {url}")
-        print("   (check NOT FOUND cases by hand: the value is often written as a range or in another format)")
-        problems += len(missing)
+        if missing:
+            print("   (check NOT FOUND cases by hand: the value is often written as a range or in another format)")
 
     if args.ieee:
         print("3) Comparison with IEEE Xplore…")
-        problems += ieee_check(venues)
+        ieee_diffs = ieee_check(venues)
 
+    soon = estimated_soon(venues, args.soon_days)
+    print(f"4) Estimated deadlines within {args.soon_days} days: {len(soon)}")
+    for vid, acr, date, _ in soon:
+        print(f"   {acr} ({vid}): ~{date}")
+
+    problems = len(unreachable) + len(missing) + len(ieee_diffs) + len(soon)
+    if args.report:
+        if problems:
+            write_report(args.report, unreachable, missing, ieee_diffs, soon)
+        elif Path(args.report).exists():
+            Path(args.report).unlink()
     sys.exit(1 if problems else 0)
 
 

@@ -471,8 +471,7 @@
       $("#empty-reset").addEventListener("click", () => $("#reset-btn").click());
       return;
     }
-    const heads = `<div class="col-heads" aria-hidden="true"><span>${esc(t("col.venue"))}</span><span>${esc(t("col.rank"))}</span><span>${esc(t("col.deadline"))}</span><span class="h-acc">${esc(t("col.acceptance"))}</span><span></span></div>`;
-    $("#results").innerHTML = heads + groups.map((g) =>
+    $("#results").innerHTML = groups.map((g) =>
       (g.title ? `<h2 class="group-title">${esc(g.title)} <span class="hint">${esc(g.hint || "")} · ${g.items.length}</span></h2>` : "") +
       g.items.map((v) => rowHtml(v, now)).join("")).join("");
   }

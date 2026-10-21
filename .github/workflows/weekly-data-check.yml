@@ -1,0 +1,62 @@
+# Weekly check of the data against the cited sources.
+# Opens (or updates) a single issue labelled "data-check" when something needs attention,
+# and closes it automatically once every check passes again.
+name: Weekly data check
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # every Monday at 06:00 UTC
+  workflow_dispatch:       # manual run from the Actions tab
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: weekly-data-check
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install optional PDF support
+        run: pip install "pypdf>=4,<7"
+
+      - name: Validate data files
+        run: python tools/validate.py
+
+      - name: Check data against sources
+        id: verify
+        run: |
+          set +e
+          python tools/verify_sources.py --ieee --report report.md
+          echo "exit=$?" >> "$GITHUB_OUTPUT"
+
+      - name: Open, update or close the data-check issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXIT_CODE: ${{ steps.verify.outputs.exit }}
+        run: |
+          issue=$(gh issue list --label data-check --state open --json number --jq '.[0].number // empty')
+          if [ -f report.md ]; then
+            if [ -n "$issue" ]; then
+              gh issue edit "$issue" --body-file report.md
+              gh issue comment "$issue" --body "Report updated by the weekly check on $(date -u +%Y-%m-%d)."
+            else
+              gh label create data-check --color D93F0B --description "Weekly data check" 2>/dev/null || true
+              gh issue create --title "Weekly data check: something needs attention" --body-file report.md --label data-check
+            fi
+          elif [ "$EXIT_CODE" != "0" ]; then
+            echo "The check script failed without producing a report." >&2
+            exit 1
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment "All checks pass again ($(date -u +%Y-%m-%d))."
+          fi

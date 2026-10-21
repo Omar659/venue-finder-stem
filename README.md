@@ -65,6 +65,8 @@ python3 tools/validate.py          # structure and format of the JSON files
 python3 tools/verify_sources.py    # links and values checked against the cited sources
 ```
 
+The same check runs every Monday through GitHub Actions (`.github/workflows/weekly-data-check.yml`): when something needs attention it opens a `data-check` issue, which is closed automatically once all checks pass. Known false positives, already checked by hand, are listed in `tools/known-issues.json`.
+
 ## Deployment
 
 The site only uses relative paths, so it works on GitHub Pages from a project subpath (`user.github.io/repo-name/`): publish the default branch from the repository root.
