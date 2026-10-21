@@ -1,0 +1,28 @@
+{
+ "schemaVersion": 1,
+ "lastVerified": "2026-10-21",
+ "field": "stem",
+ "rankings": {
+  "core": {
+   "label": "CORE (ICORE2026)",
+   "url": "https://portal.core.edu.au/conf-ranks/",
+   "order": [
+    "A*",
+    "A",
+    "B",
+    "C"
+   ],
+   "note": "Ranking ICORE2026 esportato dal portale ufficiale CORE il 2026-10-21."
+  },
+  "sjr": {
+   "label": "SCImago Journal Rank (SJR 2025)",
+   "url": "https://www.scimagojr.com/"
+  },
+  "jif": {
+   "label": "Journal Impact Factor (Clarivate JCR, release giugno 2026 = JIF 2025)"
+  },
+  "citescore": {
+   "label": "CiteScore (Scopus)"
+  }
+ }
+}

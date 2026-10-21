@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Venue Finder STEM</title>
+  <meta name="description" content="Trova conferenze e journal STEM dove pubblicare: ranking, quartili, deadline live, topic e storico dell'acceptance rate, con fonti verificate.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235b4bd6'/%3E%3Cpath d='M9 22l7-12 7 12' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <script>
+    // Apply the saved theme before first paint.
+    try { const t = localStorage.getItem("vf-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#results">Vai ai risultati</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./">
+        <span class="brand-mark" aria-hidden="true">▲</span>
+        <span>Venue Finder STEM<small>Dove pubblicare: conferenze e journal</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigazione principale">
+        <a href="./" aria-current="page">Esplora</a>
+        <a href="guide.html">Guida</a>
+      </nav>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Cambia tema">
+        <span aria-hidden="true" id="theme-icon">◐</span><span class="lbl" id="theme-label">Auto</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="filters" id="filters" aria-label="Filtri">
+      <h2>Tipo di venue</h2>
+      <div class="segmented" role="group" aria-label="Tipo di venue" id="type-seg">
+        <button type="button" data-type="all" aria-pressed="true">Tutti</button>
+        <button type="button" data-type="conference" aria-pressed="false">Conferenze</button>
+        <button type="button" data-type="journal" aria-pressed="false">Journal</button>
+      </div>
+
+      <h2>Area di ricerca</h2>
+      <ul class="tag-tree" id="tag-tree"></ul>
+
+      <div class="filter-group" id="conf-filters">
+        <h2>Conferenze</h2>
+        <label class="sr-only" for="f-country">Paese</label>
+        <select id="f-country"><option value="">Tutti i paesi</option></select>
+        <div style="margin-top:10px" role="group" aria-label="Rank CORE">
+          <div class="faint" style="font-size:12px">Rank CORE (ICORE2026)</div>
+          <div id="f-rank"></div>
+        </div>
+        <div style="margin-top:10px">
+          <label class="faint" style="font-size:12px" for="f-deadline">Deadline</label>
+          <select id="f-deadline">
+            <option value="">Qualsiasi</option>
+            <option value="open">Aperta (deadline ufficiale futura)</option>
+            <option value="closed">Chiusa / non ancora pubblicata</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filter-group" id="journal-filters">
+        <h2>Journal</h2>
+        <div role="group" aria-label="Quartile SJR">
+          <div class="faint" style="font-size:12px">Quartile SJR (migliore)</div>
+          <div id="f-quartile"></div>
+        </div>
+        <div style="margin-top:10px">
+          <label class="faint" style="font-size:12px" for="f-oa">Open access</label>
+          <select id="f-oa">
+            <option value="">Qualsiasi modello</option>
+            <option value="yes">Sì (fully open access)</option>
+            <option value="no">No (ibrido / abbonamento)</option>
+          </select>
+        </div>
+        <label class="check" style="margin-top:8px"><input type="checkbox" id="f-si"> Solo con special issue aperte</label>
+      </div>
+
+      <button class="reset-btn" type="button" id="reset-btn">Azzera filtri</button>
+    </aside>
+
+    <main id="main">
+      <div class="toolbar">
+        <button class="icon-btn filters-toggle" type="button" id="filters-toggle" aria-controls="filters" aria-expanded="false">☰ Filtri</button>
+        <div class="search-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <label class="sr-only" for="q">Cerca</label>
+          <input type="search" id="q" placeholder="Cerca per nome, acronimo, ISSN, tag o topic…" autocomplete="off">
+        </div>
+        <div class="sort-box">
+          <label for="sort" class="muted" style="font-size:13px">Ordina</label>
+          <select id="sort">
+            <option value="deadline">Prossima deadline</option>
+            <option value="rank">Rank / quartile</option>
+            <option value="acceptance">Acceptance rate (più selettive prima)</option>
+            <option value="name">Nome (A–Z)</option>
+          </select>
+        </div>
+        <div class="result-meta">
+          <span id="count" aria-live="polite"></span>
+          <span class="legend" aria-label="Legenda">
+            <span><span class="badge badge-conf">Conferenza</span></span>
+            <span><span class="badge badge-journal">Journal</span></span>
+            <span><span class="badge badge-official">ufficiale</span></span>
+            <span><span class="badge badge-est">stimata</span></span>
+            <span><span class="badge badge-na">n.d.</span> non disponibile</span>
+          </span>
+        </div>
+      </div>
+      <div id="results" class="results" tabindex="-1"></div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <p>Dati verificati il <span id="last-verified">—</span> su fonti ufficiali (siti delle conferenze, CORE ICORE2026, SCImago, editori). Ogni dato riporta link alla fonte e data di verifica nel pannello di dettaglio. Orari mostrati nel fuso originale e nel tuo fuso locale (<span id="local-tz"></span>).</p>
+  </footer>
+
+  <div class="compare-tray" id="compare-tray" hidden>
+    <span class="names" id="compare-names"></span>
+    <button class="btn" type="button" id="compare-clear">Svuota</button>
+    <button class="btn primary" type="button" id="compare-open">Confronta</button>
+  </div>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden></aside>
+  <section class="modal" id="compare-modal" role="dialog" aria-modal="true" aria-labelledby="compare-title" hidden></section>
+
+  <noscript><p style="padding:16px">Questa app richiede JavaScript.</p></noscript>
+  <script src="assets/js/time.js"></script>
+  <script src="assets/js/charts.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+{
+ "schemaVersion": 1,
+ "tags": [
+  {
+   "id": "ai",
+   "parent": null,
+   "label": "Intelligenza artificiale"
+  },
+  {
+   "id": "ml",
+   "parent": "ai",
+   "label": "Machine learning"
+  },
+  {
+   "id": "dl",
+   "parent": "ml",
+   "label": "Deep learning"
+  },
+  {
+   "id": "rl",
+   "parent": "ml",
+   "label": "Reinforcement learning"
+  },
+  {
+   "id": "learning-theory",
+   "parent": "ml",
+   "label": "Teoria dell'apprendimento"
+  },
+  {
+   "id": "cv",
+   "parent": "ai",
+   "label": "Computer vision"
+  },
+  {
+   "id": "medical-imaging",
+   "parent": "cv",
+   "label": "Imaging medico"
+  },
+  {
+   "id": "nlp",
+   "parent": "ai",
+   "label": "NLP / linguistica computazionale"
+  },
+  {
+   "id": "speech",
+   "parent": "nlp",
+   "label": "Speech e audio"
+  },
+  {
+   "id": "kr",
+   "parent": "ai",
+   "label": "Knowledge representation e ragionamento"
+  },
+  {
+   "id": "mas",
+   "parent": "ai",
+   "label": "Sistemi multi-agente"
+  },
+  {
+   "id": "evolutionary",
+   "parent": "ai",
+   "label": "Computazione evolutiva"
+  },
+  {
+   "id": "fuzzy",
+   "parent": "ai",
+   "label": "Sistemi fuzzy"
+  },
+  {
+   "id": "games",
+   "parent": "ai",
+   "label": "Giochi"
+  },
+  {
+   "id": "robotics",
+   "parent": null,
+   "label": "Robotica"
+  },
+  {
+   "id": "its",
+   "parent": "robotics",
+   "label": "Veicoli e trasporti intelligenti"
+  },
+  {
+   "id": "hci",
+   "parent": null,
+   "label": "Interazione uomo-macchina (HCI)"
+  },
+  {
+   "id": "vr-ar",
+   "parent": "hci",
+   "label": "Realtà virtuale e aumentata"
+  },
+  {
+   "id": "cscw",
+   "parent": "hci",
+   "label": "CSCW e social computing"
+  },
+  {
+   "id": "education-tech",
+   "parent": "hci",
+   "label": "Tecnologie per l'apprendimento"
+  },
+  {
+   "id": "graphics",
+   "parent": null,
+   "label": "Computer graphics"
+  },
+  {
+   "id": "visualization",
+   "parent": "graphics",
+   "label": "Visualizzazione"
+  },
+  {
+   "id": "data",
+   "parent": null,
+   "label": "Dati e informazione"
+  },
+  {
+   "id": "databases",
+   "parent": "data",
+   "label": "Basi di dati"
+  },
+  {
+   "id": "data-mining",
+   "parent": "data",
+   "label": "Data mining"
+  },
+  {
+   "id": "ir",
+   "parent": "data",
+   "label": "Information retrieval e recommender"
+  },
+  {
+   "id": "web",
+   "parent": "data",
+   "label": "Web"
+  },
+  {
+   "id": "systems",
+   "parent": null,
+   "label": "Sistemi"
+  },
+  {
+   "id": "os",
+   "parent": "systems",
+   "label": "Sistemi operativi e distribuiti"
+  },
+  {
+   "id": "architecture",
+   "parent": "systems",
+   "label": "Architetture"
+  },
+  {
+   "id": "hpc",
+   "parent": "systems",
+   "label": "High performance computing"
+  },
+  {
+   "id": "networking",
+   "parent": "systems",
+   "label": "Reti"
+  },
+  {
+   "id": "mobile",
+   "parent": "networking",
+   "label": "Mobile e wireless"
+  },
+  {
+   "id": "iot",
+   "parent": "networking",
+   "label": "Internet of Things"
+  },
+  {
+   "id": "security",
+   "parent": null,
+   "label": "Sicurezza e privacy"
+  },
+  {
+   "id": "se",
+   "parent": null,
+   "label": "Ingegneria del software"
+  },
+  {
+   "id": "pl",
+   "parent": "se",
+   "label": "Linguaggi di programmazione"
+  },
+  {
+   "id": "formal-methods",
+   "parent": "se",
+   "label": "Metodi formali e verifica"
+  },
+  {
+   "id": "theory",
+   "parent": null,
+   "label": "Informatica teorica"
+  },
+  {
+   "id": "algorithms",
+   "parent": "theory",
+   "label": "Algoritmi"
+  },
+  {
+   "id": "engineering",
+   "parent": null,
+   "label": "Ingegneria (elettronica, TLC, automazione)"
+  },
+  {
+   "id": "signal",
+   "parent": "engineering",
+   "label": "Elaborazione dei segnali"
+  },
+  {
+   "id": "multimedia",
+   "parent": "signal",
+   "label": "Multimedia"
+  },
+  {
+   "id": "telecom",
+   "parent": "engineering",
+   "label": "Telecomunicazioni"
+  },
+  {
+   "id": "control",
+   "parent": "engineering",
+   "label": "Controllo e automazione"
+  },
+  {
+   "id": "industrial",
+   "parent": "engineering",
+   "label": "Informatica industriale"
+  },
+  {
+   "id": "cs-general",
+   "parent": null,
+   "label": "Informatica generale / multidisciplinare"
+  }
+ ]
+}
