@@ -1,0 +1,4 @@
+{
+  "_comment": "CORE-ranked conferences deliberately not added to the data (out of scope or not relevant). Each entry: coreId, acronym, reason.",
+  "ignored": []
+}

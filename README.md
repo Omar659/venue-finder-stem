@@ -63,6 +63,7 @@ Data checks (Python 3.9+, no required dependencies):
 ```bash
 python3 tools/validate.py          # structure and format of the JSON files
 python3 tools/verify_sources.py    # links and values checked against the cited sources
+python3 tools/core_compare.py      # CORE ranking vs data: new editions, rank changes, missing A*/A conferences
 ```
 
 The same check runs every Monday through GitHub Actions (`.github/workflows/weekly-data-check.yml`): when something needs attention it opens a `data-check` issue, which is closed automatically once all checks pass. Known false positives, already checked by hand, are listed in `tools/known-issues.json`.
@@ -70,6 +71,7 @@ The same check runs every Monday through GitHub Actions (`.github/workflows/week
 ## Deployment
 
 The site only uses relative paths, so it works on GitHub Pages from a project subpath (`user.github.io/repo-name/`): publish the default branch from the repository root.
+
 ## Disclaimer
 
 Deadlines, rankings and metrics change over time: always check the venue's official website before submitting. Estimated deadlines are a hint based on the previous cycle, not official dates.
