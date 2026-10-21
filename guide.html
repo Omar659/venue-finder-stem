@@ -10,7 +10,7 @@
     // Apply the saved theme before first paint.
     try { const t = localStorage.getItem("vf-theme"); if (t === "light" || t === "dark") document.documentElement.dataset.theme = t; } catch (e) {}
   </script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261021b">
 </head>
 <body>
   <a class="skip-link" href="#content" data-i18n="skip.content">Skip to content</a>
@@ -24,8 +24,11 @@
         <a href="./" data-i18n="nav.explore">Explore</a>
         <a href="guide.html" aria-current="page" data-i18n="nav.guide">How publishing works</a>
       </nav>
-      <label class="sr-only" for="lang-select" data-i18n="lang.label">Language</label>
-      <select id="lang-select" class="lang-select"></select>
+      <label class="lang-picker" data-i18n-attr="title:lang.label" title="Language">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        <span class="sr-only" data-i18n="lang.label">Language</span>
+        <select id="lang-select" class="lang-select"></select>
+      </label>
       <button class="icon-btn" id="theme-btn" type="button" aria-label="Theme">
         <span aria-hidden="true" id="theme-icon">◐</span><span class="lbl" id="theme-label">Auto</span>
       </button>
@@ -37,17 +40,17 @@
   <footer class="site-footer"><p data-i18n="guide.footer">Information based on the sources cited in each section. Always check the rules of the specific venue before submitting.</p></footer>
 
   <noscript><p style="padding:16px">This page requires JavaScript.</p></noscript>
-  <script src="assets/js/time.js"></script>
-  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/time.js?v=20261021b"></script>
+  <script src="assets/js/i18n.js?v=20261021b"></script>
   <script>
     (async function () {
       "use strict";
-      await I18N.load();
+      try { await I18N.load(); } catch (e) { console.error("Translations not loaded:", e); }
       document.title = I18N.t("guide.title") + " · " + I18N.t("app.title");
 
       // Guide content is a static HTML fragment per language, English as fallback.
       const main = document.getElementById("content");
-      const get = (code) => fetch("assets/guide/" + code + ".html", { cache: "no-cache" }).then((r) => (r.ok ? r.text() : null)).catch(() => null);
+      const get = (code) => fetch("assets/guide/" + code + ".html?v=" + I18N.ASSET_VERSION).then((r) => (r.ok ? r.text() : null)).catch(() => null);
       main.innerHTML = (await get(I18N.lang)) || (await get("en")) || "";
       if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) el.scrollIntoView(); }
 

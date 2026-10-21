@@ -68,7 +68,6 @@ python3 tools/verify_sources.py    # links and values checked against the cited 
 ## Deployment
 
 The site only uses relative paths, so it works on GitHub Pages from a project subpath (`user.github.io/repo-name/`): publish the default branch from the repository root.
-
 ## Disclaimer
 
 Deadlines, rankings and metrics change over time: always check the venue's official website before submitting. Estimated deadlines are a hint based on the previous cycle, not official dates.

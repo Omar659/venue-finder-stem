@@ -125,7 +125,7 @@
 
   // ---------------------------------------------------------------- loading
   async function load() {
-    const get = (u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(u + ": HTTP " + r.status); return r.json(); });
+    const get = (u) => fetch(`${u}?v=${I18N.ASSET_VERSION}`, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(u + ": HTTP " + r.status); return r.json(); });
     const [c, j, tg, m] = await Promise.all([get(DATA_FILES.conf), get(DATA_FILES.jour), get(DATA_FILES.tags), get(DATA_FILES.meta)]);
     meta = m;
     tags = tg.tags;
@@ -841,7 +841,7 @@
   }
 
   async function main() {
-    await I18N.load();
+    try { await I18N.load(); } catch (e) { console.error("Translations not loaded:", e); }
     const loc = I18N.locale();
     nf1 = new Intl.NumberFormat(loc, { maximumFractionDigits: 1 });
     nf3 = new Intl.NumberFormat(loc, { maximumFractionDigits: 3 });

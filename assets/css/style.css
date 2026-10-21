@@ -85,7 +85,18 @@ button, input, select { font: inherit; color: inherit; }
 .main-nav a[aria-current="page"] { color: var(--text); background: var(--surface-2); }
 .main-nav a:hover, .icon-btn:hover { color: var(--text); background: var(--surface-2); }
 .icon-btn { display: inline-flex; align-items: center; gap: 6px; border-color: var(--border); }
-.lang-select { width: auto; padding: 6px 8px; font-size: 14px; }
+.main-nav a { white-space: nowrap; }
+.brand > span { white-space: nowrap; }
+.lang-picker {
+  display: inline-flex; align-items: center; gap: 6px; padding: 0 4px 0 10px; height: 36px; flex: none;
+  border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--muted); cursor: pointer;
+}
+.lang-picker:hover, .lang-picker:focus-within { color: var(--text); background: var(--surface-2); }
+.lang-picker select.lang-select {
+  width: auto; border: 0; background: transparent; padding: 6px 4px; font-size: 14px; color: inherit; cursor: pointer;
+}
+.lang-picker select.lang-select:focus-visible { outline: none; }
+.lang-picker:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* ---------- Layout ---------- */
 .layout { max-width: 1400px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 20px; align-items: start; }
@@ -291,12 +302,16 @@ details > summary { cursor: pointer; color: var(--accent); font-weight: 600; mar
   .cell-label { display: block; }
   .header-inner { flex-wrap: wrap; gap: 8px; }
   .brand small { display: none; }
+  .brand { flex: 1; min-width: 0; }
+  .brand > span { overflow: hidden; text-overflow: ellipsis; }
+  .main-nav { order: 3; width: 100%; margin-left: 0; }
   .drawer-head h2 { font-size: 18px; }
   .drawer-body, .drawer-head { padding-left: 16px; padding-right: 16px; }
 }
 @media (max-width: 520px) {
   .main-nav a { padding: 6px 8px; }
   .icon-btn .lbl { display: none; }
+  .lang-picker select.lang-select { max-width: 84px; }
   .row { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
   .compare-tray { border-radius: var(--radius); left: 16px; right: 16px; transform: none; }
 }

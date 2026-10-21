@@ -19,6 +19,9 @@
     { code: "zh", name: "中文", locale: "zh-CN" },
   ];
   const DEFAULT = "en";
+  // Bump together with the ?v= query in index.html / guide.html when releasing,
+  // so browsers never mix cached files from different versions.
+  const ASSET_VERSION = "20261021b";
   const STORAGE_KEY = "vf-lang";
 
   let lang = DEFAULT;
@@ -74,11 +77,11 @@
 
   async function load() {
     lang = pickLanguage();
-    const get = (code) => fetch(`assets/i18n/${code}.json`, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
+    const get = (code) => fetch(`assets/i18n/${code}.json?v=${ASSET_VERSION}`).then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
     fallback = await get(DEFAULT);
     dict = lang === DEFAULT ? fallback : await get(lang);
     document.documentElement.lang = lang;
-    if (window.VT) {
+    if (window.VT && typeof window.VT.setLocale === "function") {
       window.VT.setLocale(locale(), {
         dayUnit: t("time.dayUnit"), expired: t("time.expired"),
         tzNames: { "America/Los_Angeles": t("tz.pacific"), "America/New_York": t("tz.eastern"), "Pacific/Honolulu": t("tz.hawaii") },
@@ -88,5 +91,5 @@
     initSelector();
   }
 
-  window.I18N = { LANGUAGES, load, t, applyStatic, locale, get lang() { return lang; } };
+  window.I18N = { LANGUAGES, ASSET_VERSION, load, t, applyStatic, locale, get lang() { return lang; } };
 })();
