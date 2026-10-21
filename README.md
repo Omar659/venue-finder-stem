@@ -58,9 +58,10 @@ Main sources:
 
 File format and instructions for adding or updating a venue: [docs/data-format.md](docs/data-format.md).
 
-Data checks (Python 3.9+, no required dependencies):
+Data checks (Python 3.9+). The scripts only need the standard library; `pypdf` (in `requirements.txt`) also lets them read PDF sources:
 
 ```bash
+python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt   # once
 python3 tools/validate.py          # structure and format of the JSON files
 python3 tools/verify_sources.py    # links and values checked against the cited sources
 python3 tools/core_compare.py      # CORE ranking vs data: new editions, rank changes, missing A*/A conferences

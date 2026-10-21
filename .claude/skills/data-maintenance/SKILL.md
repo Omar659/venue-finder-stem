@@ -69,6 +69,8 @@ If the user did not paste an issue, run `python3 tools/verify_sources.py --ieee`
   primary sources, tags from `data/tags.json`.
 
 ### 4. Check before handing over
+Run the scripts with the project virtual environment (`.venv/bin/python`, or `source .venv/bin/activate`);
+if `.venv/` is missing, create it with `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`.
 ```bash
 python3 tools/validate.py                  # must report 0 errors
 python3 tools/verify_sources.py --ieee     # the issue's problems must be gone (or listed in known-issues)

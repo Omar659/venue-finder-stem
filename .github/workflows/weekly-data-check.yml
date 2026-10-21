@@ -27,8 +27,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install optional PDF support
-        run: pip install "pypdf>=4,<7"
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
       - name: Validate data files
         run: python tools/validate.py

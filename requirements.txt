@@ -1,0 +1,3 @@
+# Python dependencies of the scripts in tools/ (the web app itself has none).
+# pypdf lets tools/verify_sources.py read PDF sources (fact sheets, proceedings front matter).
+pypdf>=4,<7
