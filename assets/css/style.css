@@ -85,6 +85,7 @@ button, input, select { font: inherit; color: inherit; }
 .main-nav a[aria-current="page"] { color: var(--text); background: var(--surface-2); }
 .main-nav a:hover, .icon-btn:hover { color: var(--text); background: var(--surface-2); }
 .icon-btn { display: inline-flex; align-items: center; gap: 6px; border-color: var(--border); }
+.lang-select { width: auto; padding: 6px 8px; font-size: 14px; }
 
 /* ---------- Layout ---------- */
 .layout { max-width: 1400px; margin: 0 auto; padding: 16px; display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 20px; align-items: start; }

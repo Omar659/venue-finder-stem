@@ -1,240 +1,625 @@
 {
- "schemaVersion": 1,
+ "schemaVersion": 2,
+ "languages": [
+  "en",
+  "it",
+  "es",
+  "fr",
+  "de",
+  "pt",
+  "zh"
+ ],
  "tags": [
   {
    "id": "ai",
    "parent": null,
-   "label": "Intelligenza artificiale"
+   "label": {
+    "en": "Artificial intelligence",
+    "it": "Intelligenza artificiale",
+    "es": "Inteligencia artificial",
+    "fr": "Intelligence artificielle",
+    "de": "Künstliche Intelligenz",
+    "pt": "Inteligência artificial",
+    "zh": "人工智能"
+   }
   },
   {
    "id": "ml",
    "parent": "ai",
-   "label": "Machine learning"
+   "label": {
+    "en": "Machine learning",
+    "it": "Machine learning",
+    "es": "Aprendizaje automático",
+    "fr": "Apprentissage automatique",
+    "de": "Maschinelles Lernen",
+    "pt": "Aprendizado de máquina",
+    "zh": "机器学习"
+   }
   },
   {
    "id": "dl",
    "parent": "ml",
-   "label": "Deep learning"
+   "label": {
+    "en": "Deep learning",
+    "it": "Deep learning",
+    "es": "Aprendizaje profundo",
+    "fr": "Apprentissage profond",
+    "de": "Deep Learning",
+    "pt": "Aprendizado profundo",
+    "zh": "深度学习"
+   }
   },
   {
    "id": "rl",
    "parent": "ml",
-   "label": "Reinforcement learning"
+   "label": {
+    "en": "Reinforcement learning",
+    "it": "Reinforcement learning",
+    "es": "Aprendizaje por refuerzo",
+    "fr": "Apprentissage par renforcement",
+    "de": "Bestärkendes Lernen",
+    "pt": "Aprendizado por reforço",
+    "zh": "强化学习"
+   }
   },
   {
    "id": "learning-theory",
    "parent": "ml",
-   "label": "Teoria dell'apprendimento"
+   "label": {
+    "en": "Learning theory",
+    "it": "Teoria dell'apprendimento",
+    "es": "Teoría del aprendizaje",
+    "fr": "Théorie de l'apprentissage",
+    "de": "Lerntheorie",
+    "pt": "Teoria do aprendizado",
+    "zh": "学习理论"
+   }
   },
   {
    "id": "cv",
    "parent": "ai",
-   "label": "Computer vision"
+   "label": {
+    "en": "Computer vision",
+    "it": "Computer vision",
+    "es": "Visión por computador",
+    "fr": "Vision par ordinateur",
+    "de": "Computer Vision",
+    "pt": "Visão computacional",
+    "zh": "计算机视觉"
+   }
   },
   {
    "id": "medical-imaging",
    "parent": "cv",
-   "label": "Imaging medico"
+   "label": {
+    "en": "Medical imaging",
+    "it": "Imaging medico",
+    "es": "Imagen médica",
+    "fr": "Imagerie médicale",
+    "de": "Medizinische Bildgebung",
+    "pt": "Imagem médica",
+    "zh": "医学影像"
+   }
   },
   {
    "id": "nlp",
    "parent": "ai",
-   "label": "NLP / linguistica computazionale"
+   "label": {
+    "en": "NLP / computational linguistics",
+    "it": "NLP / linguistica computazionale",
+    "es": "PLN / lingüística computacional",
+    "fr": "TAL / linguistique computationnelle",
+    "de": "NLP / Computerlinguistik",
+    "pt": "PLN / linguística computacional",
+    "zh": "自然语言处理 / 计算语言学"
+   }
   },
   {
    "id": "speech",
    "parent": "nlp",
-   "label": "Speech e audio"
+   "label": {
+    "en": "Speech and audio",
+    "it": "Speech e audio",
+    "es": "Habla y audio",
+    "fr": "Parole et audio",
+    "de": "Sprache und Audio",
+    "pt": "Fala e áudio",
+    "zh": "语音与音频"
+   }
   },
   {
    "id": "kr",
    "parent": "ai",
-   "label": "Knowledge representation e ragionamento"
+   "label": {
+    "en": "Knowledge representation and reasoning",
+    "it": "Rappresentazione della conoscenza e ragionamento",
+    "es": "Representación del conocimiento y razonamiento",
+    "fr": "Représentation des connaissances et raisonnement",
+    "de": "Wissensrepräsentation und Schließen",
+    "pt": "Representação do conhecimento e raciocínio",
+    "zh": "知识表示与推理"
+   }
   },
   {
    "id": "mas",
    "parent": "ai",
-   "label": "Sistemi multi-agente"
+   "label": {
+    "en": "Multi-agent systems",
+    "it": "Sistemi multi-agente",
+    "es": "Sistemas multiagente",
+    "fr": "Systèmes multi-agents",
+    "de": "Multiagentensysteme",
+    "pt": "Sistemas multiagentes",
+    "zh": "多智能体系统"
+   }
   },
   {
    "id": "evolutionary",
    "parent": "ai",
-   "label": "Computazione evolutiva"
+   "label": {
+    "en": "Evolutionary computation",
+    "it": "Computazione evolutiva",
+    "es": "Computación evolutiva",
+    "fr": "Calcul évolutionnaire",
+    "de": "Evolutionäre Algorithmen",
+    "pt": "Computação evolutiva",
+    "zh": "演化计算"
+   }
   },
   {
    "id": "fuzzy",
    "parent": "ai",
-   "label": "Sistemi fuzzy"
+   "label": {
+    "en": "Fuzzy systems",
+    "it": "Sistemi fuzzy",
+    "es": "Sistemas difusos",
+    "fr": "Systèmes flous",
+    "de": "Fuzzy-Systeme",
+    "pt": "Sistemas fuzzy",
+    "zh": "模糊系统"
+   }
   },
   {
    "id": "games",
    "parent": "ai",
-   "label": "Giochi"
+   "label": {
+    "en": "Games",
+    "it": "Giochi",
+    "es": "Juegos",
+    "fr": "Jeux",
+    "de": "Spiele",
+    "pt": "Jogos",
+    "zh": "游戏"
+   }
   },
   {
    "id": "robotics",
    "parent": null,
-   "label": "Robotica"
+   "label": {
+    "en": "Robotics",
+    "it": "Robotica",
+    "es": "Robótica",
+    "fr": "Robotique",
+    "de": "Robotik",
+    "pt": "Robótica",
+    "zh": "机器人学"
+   }
   },
   {
    "id": "its",
    "parent": "robotics",
-   "label": "Veicoli e trasporti intelligenti"
+   "label": {
+    "en": "Intelligent vehicles and transportation",
+    "it": "Veicoli e trasporti intelligenti",
+    "es": "Vehículos y transporte inteligentes",
+    "fr": "Véhicules et transports intelligents",
+    "de": "Intelligente Fahrzeuge und Verkehr",
+    "pt": "Veículos e transportes inteligentes",
+    "zh": "智能车辆与交通"
+   }
   },
   {
    "id": "hci",
    "parent": null,
-   "label": "Interazione uomo-macchina (HCI)"
+   "label": {
+    "en": "Human-computer interaction (HCI)",
+    "it": "Interazione uomo-macchina (HCI)",
+    "es": "Interacción persona-ordenador (HCI)",
+    "fr": "Interaction humain-machine (IHM)",
+    "de": "Mensch-Computer-Interaktion (HCI)",
+    "pt": "Interação humano-computador (IHC)",
+    "zh": "人机交互"
+   }
   },
   {
    "id": "vr-ar",
    "parent": "hci",
-   "label": "Realtà virtuale e aumentata"
+   "label": {
+    "en": "Virtual and augmented reality",
+    "it": "Realtà virtuale e aumentata",
+    "es": "Realidad virtual y aumentada",
+    "fr": "Réalité virtuelle et augmentée",
+    "de": "Virtuelle und erweiterte Realität",
+    "pt": "Realidade virtual e aumentada",
+    "zh": "虚拟现实与增强现实"
+   }
   },
   {
    "id": "cscw",
    "parent": "hci",
-   "label": "CSCW e social computing"
+   "label": {
+    "en": "CSCW and social computing",
+    "it": "CSCW e social computing",
+    "es": "CSCW y computación social",
+    "fr": "TCAO et informatique sociale",
+    "de": "CSCW und Social Computing",
+    "pt": "CSCW e computação social",
+    "zh": "协同工作与社会计算"
+   }
   },
   {
    "id": "education-tech",
    "parent": "hci",
-   "label": "Tecnologie per l'apprendimento"
+   "label": {
+    "en": "Learning technologies",
+    "it": "Tecnologie per l'apprendimento",
+    "es": "Tecnologías para el aprendizaje",
+    "fr": "Technologies pour l'apprentissage",
+    "de": "Lerntechnologien",
+    "pt": "Tecnologias de aprendizagem",
+    "zh": "学习技术"
+   }
   },
   {
    "id": "graphics",
    "parent": null,
-   "label": "Computer graphics"
+   "label": {
+    "en": "Computer graphics",
+    "it": "Computer graphics",
+    "es": "Gráficos por computador",
+    "fr": "Informatique graphique",
+    "de": "Computergrafik",
+    "pt": "Computação gráfica",
+    "zh": "计算机图形学"
+   }
   },
   {
    "id": "visualization",
    "parent": "graphics",
-   "label": "Visualizzazione"
+   "label": {
+    "en": "Visualization",
+    "it": "Visualizzazione",
+    "es": "Visualización",
+    "fr": "Visualisation",
+    "de": "Visualisierung",
+    "pt": "Visualização",
+    "zh": "可视化"
+   }
   },
   {
    "id": "data",
    "parent": null,
-   "label": "Dati e informazione"
+   "label": {
+    "en": "Data and information",
+    "it": "Dati e informazione",
+    "es": "Datos e información",
+    "fr": "Données et information",
+    "de": "Daten und Information",
+    "pt": "Dados e informação",
+    "zh": "数据与信息"
+   }
   },
   {
    "id": "databases",
    "parent": "data",
-   "label": "Basi di dati"
+   "label": {
+    "en": "Databases",
+    "it": "Basi di dati",
+    "es": "Bases de datos",
+    "fr": "Bases de données",
+    "de": "Datenbanken",
+    "pt": "Bancos de dados",
+    "zh": "数据库"
+   }
   },
   {
    "id": "data-mining",
    "parent": "data",
-   "label": "Data mining"
+   "label": {
+    "en": "Data mining",
+    "it": "Data mining",
+    "es": "Minería de datos",
+    "fr": "Fouille de données",
+    "de": "Data Mining",
+    "pt": "Mineração de dados",
+    "zh": "数据挖掘"
+   }
   },
   {
    "id": "ir",
    "parent": "data",
-   "label": "Information retrieval e recommender"
+   "label": {
+    "en": "Information retrieval and recommender systems",
+    "it": "Information retrieval e sistemi di raccomandazione",
+    "es": "Recuperación de información y sistemas de recomendación",
+    "fr": "Recherche d'information et systèmes de recommandation",
+    "de": "Information Retrieval und Empfehlungssysteme",
+    "pt": "Recuperação de informação e sistemas de recomendação",
+    "zh": "信息检索与推荐系统"
+   }
   },
   {
    "id": "web",
    "parent": "data",
-   "label": "Web"
+   "label": {
+    "en": "Web",
+    "it": "Web",
+    "es": "Web",
+    "fr": "Web",
+    "de": "Web",
+    "pt": "Web",
+    "zh": "万维网"
+   }
   },
   {
    "id": "systems",
    "parent": null,
-   "label": "Sistemi"
+   "label": {
+    "en": "Systems",
+    "it": "Sistemi",
+    "es": "Sistemas",
+    "fr": "Systèmes",
+    "de": "Systeme",
+    "pt": "Sistemas",
+    "zh": "计算机系统"
+   }
   },
   {
    "id": "os",
    "parent": "systems",
-   "label": "Sistemi operativi e distribuiti"
+   "label": {
+    "en": "Operating and distributed systems",
+    "it": "Sistemi operativi e distribuiti",
+    "es": "Sistemas operativos y distribuidos",
+    "fr": "Systèmes d'exploitation et distribués",
+    "de": "Betriebs- und verteilte Systeme",
+    "pt": "Sistemas operacionais e distribuídos",
+    "zh": "操作系统与分布式系统"
+   }
   },
   {
    "id": "architecture",
    "parent": "systems",
-   "label": "Architetture"
+   "label": {
+    "en": "Computer architecture",
+    "it": "Architetture dei calcolatori",
+    "es": "Arquitectura de computadores",
+    "fr": "Architecture des ordinateurs",
+    "de": "Rechnerarchitektur",
+    "pt": "Arquitetura de computadores",
+    "zh": "计算机体系结构"
+   }
   },
   {
    "id": "hpc",
    "parent": "systems",
-   "label": "High performance computing"
+   "label": {
+    "en": "High-performance computing",
+    "it": "Calcolo ad alte prestazioni",
+    "es": "Computación de alto rendimiento",
+    "fr": "Calcul haute performance",
+    "de": "Hochleistungsrechnen",
+    "pt": "Computação de alto desempenho",
+    "zh": "高性能计算"
+   }
   },
   {
    "id": "networking",
    "parent": "systems",
-   "label": "Reti"
+   "label": {
+    "en": "Networking",
+    "it": "Reti",
+    "es": "Redes",
+    "fr": "Réseaux",
+    "de": "Netzwerke",
+    "pt": "Redes",
+    "zh": "计算机网络"
+   }
   },
   {
    "id": "mobile",
    "parent": "networking",
-   "label": "Mobile e wireless"
+   "label": {
+    "en": "Mobile and wireless",
+    "it": "Mobile e wireless",
+    "es": "Móvil e inalámbrico",
+    "fr": "Mobile et sans fil",
+    "de": "Mobil und drahtlos",
+    "pt": "Móvel e sem fio",
+    "zh": "移动与无线"
+   }
   },
   {
    "id": "iot",
    "parent": "networking",
-   "label": "Internet of Things"
+   "label": {
+    "en": "Internet of Things",
+    "it": "Internet of Things",
+    "es": "Internet de las cosas",
+    "fr": "Internet des objets",
+    "de": "Internet der Dinge",
+    "pt": "Internet das coisas",
+    "zh": "物联网"
+   }
   },
   {
    "id": "security",
    "parent": null,
-   "label": "Sicurezza e privacy"
+   "label": {
+    "en": "Security and privacy",
+    "it": "Sicurezza e privacy",
+    "es": "Seguridad y privacidad",
+    "fr": "Sécurité et vie privée",
+    "de": "Sicherheit und Datenschutz",
+    "pt": "Segurança e privacidade",
+    "zh": "安全与隐私"
+   }
   },
   {
    "id": "se",
    "parent": null,
-   "label": "Ingegneria del software"
+   "label": {
+    "en": "Software engineering",
+    "it": "Ingegneria del software",
+    "es": "Ingeniería del software",
+    "fr": "Génie logiciel",
+    "de": "Softwaretechnik",
+    "pt": "Engenharia de software",
+    "zh": "软件工程"
+   }
   },
   {
    "id": "pl",
    "parent": "se",
-   "label": "Linguaggi di programmazione"
+   "label": {
+    "en": "Programming languages",
+    "it": "Linguaggi di programmazione",
+    "es": "Lenguajes de programación",
+    "fr": "Langages de programmation",
+    "de": "Programmiersprachen",
+    "pt": "Linguagens de programação",
+    "zh": "程序设计语言"
+   }
   },
   {
    "id": "formal-methods",
    "parent": "se",
-   "label": "Metodi formali e verifica"
+   "label": {
+    "en": "Formal methods and verification",
+    "it": "Metodi formali e verifica",
+    "es": "Métodos formales y verificación",
+    "fr": "Méthodes formelles et vérification",
+    "de": "Formale Methoden und Verifikation",
+    "pt": "Métodos formais e verificação",
+    "zh": "形式化方法与验证"
+   }
   },
   {
    "id": "theory",
    "parent": null,
-   "label": "Informatica teorica"
+   "label": {
+    "en": "Theoretical computer science",
+    "it": "Informatica teorica",
+    "es": "Informática teórica",
+    "fr": "Informatique théorique",
+    "de": "Theoretische Informatik",
+    "pt": "Ciência da computação teórica",
+    "zh": "理论计算机科学"
+   }
   },
   {
    "id": "algorithms",
    "parent": "theory",
-   "label": "Algoritmi"
+   "label": {
+    "en": "Algorithms",
+    "it": "Algoritmi",
+    "es": "Algoritmos",
+    "fr": "Algorithmique",
+    "de": "Algorithmen",
+    "pt": "Algoritmos",
+    "zh": "算法"
+   }
   },
   {
    "id": "engineering",
    "parent": null,
-   "label": "Ingegneria (elettronica, TLC, automazione)"
+   "label": {
+    "en": "Engineering (electronics, telecom, automation)",
+    "it": "Ingegneria (elettronica, TLC, automazione)",
+    "es": "Ingeniería (electrónica, telecomunicaciones, automatización)",
+    "fr": "Ingénierie (électronique, télécoms, automatique)",
+    "de": "Ingenieurwesen (Elektronik, Telekommunikation, Automatisierung)",
+    "pt": "Engenharia (eletrônica, telecomunicações, automação)",
+    "zh": "工程（电子、通信、自动化）"
+   }
   },
   {
    "id": "signal",
    "parent": "engineering",
-   "label": "Elaborazione dei segnali"
+   "label": {
+    "en": "Signal processing",
+    "it": "Elaborazione dei segnali",
+    "es": "Procesamiento de señales",
+    "fr": "Traitement du signal",
+    "de": "Signalverarbeitung",
+    "pt": "Processamento de sinais",
+    "zh": "信号处理"
+   }
   },
   {
    "id": "multimedia",
    "parent": "signal",
-   "label": "Multimedia"
+   "label": {
+    "en": "Multimedia",
+    "it": "Multimedia",
+    "es": "Multimedia",
+    "fr": "Multimédia",
+    "de": "Multimedia",
+    "pt": "Multimídia",
+    "zh": "多媒体"
+   }
   },
   {
    "id": "telecom",
    "parent": "engineering",
-   "label": "Telecomunicazioni"
+   "label": {
+    "en": "Telecommunications",
+    "it": "Telecomunicazioni",
+    "es": "Telecomunicaciones",
+    "fr": "Télécommunications",
+    "de": "Telekommunikation",
+    "pt": "Telecomunicações",
+    "zh": "通信"
+   }
   },
   {
    "id": "control",
    "parent": "engineering",
-   "label": "Controllo e automazione"
+   "label": {
+    "en": "Control and automation",
+    "it": "Controllo e automazione",
+    "es": "Control y automatización",
+    "fr": "Automatique et contrôle",
+    "de": "Regelungs- und Automatisierungstechnik",
+    "pt": "Controle e automação",
+    "zh": "控制与自动化"
+   }
   },
   {
    "id": "industrial",
    "parent": "engineering",
-   "label": "Informatica industriale"
+   "label": {
+    "en": "Industrial informatics",
+    "it": "Informatica industriale",
+    "es": "Informática industrial",
+    "fr": "Informatique industrielle",
+    "de": "Industrielle Informatik",
+    "pt": "Informática industrial",
+    "zh": "工业信息学"
+   }
   },
   {
    "id": "cs-general",
    "parent": null,
-   "label": "Informatica generale / multidisciplinare"
+   "label": {
+    "en": "General / multidisciplinary computing",
+    "it": "Informatica generale / multidisciplinare",
+    "es": "Informática general / multidisciplinar",
+    "fr": "Informatique générale / pluridisciplinaire",
+    "de": "Allgemeine / multidisziplinäre Informatik",
+    "pt": "Computação geral / multidisciplinar",
+    "zh": "综合 / 多学科计算机科学"
+   }
   }
  ]
 }

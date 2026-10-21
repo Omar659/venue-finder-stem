@@ -1,0 +1,166 @@
+<h1>Come si pubblica</h1>
+<p class="lead">Un'introduzione pratica per chi si avvicina per la prima volta al mondo delle pubblicazioni scientifiche in area STEM, con particolare attenzione all'informatica e all'ingegneria.</p>
+
+<nav class="toc" aria-label="Indice">
+  <strong>Indice</strong>
+  <ol>
+    <li><a href="#conf-vs-journal">Conferenza o journal?</a></li>
+    <li><a href="#track">Main track e workshop</a></li>
+    <li><a href="#proceedings">I proceedings</a></li>
+    <li><a href="#phases">Le fasi di una submission a conferenza</a></li>
+    <li><a href="#extension">Da paper di conferenza a journal</a></li>
+    <li><a href="#metrics">Rank, quartili e metriche</a></li>
+    <li><a href="#special">Special issue</a></li>
+    <li><a href="#oa">Open access e APC</a></li>
+    <li><a href="#predatory">Riconoscere un journal predatorio</a></li>
+    <li><a href="#glossary">Glossario</a></li>
+    <li><a href="#app">Come leggere i dati di questa app</a></li>
+  </ol>
+</nav>
+
+<section id="conf-vs-journal">
+  <h2>1. Conferenza o journal?</h2>
+  <p>Una <strong>conferenza</strong> è un evento periodico (di solito annuale) con <em>scadenze fisse</em>: si sottomette entro una data, si riceve una decisione dopo alcuni mesi e, se accettati, si presenta il lavoro all'evento. Un <strong>journal</strong> (rivista) accetta invece sottomissioni <em>in qualsiasi momento</em> e la revisione può prevedere più round prima della decisione finale.</p>
+  <table class="data">
+    <thead><tr><th></th><th>Conferenza</th><th>Journal</th></tr></thead>
+    <tbody>
+      <tr><td>Tempi</td><td>Calendario fisso, decisione in genere in 2–5 mesi</td><td>Submission continua; tempi variabili (da settimane a oltre un anno), più round di revisione</td></tr>
+      <tr><td>Revisione</td><td>Di solito un solo round, a volte con rebuttal o revise &amp; resubmit</td><td>Più round (minor/major revision) fino all'accettazione</td></tr>
+      <tr><td>Formato</td><td>Limite di pagine stretto</td><td>Articoli più lunghi e completi</td></tr>
+      <tr><td>Visibilità</td><td>Presentazione dal vivo, networking</td><td>Versione archivistica e approfondita</td></tr>
+    </tbody>
+  </table>
+  <h3>Il prestigio dipende dal campo</h3>
+  <p>In <strong>informatica</strong> le conferenze più selettive sono spesso il canale principale per i risultati di ricerca, al punto che la Computing Research Association ha raccomandato di non valutare i ricercatori del settore solo sulle pubblicazioni su journal. In molte altre discipline STEM (e in parte dell'ingegneria) il riferimento principale resta il journal. Prima di scegliere, guarda dove pubblicano i gruppi più forti del tuo sotto-settore e quali criteri usa la tua istituzione.</p>
+  <p class="refs">Fonte: <a href="https://cra.org/resources/best-practice-memos/evaluating-computer-scientists-and-engineers-for-promotion-and-tenure/" target="_blank" rel="noopener">CRA – Evaluating Computer Scientists and Engineers for Promotion and Tenure</a>.</p>
+</section>
+
+<section id="track">
+  <h2>2. Main track e workshop</h2>
+  <p>La <strong>main track</strong> (o <em>research track</em>, <em>technical track</em>) è il programma principale della conferenza: è quella a cui si riferiscono rank, acceptance rate e prestigio della venue. I <strong>workshop</strong> sono eventi più piccoli e tematici, co-locati con la conferenza (spesso nei giorni prima o dopo), con call, comitati e scadenze propri, in genere successivi a quelli della main track.</p>
+  <ul>
+    <li><strong>Prestigio:</strong> un paper in main track di una conferenza A* pesa molto più di un paper in un suo workshop. I ranking come CORE valutano le conferenze, non i singoli workshop.</li>
+    <li><strong>Quando conviene un workshop:</strong> per lavori preliminari o in corso, idee di nicchia, per ricevere feedback da una comunità specifica, o come prima esperienza di pubblicazione.</li>
+    <li><strong>Archival vs non-archival:</strong> alcuni workshop pubblicano proceedings ufficiali (archival), altri no. Un workshop non-archival di solito non impedisce di ripresentare in seguito una versione estesa altrove; uno archival può invece contare come pubblicazione precedente. Leggi sempre la call del workshop e la policy della venue successiva.</li>
+  </ul>
+  <p>Molte conferenze hanno anche altre tracce (short paper, demo, poster, industry, dataset &amp; benchmark, position paper, doctoral consortium): sono utili, ma vanno distinte dalla main track.</p>
+</section>
+
+<section id="proceedings">
+  <h2>3. I proceedings</h2>
+  <p>I <strong>proceedings</strong> sono la raccolta ufficiale dei paper accettati a una conferenza, pubblicata da un editore o da un'organizzazione: ACM Digital Library, IEEE Xplore, Springer (es. serie <em>Lecture Notes in Computer Science</em>), PMLR (Proceedings of Machine Learning Research), ACL Anthology, USENIX, ecc. Contano perché:</p>
+  <ul>
+    <li>rendono il paper una <strong>pubblicazione archivistica citabile</strong> (con DOI o identificativo stabile);</li>
+    <li>determinano dove il paper sarà <strong>indicizzato</strong> e trovato (DBLP, Scopus, Web of Science dipendono dalla serie e dall'editore);</li>
+    <li>possono influire su concorsi e valutazioni istituzionali, che spesso richiedono indicizzazione in specifiche banche dati.</li>
+  </ul>
+  <p>Alcune conferenze pubblicano i paper direttamente in un journal (es. <em>Proceedings of the ACM on …</em>, PVLDB per VLDB, IEEE TVCG per i full paper di IEEE VIS): nel dettaglio di ogni conferenza trovi editore e serie.</p>
+</section>
+
+<section id="phases">
+  <h2>4. Le fasi di una submission a conferenza</h2>
+  <ol>
+    <li><strong>Abstract / registrazione</strong> — molte conferenze chiedono di registrare titolo, abstract e autori qualche giorno prima del paper, per organizzare i revisori ed evitare conflitti d'interesse. Senza questo passo spesso non si può sottomettere.</li>
+    <li><strong>Full paper</strong> — la scadenza principale, quasi sempre in <em>AoE</em>. Il materiale supplementare può avere una scadenza successiva.</li>
+    <li><strong>Revisione</strong> — i revisori (spesso in double-blind) valutano il lavoro. Alcune conferenze hanno un <em>early reject</em> dopo una prima fase.</li>
+    <li><strong>Rebuttal / author response</strong> — una finestra di pochi giorni per rispondere alle review, correggendo errori fattuali e rispondendo alle domande. Alcune venue (es. CHI, SIGMOD, IEEE S&amp;P) prevedono invece una fase di <em>revise &amp; resubmit</em> o <em>major revision</em> con una nuova versione del paper.</li>
+    <li><strong>Notifica</strong> — accettazione o rifiuto, a volte con una distinzione tra oral, spotlight e poster, oppure con un'accettazione condizionata a uno <em>shepherding</em>.</li>
+    <li><strong>Camera-ready</strong> — la versione finale, corretta secondo le review e nel formato dell'editore, da consegnare entro una data precisa (spesso insieme alla registrazione di almeno un autore all'evento).</li>
+  </ol>
+  <div class="callout">
+    <strong>Modelli particolari.</strong> Molte venue hanno <em>più cicli</em> all'anno (USENIX Security, IEEE S&amp;P, NDSS, SIGMOD, KDD, NSDI…). In NLP le conferenze ACL usano <a href="https://aclrollingreview.org/" target="_blank" rel="noopener">ACL Rolling Review (ARR)</a>: si sottomette a un ciclo ARR e poi si fa <em>commitment</em> della submission (con le review ricevute) alla conferenza scelta. VLDB usa scadenze mensili su PVLDB, CSCW un modello a sottomissione continua.
+  </div>
+</section>
+
+<section id="extension">
+  <h2>5. Da paper di conferenza a versione journal</h2>
+  <p>È una pratica comune estendere un paper di conferenza in un articolo su journal, aggiungendo esperimenti, dimostrazioni, analisi o discussione. Le regole però <strong>variano da journal a journal</strong>: non esiste una soglia universale.</p>
+  <ul>
+    <li>IEEE Transactions on Cloud Computing ammette versioni estese con almeno il 35% di materiale tecnico aggiuntivo, citando il paper originale e cambiando titolo.</li>
+    <li>IEEE Transactions on Computers chiede almeno il 40% di nuovo materiale tecnico/scientifico.</li>
+    <li>IEEE Transactions on Artificial Intelligence non fissa una percentuale, ma limita la similarità al 25% e precisa che aggiungere esperimenti su nuovi dataset o ampliare il background non basta.</li>
+  </ul>
+  <p>Regola d'oro: cita sempre la versione di conferenza, dichiaralo nella cover letter e leggi la policy del journal sulle pubblicazioni precedenti. Alcune venue hanno anche percorsi dedicati (journal-first, journal-to-conference, special issue con i migliori paper di una conferenza).</p>
+  <p class="refs">Fonti (pagine per autori, lette tramite indice di ricerca): <a href="https://www.computer.org/csdl/journal/cc/write-for-us/15064" target="_blank" rel="noopener">IEEE TCC</a> · <a href="https://www.computer.org/digital-library/journals/tc/call-for-papers-general-submissions" target="_blank" rel="noopener">IEEE TC</a> · <a href="https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence/information-for-authors-tai" target="_blank" rel="noopener">IEEE TAI</a>.</p>
+</section>
+
+<section id="metrics">
+  <h2>6. Rank, quartili e metriche: cosa significano e quali limiti hanno</h2>
+  <dl>
+    <dt>Rank CORE (conferenze)</dt>
+    <dd>Ranking delle conferenze di informatica curato da CORE (Australia/Nuova Zelanda), oggi nell'edizione ICORE2026: <strong>A*</strong> = conferenza di punta di un'area; <strong>A</strong> = eccellente e molto rispettata; <strong>B</strong> = da buona a molto buona; <strong>C</strong> = altre conferenze che rispettano gli standard minimi di peer review. Il rank combina indicatori come citazioni, acceptance rate e reputazione di chi organizza. <em>Limiti:</em> copre soprattutto l'informatica, è aggiornato ogni pochi anni e alcune venue importanti non sono classificate (es. RSS) o hanno categorie nazionali.</dd>
+    <dt>SJR – SCImago Journal Rank (journal)</dt>
+    <dd>Media delle citazioni <em>pesate</em> ricevute in un anno dai documenti pubblicati nei tre anni precedenti: le citazioni da journal più prestigiosi e tematicamente vicini contano di più. Basato su dati Scopus, aggiornato ogni anno (di solito a giugno).</dd>
+    <dt>Quartile (Q1–Q4)</dt>
+    <dd>All'interno di ogni <em>categoria disciplinare</em> SCImago ordina i journal per SJR e li divide in quattro gruppi uguali: Q1 è il 25% migliore, Q4 il 25% più basso. Un journal può avere quartili diversi in categorie diverse: questa app mostra il <strong>migliore</strong>. Esistono anche quartili JCR (Clarivate), calcolati in modo diverso.</dd>
+    <dt>CiteScore (Scopus/Elsevier)</dt>
+    <dd>Citazioni ricevute su una finestra di quattro anni da articoli, review, conference paper, capitoli e data paper, diviso il numero di questi documenti pubblicati negli stessi quattro anni.</dd>
+    <dt>Impact Factor (JIF, Clarivate)</dt>
+    <dd>Citazioni ricevute nell'anno JCR dagli elementi pubblicati nei due anni precedenti, divise per il numero di elementi "citabili" (articoli e review) di quei due anni. Lo calcola solo per i journal indicizzati in Web of Science; il "JIF 2025" è pubblicato a giugno 2026.</dd>
+    <dt>Acceptance rate</dt>
+    <dd>Percentuale di paper accettati sul totale sottomesso. Indica la selettività, ma va letto con cautela: il denominatore cambia da venue a venue (con o senza desk reject e ritiri; per ARR conta il commitment), cresce con il numero di sottomissioni e non dice nulla della qualità di un singolo paper.</dd>
+  </dl>
+  <div class="callout"><strong>Limiti generali.</strong> Le metriche di rivista descrivono la rivista, non il singolo articolo. La <a href="https://sfdora.org/read/" target="_blank" rel="noopener">San Francisco Declaration on Research Assessment (DORA)</a> raccomanda di non usare metriche come l'Impact Factor come sostituto della qualità di singoli articoli o ricercatori: le distribuzioni delle citazioni sono molto asimmetriche e i valori dipendono dal campo e dal tipo di articoli. Non confrontare mai metriche di campi diversi né scale diverse (CORE contro quartili).</div>
+  <p class="refs">Fonti: <a href="https://www.core.edu.au/conference-portal" target="_blank" rel="noopener">CORE Conference Portal</a> · <a href="https://www.scimagojr.com/methodology.php" target="_blank" rel="noopener">SCImago – metodologia SJR</a> e <a href="https://www.scimagojr.com/help.php" target="_blank" rel="noopener">help</a> · <a href="https://www.elsevier.com/products/scopus/metrics/citescore" target="_blank" rel="noopener">Elsevier – CiteScore</a> e <a href="https://service.elsevier.com/app/answers/detail/a_id/30562/supporthub/scopus/related/1/" target="_blank" rel="noopener">FAQ CiteScore</a> · <a href="https://clarivate.com/academia-government/essays/impact-factor/" target="_blank" rel="noopener">Clarivate – The Clarivate Impact Factor</a> · <a href="https://sfdora.org/read/" target="_blank" rel="noopener">DORA</a>.</p>
+</section>
+
+<section id="special">
+  <h2>7. Special issue</h2>
+  <p>Una <strong>special issue</strong> (o special section) è un numero tematico di un journal, curato da guest editor, con una call dedicata e una <strong>deadline propria</strong>. È utile se il tuo lavoro coincide con il tema, e a volte raccoglie versioni estese dei migliori paper di una conferenza. Revisione e standard dovrebbero essere gli stessi del journal: diffida di "special issue" con tempi irrealistici o inviti generici via email. In questa app le deadline delle special issue sono mostrate solo se pubblicate ufficialmente: non vengono mai stimate.</p>
+</section>
+
+<section id="oa">
+  <h2>8. Open access e APC</h2>
+  <dl>
+    <dt>Gold / fully open access</dt><dd>Tutti gli articoli sono liberamente leggibili; spesso i costi sono coperti da una <strong>APC</strong> (Article Processing Charge) pagata dagli autori o dalla loro istituzione.</dd>
+    <dt>Diamond open access</dt><dd>Open access senza costi né per lettori né per autori (es. JMLR, JAIR, TACL, Computational Linguistics).</dd>
+    <dt>Ibrido</dt><dd>Journal ad abbonamento in cui l'autore può pagare un'APC per rendere aperto il singolo articolo (es. molte IEEE Transactions).</dd>
+    <dt>Green open access</dt><dd>Deposito di una versione dell'articolo (preprint o accepted manuscript) in un archivio aperto, secondo le regole dell'editore.</dd>
+  </dl>
+  <p>Prima di pagare un'APC verifica gli accordi della tua istituzione (accordi trasformativi, programmi come ACM Open): dal 1° gennaio 2026 tutte le pubblicazioni ACM sono open access, con costi coperti dall'istituzione aderente o da un'APC. La <a href="https://doaj.org/" target="_blank" rel="noopener">DOAJ</a> elenca i journal open access che rispettano criteri di qualità, tra cui la trasparenza su revisione, comitato editoriale e costi.</p>
+  <p class="refs">Fonti: <a href="https://iui.acm.org/2027/call-for-papers/" target="_blank" rel="noopener">ACM (comunicazione sul passaggio all'open access, riportata nelle call 2026–2027)</a> · <a href="https://doaj.org/apply/guide/" target="_blank" rel="noopener">DOAJ – guida per i journal</a> · <a href="https://www.jair.org/index.php/jair/about" target="_blank" rel="noopener">JAIR</a> · <a href="https://transacl.org/index.php/tacl/about" target="_blank" rel="noopener">TACL</a>.</p>
+</section>
+
+<section id="predatory">
+  <h2>9. Come riconoscere un journal predatorio</h2>
+  <p>I journal predatori incassano APC senza offrire una vera revisione né servizi editoriali seri. Segnali d'allarme e controlli (ispirati alla checklist <a href="https://thinkchecksubmit.org/journals/" target="_blank" rel="noopener">Think. Check. Submit.</a>):</p>
+  <ul>
+    <li><strong>Nome e identità:</strong> il nome imita quello di un journal noto? L'ISSN è verificabile sul portale ISSN? L'editore è identificabile e contattabile (email, indirizzo)?</li>
+    <li><strong>Revisione:</strong> il tipo di peer review è dichiarato? Promesse di accettazione in pochi giorni sono un pessimo segnale.</li>
+    <li><strong>Comitato editoriale:</strong> composto da ricercatori reali e del settore, con affiliazioni verificabili?</li>
+    <li><strong>Indicizzazione:</strong> il journal è davvero in Scopus, Web of Science o DOAJ? Verificalo sui siti ufficiali, non sul sito del journal (che può dichiarare metriche false o "impact factor" inventati).</li>
+    <li><strong>Costi:</strong> le fee sono chiare, con importo, valuta e momento del pagamento?</li>
+    <li><strong>Inviti non richiesti:</strong> email generiche che ti invitano a pubblicare "nel tuo campo" sono un classico segnale.</li>
+    <li><strong>Etica:</strong> l'editore aderisce a organismi come COPE? Il journal è in DOAJ (per l'open access)?</li>
+  </ul>
+  <p>Questa app include solo journal indicizzati in Scopus e/o Web of Science e pubblicati da editori riconosciuti.</p>
+</section>
+
+<section id="glossary">
+  <h2>10. Glossario</h2>
+  <dl>
+    <dt>AoE (Anywhere on Earth)</dt><dd>Fuso orario UTC−12: una scadenza "23:59 AoE" non è passata finché da qualche parte sulla Terra quel giorno non è finito. In pratica corrisponde a mezzogiorno UTC del giorno successivo (in Italia le 13:00 con l'ora solare, le 14:00 con l'ora legale). <span class="refs">Fonte: <a href="https://www.ieee802.org/16/aoe.html" target="_blank" rel="noopener">IEEE 802.16 – AOE</a>.</span></dd>
+    <dt>Double-blind / single-blind</dt><dd>Nel double-blind né autori né revisori conoscono le reciproche identità: il paper va anonimizzato (niente nomi, autocitazioni in terza persona, niente link a repository identificabili). Nel single-blind i revisori conoscono gli autori ma non viceversa.</dd>
+    <dt>Long paper / short paper</dt><dd>Formati con limiti di pagine diversi: il long paper presenta un contributo completo; lo short paper un contributo più circoscritto, un risultato preliminare o negativo. Le pagine massime variano per venue (es. le conferenze ACL hanno long e short paper).</dd>
+    <dt>Desk reject</dt><dd>Rifiuto senza revisione completa, per violazioni di formato, anonimato, scope o policy (es. sul numero di sottomissioni per autore).</dd>
+    <dt>Rebuttal / author response</dt><dd>Risposta degli autori alle review prima della decisione.</dd>
+    <dt>Revise &amp; resubmit / major revision</dt><dd>Il paper non è accettato subito ma può essere rivisto e risottomesso entro una data.</dd>
+    <dt>Shepherding</dt><dd>Accettazione condizionata: un membro del comitato verifica che le modifiche richieste siano fatte.</dd>
+    <dt>Camera-ready</dt><dd>Versione finale per la pubblicazione.</dd>
+    <dt>Findings (ACL)</dt><dd>Volume complementare delle conferenze ACL per paper solidi non selezionati per la main conference.</dd>
+    <dt>Oral / spotlight / poster</dt><dd>Formati di presentazione dei paper accettati; in genere non cambiano lo status di pubblicazione.</dd>
+    <dt>Commitment (ARR)</dt><dd>Atto con cui si "impegna" una submission già revisionata in ARR verso una specifica conferenza.</dd>
+  </dl>
+</section>
+
+<section id="app">
+  <h2>11. Come leggere i dati di questa app</h2>
+  <ul>
+    <li><span class="badge badge-official">ufficiale</span> deadline pubblicata sul sito ufficiale, con link alla fonte e data di verifica.</li>
+    <li><span class="badge badge-est">stimata</span> solo per conferenze ricorrenti quando la data ufficiale non è ancora uscita: è la data del ciclo precedente spostata di uno o due anni (biennali). Non è una data ufficiale.</li>
+    <li><span class="badge badge-na">n.d.</span> dato non verificabile: lasciato vuoto invece di stimarlo.</li>
+    <li>Le deadline sono mostrate nel fuso originale (AoE, UTC o fuso locale della conferenza) e nel tuo fuso orario. Se la fonte non indica il fuso, l'app lo segnala e assume fine giornata AoE.</li>
+    <li>Rank CORE e quartili SJR sono scale diverse: ordinando per rank con entrambi i tipi visibili, conferenze e journal vengono mostrati in due gruppi separati.</li>
+    <li>I dati sono una fotografia verificata alla data indicata in fondo alla pagina principale: controlla sempre il sito ufficiale prima di sottomettere. I testi descrittivi dei dati (note, topic) sono in inglese.</li>
+  </ul>
+</section>

@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Venue Finder STEM</title>
-  <meta name="description" content="Trova conferenze e journal STEM dove pubblicare: ranking, quartili, deadline live, topic e storico dell'acceptance rate, con fonti verificate.">
+  <meta name="description" content="Find STEM conferences and journals to publish in: rankings, quartiles, live deadlines, topics and acceptance-rate history, with verified sources.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%235b4bd6'/%3E%3Cpath d='M9 22l7-12 7 12' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <script>
     // Apply the saved theme before first paint.
@@ -13,99 +13,101 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#results">Vai ai risultati</a>
+  <a class="skip-link" href="#results" data-i18n="skip.results">Skip to results</a>
 
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="./">
         <span class="brand-mark" aria-hidden="true">▲</span>
-        <span>Venue Finder STEM<small>Dove pubblicare: conferenze e journal</small></span>
+        <span><span data-i18n="app.title">Venue Finder STEM</span><small data-i18n="app.tagline">Where to publish: conferences and journals</small></span>
       </a>
-      <nav class="main-nav" aria-label="Navigazione principale">
-        <a href="./" aria-current="page">Esplora</a>
-        <a href="guide.html">Guida</a>
+      <nav class="main-nav" data-i18n-attr="aria-label:nav.aria" aria-label="Main navigation">
+        <a href="./" aria-current="page" data-i18n="nav.explore">Explore</a>
+        <a href="guide.html" data-i18n="nav.guide">How publishing works</a>
       </nav>
-      <button class="icon-btn" id="theme-btn" type="button" aria-label="Cambia tema">
+      <label class="sr-only" for="lang-select" data-i18n="lang.label">Language</label>
+      <select id="lang-select" class="lang-select"></select>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Theme">
         <span aria-hidden="true" id="theme-icon">◐</span><span class="lbl" id="theme-label">Auto</span>
       </button>
     </div>
   </header>
 
   <div class="layout">
-    <aside class="filters" id="filters" aria-label="Filtri">
-      <h2>Tipo di venue</h2>
-      <div class="segmented" role="group" aria-label="Tipo di venue" id="type-seg">
-        <button type="button" data-type="all" aria-pressed="true">Tutti</button>
-        <button type="button" data-type="conference" aria-pressed="false">Conferenze</button>
-        <button type="button" data-type="journal" aria-pressed="false">Journal</button>
+    <aside class="filters" id="filters" data-i18n-attr="aria-label:filters.aria" aria-label="Filters">
+      <h2 data-i18n="f.type">Venue type</h2>
+      <div class="segmented" role="group" data-i18n-attr="aria-label:f.type" aria-label="Venue type" id="type-seg">
+        <button type="button" data-type="all" aria-pressed="true" data-i18n="type.all">All</button>
+        <button type="button" data-type="conference" aria-pressed="false" data-i18n="type.conferences">Conferences</button>
+        <button type="button" data-type="journal" aria-pressed="false" data-i18n="type.journals">Journals</button>
       </div>
 
-      <h2>Area di ricerca</h2>
+      <h2 data-i18n="f.area">Research area</h2>
       <ul class="tag-tree" id="tag-tree"></ul>
 
       <div class="filter-group" id="conf-filters">
-        <h2>Conferenze</h2>
-        <label class="sr-only" for="f-country">Paese</label>
-        <select id="f-country"><option value="">Tutti i paesi</option></select>
-        <div style="margin-top:10px" role="group" aria-label="Rank CORE">
-          <div class="faint" style="font-size:12px">Rank CORE (ICORE2026)</div>
+        <h2 data-i18n="f.conferences">Conferences</h2>
+        <label class="sr-only" for="f-country" data-i18n="f.country">Country</label>
+        <select id="f-country"><option value="" data-i18n="f.allCountries">All countries</option></select>
+        <div style="margin-top:10px" role="group" data-i18n-attr="aria-label:f.coreRank" aria-label="CORE rank">
+          <div class="faint" style="font-size:12px" data-i18n="f.coreRank">CORE rank (ICORE2026)</div>
           <div id="f-rank"></div>
         </div>
         <div style="margin-top:10px">
-          <label class="faint" style="font-size:12px" for="f-deadline">Deadline</label>
+          <label class="faint" style="font-size:12px" for="f-deadline" data-i18n="f.deadline">Deadline</label>
           <select id="f-deadline">
-            <option value="">Qualsiasi</option>
-            <option value="open">Aperta (deadline ufficiale futura)</option>
-            <option value="closed">Chiusa / non ancora pubblicata</option>
+            <option value="" data-i18n="f.dlAny">Any</option>
+            <option value="open" data-i18n="f.dlOpen">Open (official upcoming deadline)</option>
+            <option value="closed" data-i18n="f.dlClosed">Closed / not yet published</option>
           </select>
         </div>
       </div>
 
       <div class="filter-group" id="journal-filters">
-        <h2>Journal</h2>
-        <div role="group" aria-label="Quartile SJR">
-          <div class="faint" style="font-size:12px">Quartile SJR (migliore)</div>
+        <h2 data-i18n="f.journals">Journals</h2>
+        <div role="group" data-i18n-attr="aria-label:f.quartile" aria-label="SJR quartile">
+          <div class="faint" style="font-size:12px" data-i18n="f.quartile">SJR quartile (best)</div>
           <div id="f-quartile"></div>
         </div>
         <div style="margin-top:10px">
-          <label class="faint" style="font-size:12px" for="f-oa">Open access</label>
+          <label class="faint" style="font-size:12px" for="f-oa" data-i18n="f.oa">Open access</label>
           <select id="f-oa">
-            <option value="">Qualsiasi modello</option>
-            <option value="yes">Sì (fully open access)</option>
-            <option value="no">No (ibrido / abbonamento)</option>
+            <option value="" data-i18n="f.oaAny">Any model</option>
+            <option value="yes" data-i18n="f.oaYes">Yes (fully open access)</option>
+            <option value="no" data-i18n="f.oaNo">No (hybrid / subscription)</option>
           </select>
         </div>
-        <label class="check" style="margin-top:8px"><input type="checkbox" id="f-si"> Solo con special issue aperte</label>
+        <label class="check" style="margin-top:8px"><input type="checkbox" id="f-si"> <span data-i18n="f.si">Only with open special issues</span></label>
       </div>
 
-      <button class="reset-btn" type="button" id="reset-btn">Azzera filtri</button>
+      <button class="reset-btn" type="button" id="reset-btn" data-i18n="f.reset">Reset filters</button>
     </aside>
 
     <main id="main">
       <div class="toolbar">
-        <button class="icon-btn filters-toggle" type="button" id="filters-toggle" aria-controls="filters" aria-expanded="false">☰ Filtri</button>
+        <button class="icon-btn filters-toggle" type="button" id="filters-toggle" aria-controls="filters" aria-expanded="false" data-i18n="filters.toggle">☰ Filters</button>
         <div class="search-box">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <label class="sr-only" for="q">Cerca</label>
-          <input type="search" id="q" placeholder="Cerca per nome, acronimo, ISSN, tag o topic…" autocomplete="off">
+          <label class="sr-only" for="q" data-i18n="search.label">Search</label>
+          <input type="search" id="q" autocomplete="off" data-i18n-attr="placeholder:search.placeholder" placeholder="Search by name, acronym, ISSN, area or topic…">
         </div>
         <div class="sort-box">
-          <label for="sort" class="muted" style="font-size:13px">Ordina</label>
+          <label for="sort" class="muted" style="font-size:13px" data-i18n="sort.label">Sort</label>
           <select id="sort">
-            <option value="deadline">Prossima deadline</option>
-            <option value="rank">Rank / quartile</option>
-            <option value="acceptance">Acceptance rate (più selettive prima)</option>
-            <option value="name">Nome (A–Z)</option>
+            <option value="deadline" data-i18n="sort.deadline">Next deadline</option>
+            <option value="rank" data-i18n="sort.rank">Rank / quartile</option>
+            <option value="acceptance" data-i18n="sort.acceptance">Acceptance rate (most selective first)</option>
+            <option value="name" data-i18n="sort.name">Name (A–Z)</option>
           </select>
         </div>
         <div class="result-meta">
           <span id="count" aria-live="polite"></span>
-          <span class="legend" aria-label="Legenda">
-            <span><span class="badge badge-conf">Conferenza</span></span>
-            <span><span class="badge badge-journal">Journal</span></span>
-            <span><span class="badge badge-official">ufficiale</span></span>
-            <span><span class="badge badge-est">stimata</span></span>
-            <span><span class="badge badge-na">n.d.</span> non disponibile</span>
+          <span class="legend" data-i18n-attr="aria-label:legend.aria" aria-label="Legend">
+            <span><span class="badge badge-conf" data-i18n="type.conference">Conference</span></span>
+            <span><span class="badge badge-journal" data-i18n="type.journal">Journal</span></span>
+            <span><span class="badge badge-official" data-i18n="badge.official">official</span></span>
+            <span><span class="badge badge-est" data-i18n="badge.estimated">estimated</span></span>
+            <span><span class="badge badge-na" data-i18n="badge.na">n/a</span> <span data-i18n="legend.na">not available</span></span>
           </span>
         </div>
       </div>
@@ -114,21 +116,22 @@
   </div>
 
   <footer class="site-footer">
-    <p>Dati verificati il <span id="last-verified">—</span> su fonti ufficiali (siti delle conferenze, CORE ICORE2026, SCImago, editori). Ogni dato riporta link alla fonte e data di verifica nel pannello di dettaglio. Orari mostrati nel fuso originale e nel tuo fuso locale (<span id="local-tz"></span>).</p>
+    <p id="footer-text"></p>
   </footer>
 
   <div class="compare-tray" id="compare-tray" hidden>
     <span class="names" id="compare-names"></span>
-    <button class="btn" type="button" id="compare-clear">Svuota</button>
-    <button class="btn primary" type="button" id="compare-open">Confronta</button>
+    <button class="btn" type="button" id="compare-clear" data-i18n="cmp.clear">Clear</button>
+    <button class="btn primary" type="button" id="compare-open" data-i18n="cmp.open">Compare</button>
   </div>
 
   <div class="scrim" id="scrim" hidden></div>
   <aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden></aside>
   <section class="modal" id="compare-modal" role="dialog" aria-modal="true" aria-labelledby="compare-title" hidden></section>
 
-  <noscript><p style="padding:16px">Questa app richiede JavaScript.</p></noscript>
+  <noscript><p style="padding:16px">This app requires JavaScript.</p></noscript>
   <script src="assets/js/time.js"></script>
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/charts.js"></script>
   <script src="assets/js/app.js"></script>
 </body>

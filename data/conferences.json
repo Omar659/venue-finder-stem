@@ -15,7 +15,7 @@
    ],
    "website": "https://neurips.cc/",
    "topics": {
-    "intro": "Conferenza interdisciplinare: deep learning, generative AI, core ML, neuroscienze, statistica, ottimizzazione, CV, NLP, scienze della vita e sociali.",
+    "intro": "Interdisciplinary conference: deep learning, generative AI, core ML, neuroscience, statistics, optimization, CV, NLP, life and social sciences.",
     "items": [
      "Computer vision",
      "Language and multimodal language models",
@@ -69,11 +69,12 @@
      "format": "in-person",
      "start": "2026-12-06",
      "end": "2026-12-12",
-     "note": "Sede principale Sydney + 2 meeting satellite (Atlanta e Parigi indicati nelle pagine ufficiali).",
+     "note": "Main venue Sydney + 2 satellite meetings (Atlanta and Paris, per the official pages).",
      "source": {
       "url": "https://neurips.cc/Conferences/FutureMeetings",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "AU"
     },
     "deadlines": [
      {
@@ -98,7 +99,7 @@
       "phase": "reviews",
       "date": "2026-07-22",
       "tz": "AoE",
-      "label": "Review agli autori",
+      "label": "Reviews released to authors",
       "source": {
        "url": "https://neurips.cc/Conferences/2026/Dates",
        "verified": "2026-10-21"
@@ -116,7 +117,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop di NeurIPS 2026 (elenco ufficiale, 48 eventi). Le deadline dei singoli workshop sono sui rispettivi siti; la data suggerita da NeurIPS per i contributi era il 29 ago 2026 (notifiche entro il 29 set 2026).",
+     "note": "NeurIPS 2026 workshops (official list, 48 events). Each workshop's deadlines are on its own website; NeurIPS' suggested submission date was 29 Aug 2026 (notifications by 29 Sep 2026).",
      "url": "https://neurips.cc/virtual/2026/events/workshop",
      "items": [
       {
@@ -461,7 +462,7 @@
    ],
    "website": "https://icml.cc/",
    "topics": {
-    "intro": "Tutte le aree del machine learning (metodi, teoria, applicazioni). Topic dalla call di ICML 2026 (la call 2027 non è ancora pubblicata).",
+    "intro": "All areas of machine learning (methods, theory, applications). Topics from the ICML 2026 call (the 2027 call is not out yet).",
     "items": [
      "general machine learning (active learning, clustering, online learning, ranking, supervised, semi- and self-supervised learning, time series analysis, etc.)",
      "deep learning (architectures, generative models, theory, etc.)",
@@ -499,15 +500,16 @@
      "label": "ICML 2026",
      "year": 2026,
      "city": "Seoul",
-     "country": "Corea del Sud",
+     "country": "South Korea",
      "format": "in-person",
      "start": "2026-07-06",
      "end": "2026-07-11",
-     "note": "COEX Convention & Exhibition Center. Le date di ICML 2027 non sono ancora pubblicate.",
+     "note": "COEX Convention & Exhibition Center. ICML 2027 dates are not published yet.",
      "source": {
       "url": "https://icml.cc/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "KR"
     },
     "deadlines": [
      {
@@ -532,7 +534,7 @@
       "phase": "reviews",
       "date": "2026-03-24",
       "tz": "AoE",
-      "label": "Review agli autori",
+      "label": "Reviews released to authors",
       "source": {
        "url": "https://icml.cc/Conferences/2026/Dates",
        "verified": "2026-10-21"
@@ -560,7 +562,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop co-locati (2026: 10-11 luglio). Data suggerita per i contributi: 24 apr 2026; notifica entro 14 mag 2026.",
+     "note": "Co-located workshops (2026: 10–11 July). Suggested submission date: 24 Apr 2026; notification by 14 May 2026.",
      "url": "https://icml.cc/Conferences/2026/Dates",
      "items": []
     },
@@ -578,7 +580,7 @@
       "year": 2024,
       "rate": 27.5,
       "track": "main",
-      "note": "Fact sheet: oltre 2600 paper accettati, 27,5%",
+      "note": "Fact sheet: over 2,600 accepted papers, 27.5%",
       "source": {
        "url": "https://media.icml.cc/Conferences/ICML2024/ICML2024_Fact_Sheet.pdf",
        "verified": "2026-10-21"
@@ -600,7 +602,7 @@
       "submitted": 24661,
       "accepted": 6552,
       "track": "main",
-      "note": "Tasso calcolato da sottomessi/accettati del fact sheet",
+      "note": "Rate computed from the submitted/accepted counts in the fact sheet",
       "source": {
        "url": "https://media.icml.cc/Conferences/ICML2026/ICML2026_Fact_Sheet.pdf",
        "verified": "2026-10-21"
@@ -622,7 +624,7 @@
    ],
    "website": "https://iclr.cc/",
    "topics": {
-    "intro": "Tutte le aree del machine learning; review double-blind su OpenReview (discussione pubblica).",
+    "intro": "All areas of machine learning; double-blind review on OpenReview (public discussion).",
     "items": [
      "Unsupervised, self-supervised, semi-supervised, and supervised representation learning",
      "Transfer learning, meta learning, and lifelong learning",
@@ -675,7 +677,7 @@
      "format": "in-person",
      "start": null,
      "end": null,
-     "note": "Sede e date da annunciare (pagina ufficiale).",
+     "note": "Venue and dates to be announced (official page).",
      "source": {
       "url": "https://iclr.cc/Conferences/2027/Dates",
       "verified": "2026-10-21"
@@ -704,7 +706,7 @@
       "phase": "reviews",
       "date": "2026-11-05",
       "tz": "AoE",
-      "label": "Review agli autori",
+      "label": "Reviews released to authors",
       "source": {
        "url": "https://iclr.cc/Conferences/2027/Dates",
        "verified": "2026-10-21"
@@ -714,7 +716,7 @@
       "phase": "notification",
       "date": "2026-12-16",
       "tz": "AoE",
-      "label": "Decisioni finali",
+      "label": "Final decisions",
       "source": {
        "url": "https://iclr.cc/Conferences/2027/Dates",
        "verified": "2026-10-21"
@@ -723,7 +725,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "ICLR 2026 ha ospitato 40 workshop (fact sheet). Le call dei workshop 2027 non sono ancora uscite.",
+     "note": "ICLR 2026 hosted 40 workshops (fact sheet). 2027 workshop calls are not out yet.",
      "url": "https://iclr.cc/",
      "items": []
     },
@@ -774,7 +776,7 @@
    ],
    "website": "https://aaai.org/conference/aaai/",
    "topics": {
-    "intro": "AI in senso ampio, con incoraggiamento a lavori trasversali tra aree e applicativi (sanità, sostenibilità, trasporti, commercio).",
+    "intro": "AI broadly conceived, encouraging work across areas and applications (healthcare, sustainability, transportation, commerce).",
     "items": [
      "Machine learning",
      "Natural language processing",
@@ -795,7 +797,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "AAAI-26 ha ricevuto quasi 29.000 sottomissioni alla Main Technical Track (comunicazione ufficiale); il numero di accettati non è pubblicato in forma verificabile.",
+   "notes": "AAAI-26 received almost 29,000 Main Technical Track submissions (official statement); the number of accepted papers is not published in a verifiable form.",
    "conference": {
     "rank": {
      "core": {
@@ -822,7 +824,8 @@
      "source": {
       "url": "https://aaai.org/conference/aaai/aaai-27/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "CA"
     },
     "deadlines": [
      {
@@ -850,7 +853,7 @@
       "date": "2026-07-31",
       "tz": "AoE",
       "time": "23:59",
-      "label": "Materiale supplementare e codice",
+      "label": "Supplementary material and code",
       "source": {
        "url": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
        "verified": "2026-10-21"
@@ -860,7 +863,7 @@
       "phase": "notification",
       "date": "2026-09-24",
       "tz": "AoE",
-      "label": "Notifica rigetti Fase 1",
+      "label": "Phase 1 rejection notification",
       "source": {
        "url": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
        "verified": "2026-10-21"
@@ -870,7 +873,7 @@
       "phase": "rebuttal",
       "date": "2026-10-31",
       "tz": "AoE",
-      "label": "Author feedback (finestra 24-31 ott)",
+      "label": "Author feedback (window 24–31 Oct)",
       "source": {
        "url": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
        "verified": "2026-10-21"
@@ -880,7 +883,7 @@
       "phase": "notification",
       "date": "2026-11-30",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
        "verified": "2026-10-21"
@@ -898,7 +901,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "47 workshop il 22-23 febbraio 2027 (Palais des congrès, Montréal). Requisiti e formati variano per workshop: controlla i singoli siti per eventuali proroghe.",
+     "note": "47 workshops on 22–23 February 2027 (Palais des congrès, Montréal). Requirements and formats vary: check each workshop's site for extensions.",
      "url": "https://aaai.org/conference/aaai/aaai-27/aaai-27-workshop-program/",
      "source": {
       "url": "https://aaai.org/conference/aaai/aaai-27/aaai-27-workshop-program/",
@@ -910,7 +913,7 @@
        "phase": "paper",
        "date": "2026-11-20",
        "tz": "AoE",
-       "label": "Sottomissioni ai workshop (data comune)",
+       "label": "Workshop submissions (common date)",
        "source": {
         "url": "https://aaai.org/conference/aaai/aaai-27/aaai-27-workshop-program/",
         "verified": "2026-10-21"
@@ -921,7 +924,7 @@
        "phase": "notification",
        "date": "2026-12-02",
        "tz": "AoE",
-       "label": "Notifiche agli autori",
+       "label": "Notifications to authors",
        "source": {
         "url": "https://aaai.org/conference/aaai/aaai-27/aaai-27-workshop-program/",
         "verified": "2026-10-21"
@@ -955,7 +958,7 @@
    ],
    "website": "https://www.ijcai.org/",
    "topics": {
-    "intro": "Tutte le aree dell'intelligenza artificiale (main track) più special track tematiche.",
+    "intro": "All areas of artificial intelligence (main track) plus thematic special tracks.",
     "items": [],
     "text": null,
     "source": {
@@ -983,15 +986,16 @@
      "label": "IJCAI 2027",
      "year": 2027,
      "city": "Kyoto",
-     "country": "Giappone",
+     "country": "Japan",
      "format": "in-person",
      "start": "2027-08-07",
      "end": "2027-08-13",
-     "note": "Evento satellite a Hengqin (Cina), 15-17 agosto 2027.",
+     "note": "Satellite event in Hengqin (China), 15–17 August 2027.",
      "source": {
       "url": "https://2027.ijcai.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "JP"
     },
     "deadlines": [
      {
@@ -1024,7 +1028,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop e tutorial nei giorni che precedono la main conference.",
+     "note": "Workshops and tutorials in the days before the main conference.",
      "url": "https://2027.ijcai.org/",
      "items": []
     },
@@ -1052,7 +1056,7 @@
    ],
    "website": "https://aistats.org/",
    "topics": {
-    "intro": "Intersezione tra AI, machine learning e statistica. La call indica tassi di accettazione storicamente intorno al 25%.",
+    "intro": "Intersection of AI, machine learning and statistics. The call states that acceptance rates have historically been around 25%.",
     "items": [
      "Machine learning methods and algorithms (classification, regression, unsupervised and semi-supervised learning, clustering, logic programming, …)",
      "Probabilistic methods (Bayesian methods, approximate inference, density estimation, tractable probabilistic models, probabilistic programming, …)",
@@ -1092,11 +1096,12 @@
      "format": "in-person",
      "start": null,
      "end": null,
-     "note": "Date esatte non ancora indicate sulla pagina ufficiale.",
+     "note": "Exact dates not yet given on the official page.",
      "source": {
       "url": "https://aistats.org/aistats2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "CA"
     },
     "deadlines": [
      {
@@ -1121,7 +1126,7 @@
       "phase": "reviews",
       "date": "2026-11-16",
       "tz": "AoE",
-      "label": "Review agli autori",
+      "label": "Reviews released to authors",
       "source": {
        "url": "https://virtual.aistats.org/Conferences/2027",
        "verified": "2026-10-21"
@@ -1139,7 +1144,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Traccia Journal-to-Conference separata (deadline 18 gen 2027 AoE).",
+     "note": "Separate Journal-to-Conference track (deadline 18 Jan 2027 AoE).",
      "url": "https://virtual.aistats.org/Conferences/2027",
      "items": []
     },
@@ -1167,13 +1172,13 @@
    ],
    "website": "https://www.auai.org/",
    "topics": {
-    "intro": "Rappresentazione, inferenza, apprendimento e decisione in presenza di incertezza.",
+    "intro": "Representation, inference, learning and decision-making under uncertainty.",
     "items": [],
     "text": null,
     "source": {
      "url": "https://auai.org/uai2026/call_for_papers",
      "verified": "2026-10-21",
-     "note": "Verificato tramite indice di ricerca: il sito auai.org rispondeva 503 al fetch diretto."
+     "note": "Verified via search index: auai.org returned HTTP 503 to direct requests."
     }
    },
    "notes": null,
@@ -1196,15 +1201,16 @@
      "label": "UAI 2026",
      "year": 2026,
      "city": "Amsterdam",
-     "country": "Paesi Bassi",
+     "country": "Netherlands",
      "format": "in-person",
      "start": "2026-08-17",
      "end": "2026-08-21",
      "source": {
       "url": "https://auai.org/uai2026/call_for_papers",
       "verified": "2026-10-21",
-      "note": "Verificato tramite indice di ricerca: il sito auai.org rispondeva 503 al fetch diretto."
-     }
+      "note": "Verified via search index: auai.org returned HTTP 503 to direct requests."
+     },
+     "countryCode": "NL"
     },
     "deadlines": [
      {
@@ -1215,18 +1221,18 @@
       "source": {
        "url": "https://auai.org/uai2026/call_for_papers",
        "verified": "2026-10-21",
-       "note": "Verificato tramite indice di ricerca: il sito auai.org rispondeva 503 al fetch diretto."
+       "note": "Verified via search index: auai.org returned HTTP 503 to direct requests."
       }
      },
      {
       "phase": "reviews",
       "date": "2026-04-23",
       "tz": "AoE",
-      "label": "Review agli autori",
+      "label": "Reviews released to authors",
       "source": {
        "url": "https://auai.org/uai2026/call_for_papers",
        "verified": "2026-10-21",
-       "note": "Verificato tramite indice di ricerca: il sito auai.org rispondeva 503 al fetch diretto."
+       "note": "Verified via search index: auai.org returned HTTP 503 to direct requests."
       }
      },
      {
@@ -1237,13 +1243,13 @@
       "source": {
        "url": "https://auai.org/uai2026/call_for_papers",
        "verified": "2026-10-21",
-       "note": "Verificato tramite indice di ricerca: il sito auai.org rispondeva 503 al fetch diretto."
+       "note": "Verified via search index: auai.org returned HTTP 503 to direct requests."
       }
      }
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop il 21 agosto 2026.",
+     "note": "Workshops on 21 August 2026.",
      "url": "https://www.auai.org/uai2026/",
      "items": []
     },
@@ -1272,7 +1278,7 @@
    ],
    "website": "https://www.ifaamas.org/",
    "topics": {
-    "intro": "Teoria e pratica di agenti autonomi e sistemi multi-agente. Novità 2027: i paper non selezionati per i Proceedings possono confluire nei 'Findings of AAMAS'.",
+    "intro": "Theory and practice of autonomous agents and multi-agent systems. New in 2027: papers not selected for the Proceedings may go to the 'Findings of AAMAS'.",
     "items": [
      "Learning and Adaptation (LEARN)",
      "Generative and Agentic AI (GAAI)",
@@ -1292,7 +1298,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Il rank CORE è sceso da A* (CORE2023) ad A (ICORE2026).",
+   "notes": "The CORE rank dropped from A* (CORE2023) to A (ICORE2026).",
    "conference": {
     "rank": {
      "core": {
@@ -1319,7 +1325,8 @@
      "source": {
       "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "VN"
     },
     "deadlines": [
      {
@@ -1344,7 +1351,7 @@
       "phase": "rebuttal",
       "date": "2026-11-24",
       "tz": "AoE",
-      "label": "Rebuttal (20-24 nov)",
+      "label": "Rebuttal (20–24 Nov)",
       "source": {
        "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-main-track/",
        "verified": "2026-10-21"
@@ -1371,13 +1378,13 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Proposte di workshop entro 29 ott 2026; workshop il 3-4 maggio 2027.",
+     "note": "Workshop proposals by 29 Oct 2026; workshops on 3–4 May 2027.",
      "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-workshops/",
      "items": []
     },
     "proceedings": {
      "publisher": "IFAAMAS",
-     "series": "Proceedings of AAMAS (pubblicati anche in ACM DL)",
+     "series": "Proceedings of AAMAS (also in the ACM DL)",
      "indexing": [
       "DBLP"
      ],
@@ -1400,7 +1407,7 @@
    ],
    "website": "https://learningtheory.org/",
    "topics": {
-    "intro": "Aspetti teorici del machine learning e aree correlate.",
+    "intro": "Theoretical aspects of machine learning and related areas.",
     "items": [
      "Design and analysis of learning algorithms",
      "Statistical and computational complexity of learning",
@@ -1432,7 +1439,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "La pagina CfP 2027 al momento della verifica riportava ancora il testo dell'edizione 2025: deadline 2027 non ufficiale.",
+   "notes": "When checked, the 2027 CfP page still showed the 2025 text: no official 2027 deadline.",
    "conference": {
     "rank": {
      "core": {
@@ -1452,14 +1459,15 @@
      "label": "COLT 2027",
      "year": 2027,
      "city": "Tokyo",
-     "country": "Giappone",
+     "country": "Japan",
      "format": "in-person",
      "start": "2027-06-28",
      "end": "2027-07-02",
      "source": {
       "url": "https://learningtheory.org/colt2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "JP"
     },
     "deadlines": [],
     "previousCycle": {
@@ -1514,7 +1522,7 @@
    ],
    "website": "https://ecmlpkdd.org/",
    "topics": {
-    "intro": "Conferenza europea di riferimento per machine learning e data mining: research track, applied data science track, journal track (paper pubblicati su Machine Learning / Data Mining and Knowledge Discovery), demo, PhD forum.",
+    "intro": "Flagship European conference for machine learning and data mining: research track, applied data science track, journal track (papers published in Machine Learning / Data Mining and Knowledge Discovery), demos, PhD forum.",
     "items": [],
     "text": null,
     "source": {
@@ -1542,14 +1550,15 @@
      "label": "ECML PKDD 2027",
      "year": 2027,
      "city": "Eindhoven",
-     "country": "Paesi Bassi",
+     "country": "Netherlands",
      "format": "in-person",
      "start": "2027-08-30",
      "end": "2027-09-03",
      "source": {
       "url": "https://ecmlpkdd.org/2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "NL"
     },
     "deadlines": [],
     "previousCycle": {
@@ -1594,7 +1603,7 @@
      ]
     },
     "workshops": {
-     "note": "Ampio programma di workshop e tutorial con call proprie.",
+     "note": "Large workshop and tutorial programme with separate calls.",
      "url": "https://ecmlpkdd.org/2026/submissions-workshop-track/",
      "items": []
     },
@@ -1617,7 +1626,7 @@
       "source": {
        "url": "https://link.springer.com/book/9783032376565",
        "verified": "2026-10-21",
-       "note": "Dato riportato da Springer nella descrizione dei proceedings (letto tramite indice di ricerca)"
+       "note": "Figure stated by Springer in the proceedings description (read via search index)"
       }
      }
     ]
@@ -1636,7 +1645,7 @@
    ],
    "website": "https://cvpr.thecvf.com/",
    "topics": {
-    "intro": "Tutti gli aspetti di computer vision e pattern recognition.",
+    "intro": "All aspects of computer vision and pattern recognition.",
     "items": [
      "3D reconstruction and geometry: single-view, multi-view, depth, and sensors",
      "Trustworthy, responsible and explainable vision",
@@ -1698,15 +1707,16 @@
      "label": "CVPR 2027",
      "year": 2027,
      "city": "Seattle",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-06-20",
      "end": "2027-06-25",
-     "note": "Workshop/tutorial 20-21 giugno, main conference 22-25 giugno (Seattle Convention Center).",
+     "note": "Workshops/tutorials 20–21 June, main conference 22–25 June (Seattle Convention Center).",
      "source": {
       "url": "https://cvpr.thecvf.com/Conferences/2027/Dates",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -1714,7 +1724,7 @@
       "date": "2026-11-10",
       "tz": "AoE",
       "time": "23:59",
-      "label": "Paper enrollment (registrazione)",
+      "label": "Paper enrollment (registration)",
       "source": {
        "url": "https://cvpr.thecvf.com/Conferences/2027/Dates",
        "verified": "2026-10-21"
@@ -1743,7 +1753,7 @@
       "phase": "reviews",
       "date": "2027-01-25",
       "tz": "AoE",
-      "label": "Review agli autori",
+      "label": "Reviews released to authors",
       "source": {
        "url": "https://cvpr.thecvf.com/Conferences/2027/Dates",
        "verified": "2026-10-21"
@@ -1753,7 +1763,7 @@
       "phase": "rebuttal",
       "date": "2027-02-01",
       "tz": "AoE",
-      "label": "Fine rebuttal (25 gen - 1 feb)",
+      "label": "End of rebuttal (25 Jan – 1 Feb)",
       "source": {
        "url": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
        "verified": "2026-10-21"
@@ -1763,7 +1773,7 @@
       "phase": "notification",
       "date": "2027-02-25",
       "tz": "AoE",
-      "label": "Decisioni finali",
+      "label": "Final decisions",
       "source": {
        "url": "https://cvpr.thecvf.com/Conferences/2027/Dates",
        "verified": "2026-10-21"
@@ -1772,7 +1782,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Proposte di workshop entro 4 nov 2026, decisione 23 dic 2026. I workshop (20-21 giugno 2027) avranno call e deadline proprie.",
+     "note": "Workshop proposals by 4 Nov 2026, decisions on 23 Dec 2026. Workshops (20–21 June 2027) will have their own calls and deadlines.",
      "url": "https://cvpr.thecvf.com/Conferences/2027/CallForWorkshops",
      "items": []
     },
@@ -1802,7 +1812,7 @@
       "rate": 22.1,
       "submitted": 13008,
       "accepted": 2872,
-      "note": "Comunicato ufficiale: 22%",
+      "note": "Official press release: 22%",
       "source": {
        "url": "https://cvpr.thecvf.com/Conferences/2025/News/Technical_Program",
        "verified": "2026-10-21"
@@ -1813,7 +1823,7 @@
       "rate": 25.4,
       "submitted": 16092,
       "accepted": 4089,
-      "note": "Comunicato ufficiale: circa un quarto",
+      "note": "Official press release: about one quarter",
       "source": {
        "url": "https://cvpr.thecvf.com/Conferences/2026/News/Technical_Program",
        "verified": "2026-10-21"
@@ -1834,7 +1844,7 @@
    ],
    "website": "https://iccv.thecvf.com/",
    "topics": {
-    "intro": "Conferenza biennale di riferimento per la computer vision (alterna con ECCV). Topic analoghi a CVPR.",
+    "intro": "Flagship biennial computer vision conference (alternates with ECCV). Topics similar to CVPR.",
     "items": [],
     "text": null,
     "source": {
@@ -1866,7 +1876,7 @@
      "format": "in-person",
      "start": "2027-10-03",
      "end": "2027-10-07",
-     "note": "Conferenza biennale. Sede non ancora indicata sulla pagina ufficiale.",
+     "note": "Biennial conference. Venue not yet given on the official page.",
      "source": {
       "url": "https://iccv.thecvf.com/Conferences/2027/Dates",
       "verified": "2026-10-21"
@@ -1891,7 +1901,7 @@
        "date": "2025-05-09",
        "tz": "Pacific/Honolulu",
        "time": "23:59",
-       "label": "Review agli autori",
+       "label": "Reviews released to authors",
        "source": {
         "url": "https://iccv.thecvf.com/Conferences/2025/Dates",
         "verified": "2026-10-21"
@@ -1949,7 +1959,7 @@
    ],
    "website": "https://eccv.ecva.net/",
    "topics": {
-    "intro": "Conferenza europea biennale di riferimento per la computer vision. Topic dalla call di ECCV 2026.",
+    "intro": "Flagship biennial European computer vision conference. Topics from the ECCV 2026 call.",
     "items": [
      "3D from multi-view and sensors",
      "3D from single images",
@@ -2019,15 +2029,16 @@
      "label": "ECCV 2026",
      "year": 2026,
      "city": "Malmö",
-     "country": "Svezia",
+     "country": "Sweden",
      "format": "in-person",
      "start": "2026-09-08",
      "end": "2026-09-12",
-     "note": "Conferenza biennale (anni pari). Main conference 10-12 settembre.",
+     "note": "Biennial conference (even years). Main conference 10–12 September.",
      "source": {
       "url": "https://eccv.ecva.net/Conferences/2026/Venues",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "SE"
     },
     "deadlines": [
      {
@@ -2054,7 +2065,7 @@
       "phase": "reviews",
       "date": "2026-05-02",
       "tz": "AoE",
-      "label": "Review agli autori",
+      "label": "Reviews released to authors",
       "source": {
        "url": "https://eccv.ecva.net/Conferences/2026/Dates",
        "verified": "2026-10-21"
@@ -2074,7 +2085,7 @@
       "phase": "notification",
       "date": "2026-06-17",
       "tz": "AoE",
-      "label": "Decisioni finali",
+      "label": "Final decisions",
       "source": {
        "url": "https://eccv.ecva.net/Conferences/2026/Dates",
        "verified": "2026-10-21"
@@ -2092,7 +2103,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop e tutorial 8-9 settembre 2026 (Malmömässan).",
+     "note": "Workshops and tutorials 8–9 September 2026 (Malmömässan).",
      "url": "https://eccv.ecva.net/Conferences/2026/CallForWorkshops",
      "items": []
     },
@@ -2130,7 +2141,7 @@
    ],
    "website": "https://wacv.thecvf.com/",
    "topics": {
-    "intro": "Computer vision con enfasi su applicazioni e sistemi; due round di sottomissione con possibilità di revisione. Elenco delle aree applicative della Applications track; esiste anche una Algorithms track.",
+    "intro": "Computer vision with an emphasis on applications and systems; two submission rounds with the option to revise. Listed: application areas of the Applications track; there is also an Algorithms track.",
     "items": [
      "Agriculture",
      "Animals and Insects",
@@ -2177,7 +2188,7 @@
      "label": "WACV 2027",
      "year": 2027,
      "city": "Disney Springs, Florida",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-01-04",
      "end": "2027-01-08",
@@ -2185,7 +2196,8 @@
      "source": {
       "url": "https://wacv.thecvf.com/Conferences/2027/Dates",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -2203,7 +2215,7 @@
       "phase": "notification",
       "date": "2026-08-09",
       "tz": "AoE",
-      "label": "Round 1 – review e decisioni",
+      "label": "Round 1 – reviews and decisions",
       "cycle": "Round 1",
       "source": {
        "url": "https://wacv.thecvf.com/Conferences/2027/Dates",
@@ -2225,7 +2237,7 @@
       "phase": "notification",
       "date": "2026-10-14",
       "tz": "AoE",
-      "label": "Decisioni finali (entrambi i round)",
+      "label": "Final decisions (both rounds)",
       "source": {
        "url": "https://wacv.thecvf.com/Conferences/2027/Dates",
        "verified": "2026-10-21"
@@ -2243,7 +2255,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Proposte di workshop entro 8 ago 2026.",
+     "note": "Workshop proposals by 8 Aug 2026.",
      "url": "https://wacv.thecvf.com/Conferences/2027/Dates",
      "items": []
     },
@@ -2271,7 +2283,7 @@
    ],
    "website": "https://www.bmva.org/",
    "topics": {
-    "intro": "Computer vision, image processing e pattern recognition; review double-blind su OpenReview, max 14 pagine. Topic dalla call di BMVC 2026.",
+    "intro": "Computer vision, image processing and pattern recognition; double-blind review on OpenReview, max 14 pages. Topics from the BMVC 2026 call.",
     "items": [
      "3D from X, Shape Modeling and Processing",
      "Action, Event, and Video Understanding",
@@ -2324,14 +2336,15 @@
      "label": "BMVC 2026",
      "year": 2026,
      "city": "Lancaster",
-     "country": "Regno Unito",
+     "country": "United Kingdom",
      "format": "in-person",
      "start": "2026-11-23",
      "end": "2026-11-26",
      "source": {
       "url": "https://bmvc2026.bmva.org/calls/call-for-papers/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "GB"
     },
     "deadlines": [
      {
@@ -2358,7 +2371,7 @@
       "phase": "rebuttal",
       "date": "2026-07-10",
       "tz": "AoE",
-      "label": "Rebuttal (3-10 luglio)",
+      "label": "Rebuttal (3–10 July)",
       "source": {
        "url": "https://bmvc2026.bmva.org/calls/call-for-papers/",
        "verified": "2026-10-21"
@@ -2385,7 +2398,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop co-locati con call proprie (proposte entro 22 maggio 2026).",
+     "note": "Co-located workshops with their own calls (proposals by 22 May 2026).",
      "url": "https://bmvc2026.bmva.org/calls/call-for-papers/",
      "items": []
     },
@@ -2413,7 +2426,7 @@
    ],
    "website": "https://icpr2026.org/",
    "topics": {
-    "intro": "Pattern recognition, computer vision, machine learning, analisi di segnali, immagini, documenti e biometria.",
+    "intro": "Pattern recognition, computer vision, machine learning, analysis of signals, images and documents, biometrics.",
     "items": [
      "Artificial Intelligence, Pattern Recognition and Machine Learning",
      "Computer and Robot Vision",
@@ -2447,16 +2460,17 @@
     "edition": {
      "label": "ICPR 2026",
      "year": 2026,
-     "city": "Lione",
-     "country": "Francia",
+     "city": "Lyon",
+     "country": "France",
      "format": "in-person",
      "start": "2026-08-17",
      "end": "2026-08-22",
-     "note": "Conferenza biennale (prossima edizione 2028).",
+     "note": "Biennial conference (next edition 2028).",
      "source": {
       "url": "https://icpr2026.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "FR"
     },
     "deadlines": [
      {
@@ -2489,7 +2503,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Proceedings dei workshop su SpringerLink.",
+     "note": "Workshop proceedings on SpringerLink.",
      "url": "https://icpr2026.org/",
      "items": []
     },
@@ -2518,7 +2532,7 @@
    ],
    "website": "https://miccai.org/",
    "topics": {
-    "intro": "Analisi di immagini mediche, computer-assisted intervention, robotica medica, machine learning per la sanità. Topic dalla call di MICCAI 2026 (la call 2027 non è ancora pubblicata).",
+    "intro": "Medical image analysis, computer-assisted interventions, medical robotics, machine learning for healthcare. Topics from the MICCAI 2026 call (the 2027 call is not out yet).",
     "items": [
      "Image formation and reconstruction",
      "Image segmentation and anomaly detection",
@@ -2564,7 +2578,7 @@
      "label": "MICCAI 2027",
      "year": 2027,
      "city": "Auckland",
-     "country": "Nuova Zelanda",
+     "country": "New Zealand",
      "format": "in-person",
      "start": "2027-09-27",
      "end": "2027-10-01",
@@ -2572,7 +2586,8 @@
      "source": {
       "url": "https://conferences.miccai.org/2027/en/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "NZ"
     },
     "deadlines": [],
     "previousCycle": {
@@ -2602,7 +2617,7 @@
      ]
     },
     "workshops": {
-     "note": "Ampio programma di workshop e challenge satellite con call proprie.",
+     "note": "Large programme of satellite workshops and challenges with separate calls.",
      "url": "https://conferences.miccai.org/2026/en/CALL-FOR-SATELLITE-EVENTS.html",
      "items": []
     },
@@ -2621,7 +2636,7 @@
       "rate": 27,
       "submitted": 4402,
       "accepted": 1167,
-      "note": "Dato ufficiale: 1.167 accettati su 4.402 sottomissioni revisionate",
+      "note": "Official figure: 1,167 accepted out of 4,402 reviewed submissions",
       "source": {
        "url": "https://conferences.miccai.org/2026/en/",
        "verified": "2026-10-21"
@@ -2643,7 +2658,7 @@
    ],
    "website": "https://www.aclweb.org/",
    "topics": {
-    "intro": "Le sottomissioni passano da ACL Rolling Review (ARR): si sottomette a un ciclo ARR, poi si fa 'commitment' alla conferenza con le review ottenute. Aree tematiche standard ARR (elenco dalla call EMNLP 2026, comune ai venue ACL).",
+    "intro": "Submissions go through ACL Rolling Review (ARR): you submit to an ARR cycle, then 'commit' the paper with its reviews to the conference. Standard ARR areas (list from the EMNLP 2026 call, shared by ACL venues).",
     "items": [
      "Clinical and biomedical applications",
      "NLP and code models",
@@ -2701,22 +2716,23 @@
      "label": "ACL 2027",
      "year": 2027,
      "city": "Kyoto",
-     "country": "Giappone",
+     "country": "Japan",
      "format": "in-person",
      "start": "2027-08-17",
      "end": "2027-08-22",
-     "note": "Tutorial 17 ago, workshop 18-19 ago, main conference 20-22 ago 2027.",
+     "note": "Tutorials 17 Aug, workshops 18–19 Aug, main conference 20–22 Aug 2027.",
      "source": {
       "url": "https://2027.aclweb.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "JP"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2027-01-04",
       "tz": "AoE",
-      "label": "Sottomissione ARR (ciclo gennaio 2027)",
+      "label": "ARR submission (January 2027 cycle)",
       "source": {
        "url": "https://2027.aclweb.org/",
        "verified": "2026-10-21"
@@ -2726,7 +2742,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Call congiunta per workshop di EACL, COLING, NAACL, ACL ed EMNLP 2027.",
+     "note": "Joint workshop call for EACL, COLING, NAACL, ACL and EMNLP 2027.",
      "url": "https://2027.eacl.org/",
      "items": []
     },
@@ -2745,7 +2761,7 @@
       "rate": 21.3,
       "submitted": 4407,
       "accepted": 940,
-      "note": "Main conference; metodo di calcolo ARR",
+      "note": "Main conference; ARR-based computation",
       "source": {
        "url": "https://aclanthology.org/2024.acl-long.0.pdf",
        "verified": "2026-10-21"
@@ -2786,7 +2802,7 @@
    ],
    "website": "https://2026.emnlp.org/",
    "topics": {
-    "intro": "Le sottomissioni passano da ACL Rolling Review (ARR): si sottomette a un ciclo ARR, poi si fa 'commitment' alla conferenza con le review ottenute. Theme track 2026: 'New Missions for NLP Research'.",
+    "intro": "Submissions go through ACL Rolling Review (ARR): you submit to an ARR cycle, then 'commit' the paper with its reviews to the conference. 2026 theme track: 'New Missions for NLP Research'.",
     "items": [
      "Clinical and biomedical applications",
      "NLP and code models",
@@ -2844,21 +2860,22 @@
      "label": "EMNLP 2026",
      "year": 2026,
      "city": "Budapest",
-     "country": "Ungheria",
+     "country": "Hungary",
      "format": "in-person",
      "start": "2026-10-24",
      "end": "2026-10-29",
      "source": {
       "url": "https://2026.emnlp.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "HU"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-05-25",
       "tz": "AoE",
-      "label": "Sottomissione ARR (ciclo maggio 2026)",
+      "label": "ARR submission (May 2026 cycle)",
       "source": {
        "url": "https://2026.emnlp.org/calls/main_conference_papers/",
        "verified": "2026-10-21"
@@ -2868,7 +2885,7 @@
       "phase": "rebuttal",
       "date": "2026-07-13",
       "tz": "AoE",
-      "label": "Author response (7-13 lug)",
+      "label": "Author response (7–13 Jul)",
       "source": {
        "url": "https://2026.emnlp.org/calls/main_conference_papers/",
        "verified": "2026-10-21"
@@ -2905,7 +2922,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Lista dei workshop accettati pubblicata il 10 maggio 2026 sul sito.",
+     "note": "List of accepted workshops published on the website on 10 May 2026.",
      "url": "https://2026.emnlp.org/",
      "items": []
     },
@@ -2965,7 +2982,7 @@
    ],
    "website": "https://naacl.org/",
    "topics": {
-    "intro": "Le sottomissioni passano da ACL Rolling Review (ARR): si sottomette a un ciclo ARR, poi si fa 'commitment' alla conferenza con le review ottenute.",
+    "intro": "Submissions go through ACL Rolling Review (ARR): you submit to an ARR cycle, then 'commit' the paper with its reviews to the conference.",
     "items": [
      "Clinical and biomedical applications",
      "NLP and code models",
@@ -3023,21 +3040,22 @@
      "label": "NAACL 2027",
      "year": 2027,
      "city": "San Francisco",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-06-01",
      "end": "2027-06-05",
      "source": {
       "url": "https://2027.naacl.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-10-12",
       "tz": "AoE",
-      "label": "Sottomissione ARR (ciclo ottobre 2026)",
+      "label": "ARR submission (October 2026 cycle)",
       "source": {
        "url": "https://2027.naacl.org/",
        "verified": "2026-10-21"
@@ -3065,7 +3083,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Call congiunta per i workshop *ACL 2027.",
+     "note": "Joint call for *ACL 2027 workshops.",
      "url": "https://2027.naacl.org/",
      "items": []
     },
@@ -3092,7 +3110,7 @@
      {
       "year": 2025,
       "rate": 22,
-      "note": "Stima dei program chair (ciclo ARR ottobre)",
+      "note": "Program chairs' estimate (October ARR cycle)",
       "source": {
        "url": "https://aclanthology.org/2025.naacl-long.0.pdf",
        "verified": "2026-10-21"
@@ -3113,7 +3131,7 @@
    ],
    "website": "https://eacl.org/",
    "topics": {
-    "intro": "Le sottomissioni passano da ACL Rolling Review (ARR): si sottomette a un ciclo ARR, poi si fa 'commitment' alla conferenza con le review ottenute.",
+    "intro": "Submissions go through ACL Rolling Review (ARR): you submit to an ARR cycle, then 'commit' the paper with its reviews to the conference.",
     "items": [
      "Clinical and biomedical applications",
      "NLP and code models",
@@ -3170,22 +3188,23 @@
     "edition": {
      "label": "EACL 2027",
      "year": 2027,
-     "city": "Atene",
-     "country": "Grecia",
+     "city": "Athens",
+     "country": "Greece",
      "format": "in-person",
      "start": "2027-03-09",
      "end": "2027-03-14",
      "source": {
       "url": "https://2027.eacl.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "GR"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-08-03",
       "tz": "AoE",
-      "label": "Sottomissione ARR (ciclo agosto 2026)",
+      "label": "ARR submission (August 2026 cycle)",
       "source": {
        "url": "https://2027.eacl.org/",
        "verified": "2026-10-21"
@@ -3204,7 +3223,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Call congiunta per i workshop *ACL 2027.",
+     "note": "Joint call for *ACL 2027 workshops.",
      "url": "https://2027.eacl.org/",
      "items": []
     },
@@ -3241,7 +3260,7 @@
    ],
    "website": "https://2027.coling-iccl.org/",
    "topics": {
-    "intro": "Linguistica computazionale e NLP in senso ampio. Le sottomissioni passano da ACL Rolling Review (ARR): si sottomette a un ciclo ARR, poi si fa 'commitment' alla conferenza con le review ottenute.",
+    "intro": "Computational linguistics and NLP broadly. Submissions go through ACL Rolling Review (ARR): you submit to an ARR cycle, then 'commit' the paper with its reviews to the conference.",
     "items": [],
     "text": null,
     "source": {
@@ -3268,22 +3287,23 @@
     "edition": {
      "label": "COLING 2027",
      "year": 2027,
-     "city": "Macao",
-     "country": "Cina",
+     "city": "Macau",
+     "country": "China",
      "format": "in-person",
      "start": "2027-05-09",
      "end": "2027-05-14",
      "source": {
       "url": "https://www.aclweb.org/portal/content/32nd-international-conference-computational-linguistics-coling-2027",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "CN"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-10-12",
       "tz": "AoE",
-      "label": "Sottomissione ARR (ciclo ottobre 2026)",
+      "label": "ARR submission (October 2026 cycle)",
       "source": {
        "url": "https://aclrollingreview.org/dates",
        "verified": "2026-10-21"
@@ -3329,7 +3349,7 @@
       "year": 2025,
       "rate": 30.1,
       "accepted": 760,
-      "note": "2.530 sottomissioni dirette + 193 via ARR",
+      "note": "2,530 direct submissions + 193 via ARR",
       "source": {
        "url": "https://aclanthology.org/2025.coling-main.0.pdf",
        "verified": "2026-10-21"
@@ -3349,7 +3369,7 @@
    ],
    "website": "https://lrec2026.info/",
    "topics": {
-    "intro": "Risorse linguistiche (corpora, lessici, dataset), valutazione e strumenti per l'elaborazione del linguaggio.",
+    "intro": "Language resources (corpora, lexicons, datasets), evaluation and tools for language processing.",
     "items": [],
     "text": null,
     "source": {
@@ -3376,21 +3396,22 @@
     "edition": {
      "label": "LREC 2026",
      "year": 2026,
-     "city": "Palma di Maiorca",
-     "country": "Spagna",
+     "city": "Palma de Mallorca",
+     "country": "Spain",
      "format": "in-person",
      "start": "2026-05-11",
      "end": "2026-05-16",
-     "note": "Conferenza biennale (anni pari): prossima edizione 2028.",
+     "note": "Biennial conference (even years): next edition 2028.",
      "source": {
       "url": "https://lrec2026.info/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "ES"
     },
     "deadlines": [],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop e tutorial nei giorni prima e dopo la main conference.",
+     "note": "Workshops and tutorials in the days before and after the main conference.",
      "url": "https://lrec2026.info/",
      "items": []
     },
@@ -3407,7 +3428,7 @@
      {
       "year": 2024,
       "rate": 52,
-      "note": "LREC-COLING 2024: 52% dei paper revisionati",
+      "note": "LREC-COLING 2024: 52% of reviewed papers",
       "source": {
        "url": "https://aclanthology.org/2024.lrec-main.0.pdf",
        "verified": "2026-10-21"
@@ -3428,7 +3449,7 @@
    ],
    "website": "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra",
    "topics": {
-    "intro": "Tutti gli aspetti di robotica e automazione. Possibile anche il trasferimento a ICRA di paper accettati su riviste RAS (es. RA-L).",
+    "intro": "All aspects of robotics and automation. Papers accepted in RAS journals (e.g. RA-L) can also be transferred to ICRA.",
     "items": [],
     "text": null,
     "source": {
@@ -3436,7 +3457,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "ICRA 2026 ha ricevuto 5.088 sottomissioni (dato ufficiale); il numero di accettati non è pubblicato in forma verificabile.",
+   "notes": "ICRA 2026 received 5,088 submissions (official figure); the number of accepted papers is not published in a verifiable form.",
    "conference": {
     "rank": {
      "core": {
@@ -3456,7 +3477,7 @@
      "label": "ICRA 2027",
      "year": 2027,
      "city": "Seoul",
-     "country": "Corea del Sud",
+     "country": "South Korea",
      "format": "in-person",
      "start": "2027-05-24",
      "end": "2027-05-28",
@@ -3464,7 +3485,8 @@
      "source": {
       "url": "https://2027.ieee-icra.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "KR"
     },
     "deadlines": [
      {
@@ -3472,7 +3494,7 @@
       "date": "2026-09-16",
       "tz": "America/Los_Angeles",
       "time": "23:59",
-      "label": "Paper (prorogata di 24h, ora PST)",
+      "label": "Paper (extended by 24 h, Pacific time)",
       "source": {
        "url": "https://2027.ieee-icra.org/announcements/call-for-papers-submission-deadline-extended/",
        "verified": "2026-10-21"
@@ -3485,13 +3507,13 @@
       "source": {
        "url": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/",
        "verified": "2026-10-21",
-       "note": "Verificato tramite indice di ricerca"
+       "note": "Verified via search index"
       }
      }
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop e tutorial con call separate.",
+     "note": "Workshops and tutorials with separate calls.",
      "url": "https://2027.ieee-icra.org/contribute/",
      "items": []
     },
@@ -3547,16 +3569,17 @@
     "edition": {
      "label": "IROS 2027",
      "year": 2027,
-     "city": "Firenze",
-     "country": "Italia",
+     "city": "Florence",
+     "country": "Italy",
      "format": "in-person",
      "start": "2027-09-27",
      "end": "2027-10-01",
-     "note": "Fortezza da Basso. I paper possono arrivare anche tramite RA-L (finestra 1 ago 2026 – 30 apr 2027, secondo IEEE RAS).",
+     "note": "Fortezza da Basso. Papers can also come through RA-L (window 1 Aug 2026 – 30 Apr 2027, per IEEE RAS).",
      "source": {
       "url": "https://www.ieee-ras.org/event/2027-ieee-rsj-international-conference-on-intelligent-robots-and-systems-iros-70525/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "IT"
     },
     "deadlines": [
      {
@@ -3602,7 +3625,7 @@
    ],
    "website": "https://roboticsconference.org/",
    "topics": {
-    "intro": "Ricerca di alta qualità in tutte le aree della robotica.",
+    "intro": "High-quality research in all areas of robotics.",
     "items": [],
     "text": null,
     "source": {
@@ -3610,13 +3633,13 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "RSS non è presente nel ranking CORE.",
+   "notes": "RSS is not listed in the CORE ranking.",
    "conference": {
     "rank": {
      "core": {
       "value": null,
       "edition": "ICORE2026",
-      "note": "Non presente nel ranking CORE",
+      "note": "Not listed in the CORE ranking",
       "url": "https://portal.core.edu.au/conf-ranks/",
       "verified": "2026-10-21"
      }
@@ -3626,15 +3649,16 @@
     "edition": {
      "label": "RSS 2027",
      "year": 2027,
-     "city": "Atene",
-     "country": "Grecia",
+     "city": "Athens",
+     "country": "Greece",
      "format": "in-person",
      "start": "2027-07-06",
      "end": "2027-07-11",
      "source": {
       "url": "https://roboticsconference.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "GR"
     },
     "deadlines": [
      {
@@ -3642,7 +3666,7 @@
       "date": "2026-12-04",
       "tz": "AoE",
       "time": "23:59",
-      "label": "Extended abstract (nuovo processo a due fasi)",
+      "label": "Extended abstract (new two-stage process)",
       "source": {
        "url": "https://roboticsconference.org/",
        "verified": "2026-10-21"
@@ -3652,7 +3676,7 @@
       "phase": "notification",
       "date": "2027-02-05",
       "tz": "AoE",
-      "label": "Decisione fase 1 (reject o invito al rebuttal)",
+      "label": "Stage 1 decision (reject or invitation to rebuttal)",
       "source": {
        "url": "https://roboticsconference.org/",
        "verified": "2026-10-21"
@@ -3672,7 +3696,7 @@
       "phase": "notification",
       "date": "2027-02-26",
       "tz": "AoE",
-      "label": "Decisione fase 2",
+      "label": "Stage 2 decision",
       "source": {
        "url": "https://roboticsconference.org/",
        "verified": "2026-10-21"
@@ -3693,7 +3717,7 @@
       "phase": "notification",
       "date": "2027-04-30",
       "tz": "AoE",
-      "label": "Accettazione",
+      "label": "Acceptance",
       "source": {
        "url": "https://roboticsconference.org/",
        "verified": "2026-10-21"
@@ -3740,13 +3764,13 @@
    ],
    "website": "https://www.corl.org/",
    "topics": {
-    "intro": "Intersezione tra robotica e machine learning.",
+    "intro": "Intersection of robotics and machine learning.",
     "items": [],
     "text": null,
     "source": {
      "url": "https://www.corl.org/contributions/call-for-papers",
      "verified": "2026-10-21",
-     "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+     "note": "Dates verified via a search index of the official page"
     }
    },
    "notes": "CoRL compare in ICORE2026 come 'Unranked'.",
@@ -3769,7 +3793,7 @@
      "label": "CoRL 2026",
      "year": 2026,
      "city": "Austin, Texas",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2026-11-09",
      "end": "2026-11-12",
@@ -3777,7 +3801,8 @@
      "source": {
       "url": "https://www.corl.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -3787,7 +3812,7 @@
       "source": {
        "url": "https://www.corl.org/contributions/call-for-papers",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      },
      {
@@ -3798,7 +3823,7 @@
       "source": {
        "url": "https://www.corl.org/contributions/call-for-papers",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      },
      {
@@ -3809,13 +3834,13 @@
       "source": {
        "url": "https://www.corl.org/contributions/call-for-papers",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      }
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop il 12 novembre 2026.",
+     "note": "Workshops on 12 November 2026.",
      "url": "https://www.corl.org/contributions/call-for-workshops",
      "items": []
     },
@@ -3842,7 +3867,7 @@
    ],
    "website": "https://chi2027.acm.org/",
    "topics": {
-    "intro": "Tutte le aree dell'interazione uomo-macchina; review in due round con possibilità di revisione. Dal 2026 tutte le pubblicazioni ACM sono Open Access.",
+    "intro": "All areas of human-computer interaction; two-round review with the option to revise. Since 2026 all ACM publications are open access.",
     "items": [],
     "text": null,
     "source": {
@@ -3870,21 +3895,22 @@
      "label": "CHI 2027",
      "year": 2027,
      "city": "Pittsburgh",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-05-10",
      "end": "2027-05-14",
      "source": {
       "url": "https://chi2027.acm.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-09-10",
       "tz": "AoE",
-      "label": "Paper (nessuna deadline per l'abstract)",
+      "label": "Paper (no abstract deadline)",
       "source": {
        "url": "https://chi2027.acm.org/authors/papers/",
        "verified": "2026-10-21"
@@ -3914,7 +3940,7 @@
       "phase": "notification",
       "date": "2026-12-17",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://chi2027.acm.org/authors/papers/",
        "verified": "2026-10-21"
@@ -3933,7 +3959,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Proposte di workshop entro 1 ott 2026, notifica 19 nov 2026; siti dei workshop accettati online dal 17 dic 2026 (con proprie deadline).",
+     "note": "Workshop proposals by 1 Oct 2026, notification 19 Nov 2026; accepted workshop websites online from 17 Dec 2026 (with their own deadlines).",
      "url": "https://chi2027.acm.org/",
      "items": []
     },
@@ -3981,7 +4007,7 @@
    ],
    "website": "https://uist.acm.org/",
    "topics": {
-    "intro": "Nuove interfacce utente, tecniche di interazione, hardware/sensori, fabbricazione, AR/VR, sistemi interattivi e software per UI.",
+    "intro": "Novel user interfaces, interaction techniques, hardware/sensors, fabrication, AR/VR, interactive systems and UI software.",
     "items": [],
     "text": null,
     "source": {
@@ -4009,14 +4035,15 @@
      "label": "UIST 2026",
      "year": 2026,
      "city": "Detroit, Michigan",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2026-11-02",
      "end": "2026-11-05",
      "source": {
       "url": "https://uist.acm.org/2026/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -4044,7 +4071,7 @@
       "date": "2026-04-09",
       "tz": "AoE",
       "time": "23:59",
-      "label": "Video e materiali supplementari",
+      "label": "Videos and supplementary material",
       "source": {
        "url": "https://uist.acm.org/2026/cfp/",
        "verified": "2026-10-21"
@@ -4082,7 +4109,7 @@
    ],
    "website": "https://cscw.acm.org/",
    "topics": {
-    "intro": "Modello a submission continua (rolling): per presentare a CSCW serve un paper accettato su PACM HCI (CSCW) o ToCHI nello scope CSCW; non ci sono deadline per edizione.",
+    "intro": "Rolling submission model: to present at CSCW you need a paper accepted in PACM HCI (CSCW) or ToCHI within CSCW's scope; there are no per-edition deadlines.",
     "items": [],
     "text": null,
     "source": {
@@ -4110,14 +4137,15 @@
      "label": "CSCW 2027",
      "year": 2027,
      "city": "Philadelphia",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-10-16",
      "end": "2027-10-20",
      "source": {
       "url": "https://cscw.acm.org/2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [],
     "previousCycle": null,
@@ -4151,7 +4179,7 @@
    ],
    "website": "https://iui.acm.org/2027/",
    "topics": {
-    "intro": "Intersezione tra HCI e AI: interfacce intelligenti, human-AI interaction, explainability, sistemi adattivi.",
+    "intro": "Intersection of HCI and AI: intelligent interfaces, human-AI interaction, explainability, adaptive systems.",
     "items": [
      "Interactive machine learning",
      "Human-in-the loop AI testing and debugging",
@@ -4228,7 +4256,7 @@
      "label": "IUI 2027",
      "year": 2027,
      "city": "Helsinki",
-     "country": "Finlandia",
+     "country": "Finland",
      "format": "in-person",
      "start": "2027-02-08",
      "end": "2027-02-11",
@@ -4236,7 +4264,8 @@
      "source": {
       "url": "https://iui.acm.org/2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "FI"
     },
     "deadlines": [
      {
@@ -4261,7 +4290,7 @@
       "phase": "notification",
       "date": "2026-10-29",
       "tz": "AoE",
-      "label": "Notifica iniziale",
+      "label": "Initial notification",
       "source": {
        "url": "https://iui.acm.org/2027/call-for-papers/",
        "verified": "2026-10-21"
@@ -4271,7 +4300,7 @@
       "phase": "notification",
       "date": "2026-12-03",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://iui.acm.org/2027/call-for-papers/",
        "verified": "2026-10-21"
@@ -4280,7 +4309,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Deadline dei paper per i workshop: 9 nov 2026.",
+     "note": "Workshop paper deadline: 9 Nov 2026.",
      "url": "https://iui.acm.org/2027/call-for-workshops/",
      "items": []
     },
@@ -4310,7 +4339,7 @@
    ],
    "website": "https://ieeevr.org/",
    "topics": {
-    "intro": "Realtà virtuale, aumentata e mista, interfacce utente 3D. Un'unica deadline con revisione unificata: esito come paper journal (IEEE TVCG) o conference-only.",
+    "intro": "Virtual, augmented and mixed reality, 3D user interfaces. A single deadline with unified review: outcome as a journal paper (IEEE TVCG) or conference-only paper.",
     "items": [
      "360° video",
      "3D and volumetric display and projection technology",
@@ -4383,7 +4412,8 @@
      "source": {
       "url": "https://ieeevr.org/2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "AU"
     },
     "deadlines": [
      {
@@ -4408,7 +4438,7 @@
       "phase": "notification",
       "date": "2026-11-30",
       "tz": "AoE",
-      "label": "Notifica iniziale",
+      "label": "Initial notification",
       "source": {
        "url": "https://ieeevr.org/2027/contribute/papers/",
        "verified": "2026-10-21"
@@ -4418,7 +4448,7 @@
       "phase": "rebuttal",
       "date": "2026-12-31",
       "tz": "AoE",
-      "label": "Revisione (revised submission)",
+      "label": "Revised submission",
       "source": {
        "url": "https://ieeevr.org/2027/contribute/papers/",
        "verified": "2026-10-21"
@@ -4428,7 +4458,7 @@
       "phase": "notification",
       "date": "2027-01-07",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://ieeevr.org/2027/contribute/papers/",
        "verified": "2026-10-21"
@@ -4446,7 +4476,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop con call proprie (proposte entro 28 set 2026).",
+     "note": "Workshops with their own calls (proposals by 28 Sep 2026).",
      "url": "https://ieeevr.org/2027/contribute/workshops/",
      "items": []
     },
@@ -4476,13 +4506,13 @@
    ],
    "website": "https://www.ismar.net/",
    "topics": {
-    "intro": "Realtà mista e aumentata: tracking, display, interazione, percezione, applicazioni. Revisione unificata: esito IEEE TVCG journal paper o conference paper.",
+    "intro": "Mixed and augmented reality: tracking, displays, interaction, perception, applications. Unified review: outcome as IEEE TVCG journal paper or conference paper.",
     "items": [],
     "text": null,
     "source": {
      "url": "https://listserv.uni-tuebingen.de/pipermail/ieee_vis/2026/003227.html",
      "verified": "2026-10-21",
-     "note": "Call ufficiale diffusa dagli organizzatori sulla mailing list IEEE VIS"
+     "note": "Official call distributed by the organizers on the IEEE VIS mailing list"
     }
    },
    "notes": null,
@@ -4505,14 +4535,15 @@
      "label": "ISMAR 2026",
      "year": 2026,
      "city": "Bari",
-     "country": "Italia",
+     "country": "Italy",
      "format": "in-person",
      "start": "2026-10-04",
      "end": "2026-10-09",
      "source": {
       "url": "https://www.ismar.net/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "IT"
     },
     "deadlines": [
      {
@@ -4523,7 +4554,7 @@
       "source": {
        "url": "https://listserv.uni-tuebingen.de/pipermail/ieee_vis/2026/003227.html",
        "verified": "2026-10-21",
-       "note": "Call ufficiale diffusa dagli organizzatori sulla mailing list IEEE VIS"
+       "note": "Official call distributed by the organizers on the IEEE VIS mailing list"
       }
      },
      {
@@ -4534,7 +4565,7 @@
       "source": {
        "url": "https://listserv.uni-tuebingen.de/pipermail/ieee_vis/2026/003227.html",
        "verified": "2026-10-21",
-       "note": "Call ufficiale diffusa dagli organizzatori sulla mailing list IEEE VIS"
+       "note": "Official call distributed by the organizers on the IEEE VIS mailing list"
       }
      }
     ],
@@ -4570,16 +4601,16 @@
    ],
    "website": "https://vrst.acm.org/",
    "topics": {
-    "intro": "Software e tecnologie per realtà virtuale e aumentata.",
+    "intro": "Software and technology for virtual and augmented reality.",
     "items": [],
     "text": null,
     "source": {
      "url": "https://vrst.acm.org/vrst2026/cfp/",
      "verified": "2026-10-21",
-     "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+     "note": "Dates verified via a search index of the official page"
     }
    },
-   "notes": "Rank sceso da A (CORE2023) a B (ICORE2026).",
+   "notes": "Rank dropped from A (CORE2023) to B (ICORE2026).",
    "conference": {
     "rank": {
      "core": {
@@ -4599,7 +4630,7 @@
      "label": "VRST 2026",
      "year": 2026,
      "city": "Sendai",
-     "country": "Giappone",
+     "country": "Japan",
      "format": "in-person",
      "start": "2026-11-16",
      "end": "2026-11-18",
@@ -4607,7 +4638,8 @@
      "source": {
       "url": "https://vrst.acm.org/vrst2026/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "JP"
     },
     "deadlines": [
      {
@@ -4617,7 +4649,7 @@
       "source": {
        "url": "https://vrst.acm.org/vrst2026/cfp/",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      },
      {
@@ -4627,7 +4659,7 @@
       "source": {
        "url": "https://vrst.acm.org/vrst2026/cfp/",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      }
     ],
@@ -4663,7 +4695,7 @@
    ],
    "website": "https://www.siggraph.org/",
    "topics": {
-    "intro": "Computer graphics e tecniche interattive: rendering, animazione, geometria, imaging, fabbricazione, VR/AR. I Technical Papers possono essere pubblicati come Conference Papers o su ACM Transactions on Graphics.",
+    "intro": "Computer graphics and interactive techniques: rendering, animation, geometry, imaging, fabrication, VR/AR. Technical Papers can be published as Conference Papers or in ACM Transactions on Graphics.",
     "items": [],
     "text": null,
     "source": {
@@ -4691,15 +4723,16 @@
      "label": "SIGGRAPH 2027",
      "year": 2027,
      "city": "Anaheim, California",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-08-08",
      "end": "2027-08-12",
-     "note": "Deadline 2027 dei Technical Papers 'To Be Announced' sul sito ufficiale.",
+     "note": "2027 Technical Papers deadline 'To Be Announced' on the official website.",
      "source": {
       "url": "https://s2027.siggraph.org/submit-to-siggraph/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [],
     "previousCycle": {
@@ -4759,7 +4792,7 @@
    ],
    "website": "https://ieeevis.org/",
    "topics": {
-    "intro": "Visualizzazione scientifica e dell'informazione, visual analytics. I full paper accettati sono pubblicati su IEEE TVCG.",
+    "intro": "Scientific and information visualization, visual analytics. Accepted full papers are published in IEEE TVCG.",
     "items": [],
     "text": null,
     "source": {
@@ -4787,14 +4820,15 @@
      "label": "IEEE VIS 2026",
      "year": 2026,
      "city": "Boston, Massachusetts",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2026-11-09",
      "end": "2026-11-13",
      "source": {
       "url": "https://ieeevis.org/year/2026/welcome",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -4804,7 +4838,7 @@
       "source": {
        "url": "https://ieeevis.org/year/2026/info/call-participation/paper-submission-guidelines/",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      },
      {
@@ -4814,7 +4848,7 @@
       "source": {
        "url": "https://ieeevis.org/year/2026/info/call-participation/paper-submission-guidelines/",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      },
      {
@@ -4824,7 +4858,7 @@
       "source": {
        "url": "https://ieeevis.org/year/2026/info/call-participation/paper-submission-guidelines/",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       }
      }
     ],
@@ -4859,7 +4893,7 @@
    ],
    "website": "https://mobilehci.acm.org/",
    "topics": {
-    "intro": "Interazione con dispositivi e servizi mobili, wearable e ubiqui.",
+    "intro": "Interaction with mobile, wearable and ubiquitous devices and services.",
     "items": [],
     "text": null,
     "source": {
@@ -4887,14 +4921,15 @@
      "label": "MobileHCI 2027",
      "year": 2027,
      "city": "Limassol",
-     "country": "Cipro",
+     "country": "Cyprus",
      "format": "in-person",
      "start": "2027-09-20",
      "end": "2027-09-23",
      "source": {
       "url": "https://mobilehci.acm.org/2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "CY"
     },
     "deadlines": [
      {
@@ -4919,7 +4954,7 @@
       "phase": "notification",
       "date": "2027-04-15",
       "tz": "AoE",
-      "label": "Prima notifica",
+      "label": "First notification",
       "source": {
        "url": "https://mobilehci.acm.org/2027/",
        "verified": "2026-10-21"
@@ -4939,7 +4974,7 @@
       "phase": "notification",
       "date": "2027-06-17",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://mobilehci.acm.org/2027/",
        "verified": "2026-10-21"
@@ -4986,7 +5021,7 @@
    ],
    "website": "https://www.eurovis.org/",
    "topics": {
-    "intro": "Visualizzazione (dell'informazione, scientifica, visual analytics). I full paper sono pubblicati su Computer Graphics Forum.",
+    "intro": "Visualization (information, scientific, visual analytics). Full papers are published in Computer Graphics Forum.",
     "items": [],
     "text": null,
     "source": {
@@ -4994,7 +5029,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Deadline 2027 non ancora pubblicate al momento della verifica.",
+   "notes": "2027 deadlines not yet published when checked.",
    "conference": {
     "rank": {
      "core": {
@@ -5013,15 +5048,16 @@
     "edition": {
      "label": "EuroVis 2027",
      "year": 2027,
-     "city": "Stoccarda",
-     "country": "Germania",
+     "city": "Stuttgart",
+     "country": "Germany",
      "format": "in-person",
      "start": "2027-05-31",
      "end": "2027-06-04",
      "source": {
       "url": "https://www.eurovis.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "DE"
     },
     "deadlines": [],
     "previousCycle": null,
@@ -5054,7 +5090,7 @@
    ],
    "website": "https://sigmod.org/",
    "topics": {
-    "intro": "Gestione dei dati in senso ampio: sistemi di basi di dati, query processing, data science, ML per/con i dati. Quattro round di sottomissione all'anno, con possibilità di revisione; i paper sono pubblicati nei Proceedings of the ACM on Management of Data (PACMMOD).",
+    "intro": "Data management broadly: database systems, query processing, data science, ML for/with data. Four submission rounds per year with the option to revise; papers appear in the Proceedings of the ACM on Management of Data (PACMMOD).",
     "items": [
      "Monitoring, testing, and tuning database systems",
      "Cloud, distributed, decentralized and parallel data management",
@@ -5117,14 +5153,15 @@
      "label": "SIGMOD/PODS 2027",
      "year": 2027,
      "city": "Huntington Beach, California",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-06-13",
      "end": "2027-06-18",
      "source": {
       "url": "https://2027.sigmod.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -5219,7 +5256,7 @@
       "phase": "rebuttal",
       "date": "2026-12-17",
       "tz": "AoE",
-      "label": "Round 4 – author feedback (10-17 dic)",
+      "label": "Round 4 – author feedback (10–17 Dec)",
       "cycle": "Round 4",
       "source": {
        "url": "https://2027.sigmod.org/calls_papers_sigmod_research.shtml",
@@ -5241,7 +5278,7 @@
       "phase": "notification",
       "date": "2027-03-12",
       "tz": "AoE",
-      "label": "Round 4 – notifica finale",
+      "label": "Round 4 – final notification",
       "cycle": "Round 4",
       "source": {
        "url": "https://2027.sigmod.org/calls_papers_sigmod_research.shtml",
@@ -5251,7 +5288,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop co-locati con call proprie.",
+     "note": "Co-located workshops with their own calls.",
      "url": "https://2027.sigmod.org/",
      "items": []
     },
@@ -5280,7 +5317,7 @@
    ],
    "website": "https://vldb.org/",
    "topics": {
-    "intro": "Modello journal-conference: sottomissione mensile a PVLDB (il 1° di ogni mese, ore 17:00 Pacific; abstract obbligatorio entro il 25 del mese precedente). I paper accettati entro il 1° luglio 2027 formano la Research Track di VLDB 2027.",
+    "intro": "Journal-style model: monthly submission to PVLDB (the 1st of each month, 5:00 PM Pacific; mandatory abstract by the 25th of the previous month). Papers accepted by 1 July 2027 form the VLDB 2027 Research Track.",
     "items": [],
     "text": null,
     "source": {
@@ -5307,15 +5344,16 @@
     "edition": {
      "label": "VLDB 2027",
      "year": 2027,
-     "city": "Atene",
-     "country": "Grecia",
+     "city": "Athens",
+     "country": "Greece",
      "format": "in-person",
      "start": "2027-08-23",
      "end": "2027-08-27",
      "source": {
       "url": "https://vldb.org/2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "GR"
     },
     "deadlines": [
      {
@@ -5323,7 +5361,7 @@
       "date": "2026-11-01",
       "tz": "America/Los_Angeles",
       "time": "17:00",
-      "label": "PVLDB Vol. 20 – scadenza mensile",
+      "label": "PVLDB Vol. 20 – monthly deadline",
       "source": {
        "url": "https://www.vldb.org/2027/submission-guidelines.html",
        "verified": "2026-10-21"
@@ -5334,7 +5372,7 @@
       "date": "2026-12-01",
       "tz": "America/Los_Angeles",
       "time": "17:00",
-      "label": "PVLDB Vol. 20 – scadenza mensile",
+      "label": "PVLDB Vol. 20 – monthly deadline",
       "source": {
        "url": "https://www.vldb.org/2027/submission-guidelines.html",
        "verified": "2026-10-21"
@@ -5345,7 +5383,7 @@
       "date": "2027-01-01",
       "tz": "America/Los_Angeles",
       "time": "17:00",
-      "label": "PVLDB Vol. 20 – scadenza mensile",
+      "label": "PVLDB Vol. 20 – monthly deadline",
       "source": {
        "url": "https://www.vldb.org/2027/submission-guidelines.html",
        "verified": "2026-10-21"
@@ -5356,7 +5394,7 @@
       "date": "2027-02-01",
       "tz": "America/Los_Angeles",
       "time": "17:00",
-      "label": "PVLDB Vol. 20 – scadenza mensile",
+      "label": "PVLDB Vol. 20 – monthly deadline",
       "source": {
        "url": "https://www.vldb.org/2027/submission-guidelines.html",
        "verified": "2026-10-21"
@@ -5367,7 +5405,7 @@
       "date": "2027-03-01",
       "tz": "America/Los_Angeles",
       "time": "17:00",
-      "label": "PVLDB Vol. 20 – ultima scadenza",
+      "label": "PVLDB Vol. 20 – last deadline",
       "source": {
        "url": "https://www.vldb.org/2027/submission-guidelines.html",
        "verified": "2026-10-21"
@@ -5404,7 +5442,7 @@
    ],
    "website": "https://icde2027.github.io/",
    "topics": {
-    "intro": "Ingegneria dei dati: sistemi di basi di dati, gestione e analisi di dati su larga scala, data mining, data science.",
+    "intro": "Data engineering: database systems, large-scale data management and analytics, data mining, data science.",
     "items": [],
     "text": null,
     "source": {
@@ -5412,7 +5450,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "La data del secondo round non risultava pubblicata sulla pagina ufficiale al momento della verifica (alcuni aggregatori indicano 11 nov 2026: non verificato).",
+   "notes": "The second-round date was not on the official page when checked (some aggregators list 11 Nov 2026: not verified).",
    "conference": {
     "rank": {
      "core": {
@@ -5432,14 +5470,15 @@
      "label": "ICDE 2027",
      "year": 2027,
      "city": "Copenhagen",
-     "country": "Danimarca",
+     "country": "Denmark",
      "format": "in-person",
      "start": "2027-05-17",
      "end": "2027-05-21",
      "source": {
       "url": "https://icde2027.github.io/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "DK"
     },
     "deadlines": [
      {
@@ -5487,7 +5526,7 @@
    ],
    "website": "https://kdd.org/",
    "topics": {
-    "intro": "Data science e AI: Research Track, Applied Data Science Track, Datasets & Benchmarks, AI for Sciences. Due cicli di sottomissione all'anno (le date del secondo ciclo 2027 non sono ancora pubblicate).",
+    "intro": "Data science and AI: Research Track, Applied Data Science Track, Datasets & Benchmarks, AI for Sciences. Two submission cycles per year (second 2027 cycle dates not yet published).",
     "items": [
      "Foundations of Knowledge Discovery and Data Science",
      "Modern AI and Big Data",
@@ -5521,22 +5560,23 @@
      "label": "KDD 2027",
      "year": 2027,
      "city": "San Jose, California",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-08-01",
      "end": "2027-08-05",
      "source": {
       "url": "https://kdd2027.kdd.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
       "phase": "abstract",
       "date": "2026-07-19",
       "tz": "AoE",
-      "label": "Ciclo 1 – abstract",
-      "cycle": "Ciclo 1",
+      "label": "Cycle 1 – abstract",
+      "cycle": "Cycle 1",
       "source": {
        "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
        "verified": "2026-10-21"
@@ -5546,8 +5586,8 @@
       "phase": "paper",
       "date": "2026-07-26",
       "tz": "AoE",
-      "label": "Ciclo 1 – paper",
-      "cycle": "Ciclo 1",
+      "label": "Cycle 1 – paper",
+      "cycle": "Cycle 1",
       "source": {
        "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
        "verified": "2026-10-21"
@@ -5557,8 +5597,8 @@
       "phase": "notification",
       "date": "2026-11-14",
       "tz": "AoE",
-      "label": "Ciclo 1 – notifica",
-      "cycle": "Ciclo 1",
+      "label": "Cycle 1 – notification",
+      "cycle": "Cycle 1",
       "source": {
        "url": "https://kdd2027.kdd.org/research-track-call-for-papers/",
        "verified": "2026-10-21"
@@ -5596,7 +5636,7 @@
    ],
    "website": "https://sigir.org/",
    "topics": {
-    "intro": "Information retrieval: ricerca, ranking, raccomandazione, valutazione, IR con LLM e agenti.",
+    "intro": "Information retrieval: search, ranking, recommendation, evaluation, IR with LLMs and agents.",
     "items": [],
     "text": null,
     "source": {
@@ -5604,7 +5644,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Deadline non disponibili: le date 2026/2027 trovate solo su aggregatori non sono state riportate.",
+   "notes": "Deadlines not available: 2026/2027 dates found only on aggregators were not included.",
    "conference": {
     "rank": {
      "core": {
@@ -5624,15 +5664,16 @@
      "label": "SIGIR 2027",
      "year": 2027,
      "city": null,
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": null,
      "end": null,
-     "note": "Edizione 2027 annunciata in Nord America; date e call non ancora pubblicate sul sito ufficiale al momento della verifica.",
+     "note": "2027 edition announced in North America; dates and call not yet on the official website when checked.",
      "source": {
       "url": "https://sigir.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [],
     "previousCycle": null,
@@ -5667,7 +5708,7 @@
    ],
    "website": "https://www2027.thewebconf.org/",
    "topics": {
-    "intro": "Ricerca sul Web: web mining, search, social web, semantica e knowledge graph, sicurezza e privacy, economia del web, sistemi e infrastrutture. Sottomissione su OpenReview.",
+    "intro": "Web research: web mining, search, social web, semantics and knowledge graphs, security and privacy, web economics, systems and infrastructure. Submission via OpenReview.",
     "items": [],
     "text": null,
     "source": {
@@ -5694,16 +5735,17 @@
     "edition": {
      "label": "The Web Conference 2027",
      "year": 2027,
-     "city": "Dublino",
-     "country": "Irlanda",
+     "city": "Dublin",
+     "country": "Ireland",
      "format": "in-person",
      "start": "2027-05-10",
      "end": "2027-05-14",
-     "note": "Workshop/tutorial 10-11 maggio, main conference 12-14 maggio.",
+     "note": "Workshops/tutorials 10–11 May, main conference 12–14 May.",
      "source": {
       "url": "https://www2027.thewebconf.org/?p=296",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "IE"
     },
     "deadlines": [
      {
@@ -5727,7 +5769,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Call per industry paper (deadline 25 ott 2026), PhD symposium e resource track.",
+     "note": "Calls for industry papers (deadline 25 Oct 2026), PhD symposium and resource track.",
      "url": "https://www2027.thewebconf.org/",
      "items": []
     },
@@ -5757,7 +5799,7 @@
    ],
    "website": "https://cikm2026.diag.uniroma1.it/",
    "topics": {
-    "intro": "Information retrieval, knowledge management e basi di dati: acquisizione, organizzazione, archiviazione, recupero e uso di informazione e conoscenza.",
+    "intro": "Information retrieval, knowledge management and databases: acquisition, organization, storage, retrieval and use of information and knowledge.",
     "items": [],
     "text": null,
     "source": {
@@ -5784,15 +5826,16 @@
     "edition": {
      "label": "CIKM 2026",
      "year": 2026,
-     "city": "Roma",
-     "country": "Italia",
+     "city": "Rome",
+     "country": "Italy",
      "format": "in-person",
      "start": "2026-11-07",
      "end": "2026-11-11",
      "source": {
       "url": "https://cikm2026.diag.uniroma1.it/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "IT"
     },
     "deadlines": [
      {
@@ -5858,7 +5901,7 @@
    ],
    "website": "https://wsdm-conference.org/2027/",
    "topics": {
-    "intro": "Ricerca sul web e data mining: search, raccomandazione, social media, mining di dati web.",
+    "intro": "Web search and data mining: search, recommendation, social media, web data mining.",
     "items": [],
     "text": null,
     "source": {
@@ -5866,7 +5909,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "La deadline dei full paper 2027 non risulta più in evidenza sulla pagina ufficiale (già passata).",
+   "notes": "The 2027 full-paper deadline is no longer shown on the official page (already passed).",
    "conference": {
     "rank": {
      "core": {
@@ -5898,7 +5941,7 @@
     "deadlines": [],
     "previousCycle": null,
     "workshops": {
-     "note": "Short paper, demo, WSDM Cup e doctoral consortium hanno deadline proprie (ott-nov 2026).",
+     "note": "Short papers, demos, WSDM Cup and the doctoral consortium have their own deadlines (Oct–Nov 2026).",
      "url": "https://wsdm-conference.org/2027/",
      "items": []
     },
@@ -5927,7 +5970,7 @@
    ],
    "website": "https://recsys.acm.org/",
    "topics": {
-    "intro": "Sistemi di raccomandazione: algoritmi, valutazione, interfacce, aspetti etici e applicazioni.",
+    "intro": "Recommender systems: algorithms, evaluation, interfaces, ethics and applications.",
     "items": [],
     "text": null,
     "source": {
@@ -5955,14 +5998,15 @@
      "label": "RecSys 2026",
      "year": 2026,
      "city": "Minneapolis, Minnesota",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2026-09-28",
      "end": "2026-10-02",
      "source": {
       "url": "https://recsys.acm.org/recsys26/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -5988,7 +6032,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop co-locati con call proprie.",
+     "note": "Co-located workshops with their own calls.",
      "url": "https://recsys.acm.org/recsys26/workshops/",
      "items": []
     },
@@ -6016,7 +6060,7 @@
    ],
    "website": "https://www.bcs.org/membership-and-registrations/member-communities/information-retrieval-specialist-group/conferences-and-events/european-conference-on-information-retrieval/",
    "topics": {
-    "intro": "Information retrieval (conferenza europea del BCS IRSG).",
+    "intro": "Information retrieval (European conference of the BCS IRSG).",
     "items": [],
     "text": null,
     "source": {
@@ -6024,7 +6068,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Deadline 2027 discordanti tra gli aggregatori e non confermate dalla fonte ufficiale: non riportate.",
+   "notes": "2027 deadlines differ between aggregators and are not confirmed by an official source: not included.",
    "conference": {
     "rank": {
      "core": {
@@ -6044,15 +6088,16 @@
      "label": "ECIR 2027",
      "year": 2027,
      "city": "Southampton",
-     "country": "Regno Unito",
+     "country": "United Kingdom",
      "format": "in-person",
      "start": null,
      "end": null,
-     "note": "Sede confermata dal BCS-IRSG (organizzatore). Date dell'evento non ancora confermate da una fonte ufficiale (alcuni listing indicano 21-25 marzo 2027).",
+     "note": "Venue confirmed by the BCS-IRSG (organizer). Event dates not yet confirmed by an official source (some listings give 21–25 March 2027).",
      "source": {
       "url": "https://www.bcs.org/membership-and-registrations/member-communities/information-retrieval-specialist-group/conferences-and-events/european-conference-on-information-retrieval/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "GB"
     },
     "deadlines": [],
     "previousCycle": null,
@@ -6114,14 +6159,15 @@
      "label": "ICDM 2026",
      "year": 2026,
      "city": "Shenyang",
-     "country": "Cina",
+     "country": "China",
      "format": "in-person",
      "start": "2026-11-12",
      "end": "2026-11-15",
      "source": {
       "url": "https://www3.cs.stonybrook.edu/~icdm2026/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "CN"
     },
     "deadlines": [
      {
@@ -6131,7 +6177,7 @@
       "source": {
        "url": "https://www.aepia.org/icdm-2026-call-for-papers/",
        "verified": "2026-10-21",
-       "note": "Call ufficiale ridistribuita"
+       "note": "Official call, redistributed"
       },
       "tzStated": false
      },
@@ -6187,7 +6233,7 @@
    ],
    "website": "https://www.usenix.org/conferences/byname/179",
    "topics": {
-    "intro": "Sistemi software: sistemi operativi, sistemi distribuiti, storage, sistemi per ML, virtualizzazione, sicurezza e affidabilità dei sistemi.",
+    "intro": "Software systems: operating systems, distributed systems, storage, systems for ML, virtualization, systems security and reliability.",
     "items": [],
     "text": null,
     "source": {
@@ -6195,7 +6241,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "L'ora esatta della deadline è indicata nella call ufficiale (fuso orario USA).",
+   "notes": "The exact deadline time is given in the official call (US time zone).",
    "conference": {
     "rank": {
      "core": {
@@ -6214,8 +6260,8 @@
     "edition": {
      "label": "OSDI '27",
      "year": 2027,
-     "city": "Baltimora, Maryland",
-     "country": "USA",
+     "city": "Baltimore, Maryland",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-07-07",
      "end": "2027-07-09",
@@ -6223,7 +6269,8 @@
      "source": {
       "url": "https://www.usenix.org/conference/osdi27",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -6288,7 +6335,7 @@
       "rate": 16,
       "submitted": 339,
       "accepted": 53,
-      "note": "48 accettati + 5 da revise-and-resubmit",
+      "note": "48 accepted + 5 from revise-and-resubmit",
       "source": {
        "url": "https://www.usenix.org/sites/default/files/osdi25-message.pdf",
        "verified": "2026-10-21"
@@ -6309,7 +6356,7 @@
    ],
    "website": "https://www.usenix.org/conferences/byname/178",
    "topics": {
-    "intro": "Progettazione e implementazione di sistemi in rete e distribuiti: reti, data center, cloud, sistemi wireless e mobili, sistemi per ML. Fuori scope secondo la call: architettura hardware, physical layer, sensing/localizzazione, interfacce utente, lavori senza contributi al design di sistemi in rete.",
+    "intro": "Design and implementation of networked and distributed systems: networks, data centers, cloud, wireless and mobile systems, systems for ML. Out of scope per the call: hardware architecture, physical layer, sensing/localization, user interfaces, work without contributions to networked-system design.",
     "items": [
      "Cloud and multi-tenant systems",
      "Distributed storage and caching",
@@ -6334,7 +6381,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "In ICORE2026 NSDI ha classificazione 'National: USA' (non un rank A*/A/B/C).",
+   "notes": "In ICORE2026 NSDI is classified 'National: USA' (not an A*/A/B/C rank).",
    "conference": {
     "rank": {
      "core": {
@@ -6354,14 +6401,15 @@
      "label": "NSDI '27",
      "year": 2027,
      "city": "Providence, Rhode Island",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-05-11",
      "end": "2027-05-13",
      "source": {
       "url": "https://www.usenix.org/conference/nsdi27/call-for-papers",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -6416,7 +6464,7 @@
       "phase": "notification",
       "date": "2026-12-08",
       "tz": "AoE",
-      "label": "Fall – notifica",
+      "label": "Fall – notification",
       "cycle": "Fall",
       "source": {
        "url": "https://www.usenix.org/conference/nsdi27/call-for-papers",
@@ -6486,7 +6534,7 @@
    ],
    "website": "https://www.eurosys.org/",
    "topics": {
-    "intro": "Sistemi informatici: sistemi operativi, distribuiti, storage, cloud, sistemi per ML. Due cicli di sottomissione (spring e fall).",
+    "intro": "Computer systems: operating systems, distributed systems, storage, cloud, systems for ML. Two submission cycles (spring and fall).",
     "items": [],
     "text": null,
     "source": {
@@ -6514,14 +6562,15 @@
      "label": "EuroSys 2027",
      "year": 2027,
      "city": "Rabat",
-     "country": "Marocco",
+     "country": "Morocco",
      "format": "in-person",
      "start": "2027-04-19",
      "end": "2027-04-23",
      "source": {
       "url": "https://2027.eurosys.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "MA"
     },
     "deadlines": [
      {
@@ -6551,7 +6600,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop il 19 aprile 2027.",
+     "note": "Workshops on 19 April 2027.",
      "url": "https://2027.eurosys.org/",
      "items": []
     },
@@ -6580,7 +6629,7 @@
    ],
    "website": "https://www.sigcomm.org/",
    "topics": {
-    "intro": "Reti di comunicazione: architetture, protocolli, data center, Internet measurement, sistemi in rete, wireless. SIGCOMM 2027 introduce anche la possibilità di accettazione in CCR (Computer Communication Review) per i paper non accettati alla conferenza.",
+    "intro": "Communication networks: architectures, protocols, data centers, Internet measurement, networked systems, wireless. SIGCOMM 2027 also introduces acceptance into CCR (Computer Communication Review) for papers not accepted to the conference.",
     "items": [
      "All types of computer networks, including mobile, wide-area, datacenter, home, and enterprise networks.",
      "All types of wired and wireless networking technologies, including optics, radio, acoustic, and visible light-based communication.",
@@ -6594,7 +6643,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Fuso orario della deadline non indicato nella pagina principale: verificare nella call.",
+   "notes": "Deadline time zone not stated on the main page: check the call.",
    "conference": {
     "rank": {
      "core": {
@@ -6614,7 +6663,7 @@
      "label": "SIGCOMM 2027",
      "year": 2027,
      "city": "Bangkok",
-     "country": "Thailandia",
+     "country": "Thailand",
      "format": "in-person",
      "start": "2027-08-08",
      "end": "2027-08-12",
@@ -6622,7 +6671,8 @@
      "source": {
       "url": "https://conferences.sigcomm.org/sigcomm/2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "TH"
     },
     "deadlines": [
      {
@@ -6668,7 +6718,7 @@
    ],
    "website": "https://infocom2027.ieee-infocom.org/",
    "topics": {
-    "intro": "Networking: teoria e sistemi (reti wireless e mobili, ottimizzazione, sicurezza di rete, data center, IoT).",
+    "intro": "Networking: theory and systems (wireless and mobile networks, optimization, network security, data centers, IoT).",
     "items": [
      "Artificial Intelligence/Machine Learning (AI/ML) for networking",
      "AI/ML ethics for networking",
@@ -6733,7 +6783,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Fuso orario delle deadline non indicato nella home: verificare nella call ufficiale.",
+   "notes": "Deadline time zone not stated on the home page: check the official call.",
    "conference": {
     "rank": {
      "core": {
@@ -6753,14 +6803,15 @@
      "label": "INFOCOM 2027",
      "year": 2027,
      "city": "Honolulu, Hawaii",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-05-24",
      "end": "2027-05-27",
      "source": {
       "url": "https://infocom2027.ieee-infocom.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -6798,7 +6849,7 @@
       "phase": "notification",
       "date": "2026-12-08",
       "tz": "AoE",
-      "label": "Notifica di accettazione",
+      "label": "Acceptance notification",
       "source": {
        "url": "https://infocom2027.ieee-infocom.org/",
        "verified": "2026-10-21"
@@ -6808,7 +6859,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Workshop con call proprie.",
+     "note": "Workshops with their own calls.",
      "url": "https://infocom2027.ieee-infocom.org/",
      "items": []
     },
@@ -6899,7 +6950,7 @@
       "phase": "rebuttal",
       "date": "2026-11-06",
       "tz": "AoE",
-      "label": "Rebuttal (3-6 nov)",
+      "label": "Rebuttal (3–6 Nov)",
       "source": {
        "url": "https://www.sigmobile.org/mobicom/2027/",
        "verified": "2026-10-21"
@@ -6909,7 +6960,7 @@
       "phase": "notification",
       "date": "2026-11-19",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://www.sigmobile.org/mobicom/2027/",
        "verified": "2026-10-21"
@@ -6948,7 +6999,7 @@
    ],
    "website": "https://www.asplos-conference.org/",
    "topics": {
-    "intro": "Ricerca multidisciplinare tra architetture, linguaggi di programmazione, sistemi operativi e aree correlate; possibile 'major revision'.",
+    "intro": "Multidisciplinary research across architecture, programming languages, operating systems and related areas; 'major revision' possible.",
     "items": [
      "Heterogeneous architectures and accelerators",
      "Internet services, cloud computing, and datacenters",
@@ -6986,23 +7037,24 @@
     "edition": {
      "label": "ASPLOS 2027",
      "year": 2027,
-     "city": "Heraklion, Creta",
-     "country": "Grecia",
+     "city": "Heraklion, Crete",
+     "country": "Greece",
      "format": "in-person",
      "start": "2027-04-11",
      "end": "2027-04-15",
      "source": {
       "url": "https://www.asplos-conference.org/asplos2027/cfp/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "GR"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-04-15",
       "tz": "AoE",
-      "label": "Ciclo di aprile",
-      "cycle": "Aprile",
+      "label": "April cycle",
+      "cycle": "April",
       "source": {
        "url": "https://www.asplos-conference.org/asplos2027/cfp/",
        "verified": "2026-10-21"
@@ -7013,8 +7065,8 @@
       "phase": "notification",
       "date": "2026-07-27",
       "tz": "AoE",
-      "label": "Ciclo di aprile – notifica",
-      "cycle": "Aprile",
+      "label": "April cycle – notification",
+      "cycle": "April",
       "source": {
        "url": "https://www.asplos-conference.org/asplos2027/cfp/",
        "verified": "2026-10-21"
@@ -7025,8 +7077,8 @@
       "phase": "paper",
       "date": "2026-09-09",
       "tz": "AoE",
-      "label": "Ciclo di settembre",
-      "cycle": "Settembre",
+      "label": "September cycle",
+      "cycle": "September",
       "source": {
        "url": "https://www.asplos-conference.org/asplos2027/cfp/",
        "verified": "2026-10-21"
@@ -7037,8 +7089,8 @@
       "phase": "rebuttal",
       "date": "2026-12-04",
       "tz": "AoE",
-      "label": "Author response (1-4 dic)",
-      "cycle": "Settembre",
+      "label": "Author response (1–4 Dec)",
+      "cycle": "September",
       "source": {
        "url": "https://www.asplos-conference.org/asplos2027/cfp/",
        "verified": "2026-10-21"
@@ -7049,8 +7101,8 @@
       "phase": "notification",
       "date": "2026-12-21",
       "tz": "AoE",
-      "label": "Ciclo di settembre – notifica",
-      "cycle": "Settembre",
+      "label": "September cycle – notification",
+      "cycle": "September",
       "source": {
        "url": "https://www.asplos-conference.org/asplos2027/cfp/",
        "verified": "2026-10-21"
@@ -7060,7 +7112,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Proposte di workshop/tutorial entro 4 nov 2026 (eventi l'11-12 aprile 2027).",
+     "note": "Workshop/tutorial proposals by 4 Nov 2026 (events on 11–12 April 2027).",
      "url": "https://www.asplos-conference.org/call-for-workshops-and-tutorials/",
      "items": []
     },
@@ -7089,7 +7141,7 @@
    ],
    "website": "https://iscaconf.org/",
    "topics": {
-    "intro": "Architetture dei calcolatori: microarchitettura, memoria, acceleratori, architetture per ML, sistemi paralleli. Traccia industry separata (paper 13 dic 2026).",
+    "intro": "Computer architecture: microarchitecture, memory, accelerators, architectures for ML, parallel systems. Separate industry track (papers due 13 Dec 2026).",
     "items": [],
     "text": null,
     "source": {
@@ -7097,7 +7149,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Fuso orario delle deadline non indicato nella home: verificare nella call ufficiale.",
+   "notes": "Deadline time zone not stated on the home page: check the official call.",
    "conference": {
     "rank": {
      "core": {
@@ -7117,14 +7169,15 @@
      "label": "ISCA 2027",
      "year": 2027,
      "city": "Atlanta, Georgia",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-06-05",
      "end": "2027-06-09",
      "source": {
       "url": "https://iscaconf.org/isca2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -7209,7 +7262,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Date dell'evento e deadline non estratte dalla pagina ufficiale: non disponibili.",
+   "notes": "Event dates and deadlines not extracted from the official page: not available.",
    "conference": {
     "rank": {
      "core": {
@@ -7229,14 +7282,15 @@
      "label": "SC26",
      "year": 2026,
      "city": "Chicago, Illinois",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": null,
      "end": null,
      "source": {
       "url": "https://sc26.supercomputing.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [],
     "previousCycle": null,
@@ -7270,7 +7324,7 @@
    ],
    "website": "https://sp2027.ieee-security.org/",
    "topics": {
-    "intro": "Sicurezza e privacy dei sistemi informatici, inclusi paper di systematization of knowledge (SoK). Due cicli di sottomissione; i paper rifiutati devono attendere un anno prima di essere ripresentati.",
+    "intro": "Security and privacy of computer systems, including systematization of knowledge (SoK) papers. Two submission cycles; rejected papers must wait one year before resubmission.",
     "items": [
      "Applied cryptography",
      "Attacks with novel insights, techniques, or results",
@@ -7336,19 +7390,20 @@
      "format": "in-person",
      "start": "2027-05-17",
      "end": "2027-05-20",
-     "note": "Symposium 17-19 maggio, workshop 20 maggio (Le Centre Sheraton).",
+     "note": "Symposium 17–19 May, workshops 20 May (Le Centre Sheraton).",
      "source": {
       "url": "https://sp2027.ieee-security.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "CA"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-06-11",
       "tz": "AoE",
-      "label": "Ciclo 1 – paper",
-      "cycle": "Ciclo 1",
+      "label": "Cycle 1 – paper",
+      "cycle": "Cycle 1",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7358,8 +7413,8 @@
       "phase": "notification",
       "date": "2026-09-11",
       "tz": "AoE",
-      "label": "Ciclo 1 – accettazione",
-      "cycle": "Ciclo 1",
+      "label": "Cycle 1 – acceptance",
+      "cycle": "Cycle 1",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7369,8 +7424,8 @@
       "phase": "abstract",
       "date": "2026-11-10",
       "tz": "AoE",
-      "label": "Ciclo 2 – abstract",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – abstract",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7380,8 +7435,8 @@
       "phase": "paper",
       "date": "2026-11-17",
       "tz": "AoE",
-      "label": "Ciclo 2 – paper",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – paper",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7391,8 +7446,8 @@
       "phase": "notification",
       "date": "2027-01-18",
       "tz": "AoE",
-      "label": "Ciclo 2 – early reject",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – early reject",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7402,8 +7457,8 @@
       "phase": "rebuttal",
       "date": "2027-02-16",
       "tz": "AoE",
-      "label": "Ciclo 2 – rebuttal",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – rebuttal",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7413,8 +7468,8 @@
       "phase": "notification",
       "date": "2027-03-05",
       "tz": "AoE",
-      "label": "Ciclo 2 – accettazione",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – acceptance",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7424,8 +7479,8 @@
       "phase": "camera_ready",
       "date": "2027-04-08",
       "tz": "AoE",
-      "label": "Ciclo 2 – camera-ready",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – camera-ready",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://sp2027.ieee-security.org/cfpapers.html",
        "verified": "2026-10-21"
@@ -7434,7 +7489,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Security and Privacy Workshops il 20 maggio 2027.",
+     "note": "Security and Privacy Workshops on 20 May 2027.",
      "url": "https://sp2027.ieee-security.org/",
      "items": []
     },
@@ -7462,7 +7517,7 @@
    ],
    "website": "https://www.usenix.org/conference/usenixsecurity27",
    "topics": {
-    "intro": "Sicurezza e privacy di sistemi e reti in senso ampio (sistemi, software, hardware, web, ML security, crittografia applicata, aspetti umani).",
+    "intro": "Security and privacy of systems and networks broadly (systems, software, hardware, web, ML security, applied cryptography, human factors).",
     "items": [],
     "text": null,
     "source": {
@@ -7470,7 +7525,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "L'ora esatta delle deadline è indicata nella call ufficiale.",
+   "notes": "The exact deadline times are given in the official call.",
    "conference": {
     "rank": {
      "core": {
@@ -7490,22 +7545,23 @@
      "label": "USENIX Security '27",
      "year": 2027,
      "city": "Denver, Colorado",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-08-11",
      "end": "2027-08-13",
      "source": {
       "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
       "phase": "paper",
       "date": "2026-08-25",
       "tz": "AoE",
-      "label": "Ciclo 1 – paper",
-      "cycle": "Ciclo 1",
+      "label": "Cycle 1 – paper",
+      "cycle": "Cycle 1",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7516,8 +7572,8 @@
       "phase": "notification",
       "date": "2026-12-03",
       "tz": "AoE",
-      "label": "Ciclo 1 – notifica",
-      "cycle": "Ciclo 1",
+      "label": "Cycle 1 – notification",
+      "cycle": "Cycle 1",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7528,8 +7584,8 @@
       "phase": "paper",
       "date": "2027-01-26",
       "tz": "AoE",
-      "label": "Ciclo 2 – paper",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – paper",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7540,8 +7596,8 @@
       "phase": "supplementary",
       "date": "2027-01-29",
       "tz": "AoE",
-      "label": "Ciclo 2 – artefatti",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – artifacts",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7552,8 +7608,8 @@
       "phase": "notification",
       "date": "2027-03-09",
       "tz": "AoE",
-      "label": "Ciclo 2 – early reject",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – early reject",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7564,8 +7620,8 @@
       "phase": "rebuttal",
       "date": "2027-04-15",
       "tz": "AoE",
-      "label": "Ciclo 2 – rebuttal (8-15 apr)",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – rebuttal (8–15 Apr)",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7576,8 +7632,8 @@
       "phase": "notification",
       "date": "2027-05-06",
       "tz": "AoE",
-      "label": "Ciclo 2 – notifica",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – notification",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7588,8 +7644,8 @@
       "phase": "camera_ready",
       "date": "2027-06-03",
       "tz": "AoE",
-      "label": "Ciclo 2 – final paper",
-      "cycle": "Ciclo 2",
+      "label": "Cycle 2 – final paper",
+      "cycle": "Cycle 2",
       "source": {
        "url": "https://www.usenix.org/conference/usenixsecurity27/call-for-papers",
        "verified": "2026-10-21"
@@ -7617,7 +7673,7 @@
       "year": 2024,
       "rate": 17.6,
       "accepted": 382,
-      "note": "Intervallo ufficiale 17,6–19,1% (3 cicli; 35 paper ancora in major revision)",
+      "note": "Official range 17.6–19.1% (3 cycles; 35 papers still in major revision)",
       "source": {
        "url": "https://www.usenix.org/sites/default/files/sec24_message.pdf",
        "verified": "2026-10-21"
@@ -7637,7 +7693,7 @@
       "year": 2026,
       "rate": 13.2,
       "accepted": 362,
-      "note": "Relativo alle sottomissioni valide",
+      "note": "Relative to valid submissions",
       "source": {
        "url": "https://www.usenix.org/sites/default/files/sec26_message.pdf",
        "verified": "2026-10-21"
@@ -7657,7 +7713,7 @@
    ],
    "website": "https://www.sigsac.org/ccs/CCS2027/",
    "topics": {
-    "intro": "Sicurezza informatica e delle comunicazioni in tutte le sue aree. Le deadline 2027 non sono ancora pubblicate (di norma due cicli).",
+    "intro": "Computer and communications security in all its areas. 2027 deadlines not yet published (usually two cycles).",
     "items": [],
     "text": null,
     "source": {
@@ -7685,19 +7741,20 @@
      "label": "CCS 2027",
      "year": 2027,
      "city": "Atlanta",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-10-11",
      "end": "2027-10-15",
      "source": {
       "url": "https://www.sigsac.org/ccs/CCS2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [],
     "previousCycle": null,
     "workshops": {
-     "note": "Proposte di workshop entro 20 marzo 2027.",
+     "note": "Workshop proposals by 20 March 2027.",
      "url": "https://www.sigsac.org/ccs/CCS2027/call-for-workshops.html",
      "items": []
     },
@@ -7726,7 +7783,7 @@
    ],
    "website": "https://www.ndss-symposium.org/",
    "topics": {
-    "intro": "Sicurezza di reti e sistemi distribuiti, software, web, privacy, sistemi cyber-fisici.",
+    "intro": "Security of networks and distributed systems, software, web, privacy, cyber-physical systems.",
     "items": [
      "Anti-malware techniques: detection, analysis, and prevention",
      "Cyber attack (e.g., APTs, botnets, DDoS) prevention, detection, investigation, and response",
@@ -7777,14 +7834,15 @@
      "label": "NDSS 2027",
      "year": 2027,
      "city": "Seoul",
-     "country": "Corea del Sud",
+     "country": "South Korea",
      "format": "in-person",
      "start": "2027-03-22",
      "end": "2027-03-26",
      "source": {
       "url": "https://www.ndss-symposium.org/ndss2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "KR"
     },
     "deadlines": [
      {
@@ -7803,7 +7861,7 @@
       "phase": "notification",
       "date": "2026-07-29",
       "tz": "AoE",
-      "label": "Summer cycle – notifica",
+      "label": "Summer cycle – notification",
       "cycle": "Summer",
       "source": {
        "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
@@ -7826,7 +7884,7 @@
       "phase": "notification",
       "date": "2026-10-16",
       "tz": "AoE",
-      "label": "Fall cycle – notifica Round 2",
+      "label": "Fall cycle – Round 2 notification",
       "cycle": "Fall",
       "source": {
        "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
@@ -7837,7 +7895,7 @@
       "phase": "rebuttal",
       "date": "2026-11-13",
       "tz": "AoE",
-      "label": "Fall cycle – rebuttal (11-13 nov)",
+      "label": "Fall cycle – rebuttal (11–13 Nov)",
       "cycle": "Fall",
       "source": {
        "url": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
@@ -7885,7 +7943,7 @@
    ],
    "website": "https://www.acsac.org/",
    "topics": {
-    "intro": "Sicurezza applicata: soluzioni pratiche, sistemi, esperienze sul campo.",
+    "intro": "Applied security: practical solutions, systems, field experience.",
     "items": [],
     "text": null,
     "source": {
@@ -7913,14 +7971,15 @@
      "label": "ACSAC 2026",
      "year": 2026,
      "city": "Los Angeles, California",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2026-12-07",
      "end": "2026-12-11",
      "source": {
       "url": "https://www.acsac.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [],
     "previousCycle": null,
@@ -7952,7 +8011,7 @@
    ],
    "website": "https://esorics2026.org/",
    "topics": {
-    "intro": "Ricerca in sicurezza informatica (conferenza europea di riferimento).",
+    "intro": "Computer security research (flagship European conference).",
     "items": [],
     "text": null,
     "source": {
@@ -7979,16 +8038,17 @@
     "edition": {
      "label": "ESORICS 2026",
      "year": 2026,
-     "city": "Roma",
-     "country": "Italia",
+     "city": "Rome",
+     "country": "Italy",
      "format": "in-person",
      "start": "2026-09-14",
      "end": "2026-09-18",
-     "note": "Sapienza Università di Roma: main conference 14-16 settembre, workshop 17-18 settembre (la prima call indicava 21-25 settembre).",
+     "note": "Sapienza University of Rome: main conference 14–16 September, workshops 17–18 September (the first call gave 21–25 September).",
      "source": {
       "url": "https://esorics2026.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "IT"
     },
     "deadlines": [
      {
@@ -8006,7 +8066,7 @@
       "phase": "notification",
       "date": "2026-03-10",
       "tz": "AoE",
-      "label": "Winter cycle – notifica",
+      "label": "Winter cycle – notification",
       "cycle": "Winter",
       "source": {
        "url": "https://www.ieee-security.org/Calendar/cfps/cfp-ESORICS2026.html",
@@ -8028,7 +8088,7 @@
       "phase": "notification",
       "date": "2026-06-12",
       "tz": "AoE",
-      "label": "Spring cycle – notifica",
+      "label": "Spring cycle – notification",
       "cycle": "Spring",
       "source": {
        "url": "https://www.ieee-security.org/Calendar/cfps/cfp-ESORICS2026.html",
@@ -8066,7 +8126,7 @@
    ],
    "website": "https://conf.researchr.org/home/icse-2027",
    "topics": {
-    "intro": "Tutte le aree dell'ingegneria del software; un solo ciclo di sottomissione per il 2027. Track co-locate (MSR, SEAMS, CHASE, TechDebt…) con deadline proprie.",
+    "intro": "All areas of software engineering; a single submission cycle for 2027. Co-located tracks (MSR, SEAMS, CHASE, TechDebt…) with their own deadlines.",
     "items": [],
     "text": null,
     "source": {
@@ -8093,15 +8153,16 @@
     "edition": {
      "label": "ICSE 2027",
      "year": 2027,
-     "city": "Dublino",
-     "country": "Irlanda",
+     "city": "Dublin",
+     "country": "Ireland",
      "format": "in-person",
      "start": "2027-04-25",
      "end": "2027-05-01",
      "source": {
       "url": "https://conf.researchr.org/home/icse-2027",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "IE"
     },
     "deadlines": [
      {
@@ -8128,7 +8189,7 @@
       "phase": "rebuttal",
       "date": "2026-09-25",
       "tz": "AoE",
-      "label": "Author response (23-25 set)",
+      "label": "Author response (23–25 Sep)",
       "source": {
        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
        "verified": "2026-10-21"
@@ -8160,7 +8221,7 @@
       "phase": "camera_ready",
       "date": "2026-11-24",
       "tz": "AoE",
-      "label": "Camera-ready (accettati diretti)",
+      "label": "Camera-ready (directly accepted papers)",
       "source": {
        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
        "verified": "2026-10-21"
@@ -8171,7 +8232,7 @@
       "phase": "notification",
       "date": "2026-12-18",
       "tz": "AoE",
-      "label": "Decisione finale (major revision)",
+      "label": "Final decision (major revision)",
       "source": {
        "url": "https://conf.researchr.org/track/icse-2027/icse-2027-research-track",
        "verified": "2026-10-21"
@@ -8181,7 +8242,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Molte conferenze e workshop co-locati con deadline proprie (ott-nov 2026).",
+     "note": "Many co-located conferences and workshops with their own deadlines (Oct–Nov 2026).",
      "url": "https://conf.researchr.org/home/icse-2027",
      "items": []
     },
@@ -8210,7 +8271,7 @@
    ],
    "website": "https://conf.researchr.org/home/fse-2027",
    "topics": {
-    "intro": "Fondamenti dell'ingegneria del software (ex ESEC/FSE); i paper sono pubblicati in Proceedings of the ACM on Software Engineering (PACMSE).",
+    "intro": "Foundations of software engineering (formerly ESEC/FSE); papers appear in the Proceedings of the ACM on Software Engineering (PACMSE).",
     "items": [
      "Artificial intelligence and machine learning for software engineering",
      "Autonomic computing",
@@ -8253,7 +8314,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Deadline prorogata di un giorno (3 ott 2026) per un'interruzione di HotCRP, secondo la call ufficiale.",
+   "notes": "Deadline extended by one day (3 Oct 2026) due to a HotCRP outage, per the official call.",
    "conference": {
     "rank": {
      "core": {
@@ -8273,14 +8334,15 @@
      "label": "FSE 2027",
      "year": 2027,
      "city": "Shenzhen",
-     "country": "Cina",
+     "country": "China",
      "format": "in-person",
      "start": "2027-07-12",
      "end": "2027-07-16",
      "source": {
       "url": "https://conf.researchr.org/home/fse-2027",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "CN"
     },
     "deadlines": [
      {
@@ -8296,7 +8358,7 @@
       "phase": "rebuttal",
       "date": "2026-12-18",
       "tz": "AoE",
-      "label": "Author response (14-18 dic)",
+      "label": "Author response (14–18 Dec)",
       "source": {
        "url": "https://conf.researchr.org/dates/fse-2027",
        "verified": "2026-10-21"
@@ -8306,7 +8368,7 @@
       "phase": "notification",
       "date": "2027-01-22",
       "tz": "AoE",
-      "label": "Notifica iniziale",
+      "label": "Initial notification",
       "source": {
        "url": "https://conf.researchr.org/dates/fse-2027",
        "verified": "2026-10-21"
@@ -8326,7 +8388,7 @@
       "phase": "notification",
       "date": "2027-03-31",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://conf.researchr.org/dates/fse-2027",
        "verified": "2026-10-21"
@@ -8335,7 +8397,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Industry track (23 gen 2027), SE Education (29 gen 2027), workshop (paper entro 11 feb 2027).",
+     "note": "Industry track (23 Jan 2027), SE Education (29 Jan 2027), workshops (papers by 11 Feb 2027).",
      "url": "https://conf.researchr.org/dates/fse-2027",
      "items": []
     },
@@ -8363,7 +8425,7 @@
    ],
    "website": "https://conf.researchr.org/home/ase-2026",
    "topics": {
-    "intro": "Automazione dell'ingegneria del software: analisi, testing, verifica, sintesi, AI for SE.",
+    "intro": "Automated software engineering: analysis, testing, verification, synthesis, AI for SE.",
     "items": [],
     "text": null,
     "source": {
@@ -8390,15 +8452,16 @@
     "edition": {
      "label": "ASE 2026",
      "year": 2026,
-     "city": "Monaco di Baviera",
-     "country": "Germania",
+     "city": "Munich",
+     "country": "Germany",
      "format": "in-person",
      "start": "2026-10-12",
      "end": "2026-10-16",
      "source": {
       "url": "https://conf.researchr.org/home/ase-2026",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "DE"
     },
     "deadlines": [],
     "previousCycle": null,
@@ -8432,7 +8495,7 @@
    ],
    "website": "https://conf.researchr.org/home/issta-2027",
    "topics": {
-    "intro": "Testing e analisi del software (statica, dinamica, verifica, debugging).",
+    "intro": "Software testing and analysis (static, dynamic, verification, debugging).",
     "items": [],
     "text": null,
     "source": {
@@ -8494,7 +8557,7 @@
       "phase": "rebuttal",
       "date": "2027-03-25",
       "tz": "AoE",
-      "label": "Author response (22-25 mar)",
+      "label": "Author response (22–25 Mar)",
       "source": {
        "url": "https://conf.researchr.org/home/issta-2027",
        "verified": "2026-10-21"
@@ -8505,7 +8568,7 @@
       "phase": "notification",
       "date": "2027-04-20",
       "tz": "AoE",
-      "label": "Notifica iniziale",
+      "label": "Initial notification",
       "source": {
        "url": "https://conf.researchr.org/home/issta-2027",
        "verified": "2026-10-21"
@@ -8527,7 +8590,7 @@
       "phase": "notification",
       "date": "2027-06-17",
       "tz": "AoE",
-      "label": "Notifica finale",
+      "label": "Final notification",
       "source": {
        "url": "https://conf.researchr.org/home/issta-2027",
        "verified": "2026-10-21"
@@ -8565,7 +8628,7 @@
    ],
    "website": "https://pldi27.sigplan.org/",
    "topics": {
-    "intro": "Progettazione, implementazione, teoria, applicazioni e performance dei linguaggi di programmazione; i paper sono pubblicati in PACMPL.",
+    "intro": "Programming language design, implementation, theory, applications and performance; papers appear in PACMPL.",
     "items": [],
     "text": null,
     "source": {
@@ -8593,7 +8656,7 @@
      "label": "PLDI 2027",
      "year": 2027,
      "city": "Atlanta, Georgia",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-06-05",
      "end": "2027-06-11",
@@ -8601,7 +8664,8 @@
      "source": {
       "url": "https://pldi27.sigplan.org/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -8618,7 +8682,7 @@
       "phase": "rebuttal",
       "date": "2027-02-18",
       "tz": "AoE",
-      "label": "Author response (16-18 feb)",
+      "label": "Author response (16–18 Feb)",
       "source": {
        "url": "https://pldi27.sigplan.org/",
        "verified": "2026-10-21"
@@ -8650,7 +8714,7 @@
       "phase": "notification",
       "date": "2027-04-01",
       "tz": "AoE",
-      "label": "Accettazione finale",
+      "label": "Final acceptance",
       "source": {
        "url": "https://pldi27.sigplan.org/",
        "verified": "2026-10-21"
@@ -8690,7 +8754,7 @@
    ],
    "website": "https://popl27.sigplan.org/",
    "topics": {
-    "intro": "Principi dei linguaggi di programmazione: semantica, tipi, verifica, logica, compilazione; i paper sono pubblicati in PACMPL.",
+    "intro": "Principles of programming languages: semantics, types, verification, logic, compilation; papers appear in PACMPL.",
     "items": [],
     "text": null,
     "source": {
@@ -8717,15 +8781,16 @@
     "edition": {
      "label": "POPL 2027",
      "year": 2027,
-     "city": "Città del Messico",
-     "country": "Messico",
+     "city": "Mexico City",
+     "country": "Mexico",
      "format": "in-person",
      "start": "2027-01-10",
      "end": "2027-01-16",
      "source": {
       "url": "https://popl27.sigplan.org/dates",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "MX"
     },
     "deadlines": [
      {
@@ -8760,7 +8825,7 @@
       "phase": "notification",
       "date": "2026-11-09",
       "tz": "AoE",
-      "label": "Accettazione finale",
+      "label": "Final acceptance",
       "source": {
        "url": "https://popl27.sigplan.org/dates",
        "verified": "2026-10-21"
@@ -8769,7 +8834,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Molti workshop co-locati (CPP, PEPM, LAFI, PLanQC, WAVE…) con deadline proprie.",
+     "note": "Many co-located workshops (CPP, PEPM, LAFI, PLanQC, WAVE…) with their own deadlines.",
      "url": "https://popl27.sigplan.org/",
      "items": []
     },
@@ -8798,7 +8863,7 @@
    ],
    "website": "https://acm-stoc.org/",
    "topics": {
-    "intro": "Teoria della computazione: algoritmi, complessità, crittografia teorica, teoria dell'apprendimento, quantum computing teorico.",
+    "intro": "Theory of computation: algorithms, complexity, theoretical cryptography, learning theory, theoretical quantum computing.",
     "items": [],
     "text": null,
     "source": {
@@ -8826,15 +8891,16 @@
      "label": "STOC 2027",
      "year": 2027,
      "city": "Atlanta, Georgia",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-06-06",
      "end": "2027-06-10",
-     "note": "Nell'ambito di ACM FCRC; giornata TCS+AI l'11 giugno.",
+     "note": "Part of ACM FCRC; TCS+AI day on 11 June.",
      "source": {
       "url": "https://acm-stoc.org/stoc2027/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -8870,7 +8936,7 @@
     ],
     "previousCycle": null,
     "workshops": {
-     "note": "Proposte di workshop entro 1 aprile 2027.",
+     "note": "Workshop proposals by 1 April 2027.",
      "url": "https://acm-stoc.org/stoc2027/",
      "items": []
     },
@@ -8899,7 +8965,7 @@
    ],
    "website": "https://focs.computer.org/",
    "topics": {
-    "intro": "Fondamenti teorici dell'informatica: algoritmi, complessità, crittografia, teoria dei grafi, calcolo quantistico. Topic dalla call di FOCS 2026.",
+    "intro": "Theoretical foundations of computer science: algorithms, complexity, cryptography, graph theory, quantum computing. Topics from the FOCS 2026 call.",
     "items": [
      "Algebraic computation",
      "Algorithmic coding theory",
@@ -8939,7 +9005,7 @@
      "verified": "2026-10-21"
     }
    },
-   "notes": "Fuso orario della deadline non indicato nella pagina: verificare nella call.",
+   "notes": "Deadline time zone not stated on the page: check the call.",
    "conference": {
     "rank": {
      "core": {
@@ -8959,7 +9025,7 @@
      "label": "FOCS 2026",
      "year": 2026,
      "city": "New York",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2026-11-08",
      "end": "2026-11-11",
@@ -8967,7 +9033,8 @@
      "source": {
       "url": "https://focs.computer.org/2026/",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -9032,13 +9099,13 @@
    ],
    "website": "https://www.siam.org/conferences-events/siam-conferences/soda27/",
    "topics": {
-    "intro": "Algoritmi discreti e strutture dati: progettazione e analisi di algoritmi, combinatoria, ottimizzazione combinatoria.",
+    "intro": "Discrete algorithms and data structures: algorithm design and analysis, combinatorics, combinatorial optimization.",
     "items": [],
     "text": null,
     "source": {
      "url": "https://www.siam.org/conferences-events/siam-conferences/soda27/",
      "verified": "2026-10-21",
-     "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+     "note": "Dates verified via a search index of the official page"
     }
    },
    "notes": null,
@@ -9061,16 +9128,17 @@
      "label": "SODA27",
      "year": 2027,
      "city": "Philadelphia, Pennsylvania",
-     "country": "USA",
+     "country": "United States",
      "format": "in-person",
      "start": "2027-01-24",
      "end": "2027-01-27",
-     "note": "Co-locato con ALENEX e SOSA.",
+     "note": "Co-located with ALENEX and SOSA.",
      "source": {
       "url": "https://www.siam.org/conferences-events/siam-conferences/soda27/",
       "verified": "2026-10-21",
-      "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
-     }
+      "note": "Dates verified via a search index of the official page"
+     },
+     "countryCode": "US"
     },
     "deadlines": [
      {
@@ -9080,7 +9148,7 @@
       "source": {
        "url": "https://www.siam.org/conferences-events/siam-conferences/soda27/",
        "verified": "2026-10-21",
-       "note": "Date verificate tramite indice di ricerca della pagina ufficiale"
+       "note": "Dates verified via a search index of the official page"
       },
       "tzStated": false
      }
@@ -9142,15 +9210,16 @@
     "edition": {
      "label": "GECCO 2027",
      "year": 2027,
-     "city": "Cracovia",
-     "country": "Polonia",
+     "city": "Kraków",
+     "country": "Poland",
      "format": "in-person",
      "start": "2027-07-12",
      "end": "2027-07-16",
      "source": {
       "url": "http://gecco-2027.sigevo.org/HomePage",
       "verified": "2026-10-21"
-     }
+     },
+     "countryCode": "PL"
     },
     "deadlines": [],
     "previousCycle": {
@@ -9173,7 +9242,7 @@
        "source": {
         "url": "http://gecco-2026.sigevo.org/Call+for+Papers",
         "verified": "2026-10-21",
-        "note": "Verificato tramite indice di ricerca"
+        "note": "Verified via search index"
        },
        "tzStated": false
       }

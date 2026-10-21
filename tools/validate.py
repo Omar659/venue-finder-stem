@@ -25,12 +25,12 @@ def err(where, msg):
 def check_source(where, src, required=True):
     if src is None:
         if required:
-            err(where, "fonte mancante")
+            err(where, "missing source")
         return
     if not isinstance(src, dict) or not str(src.get("url", "")).startswith("http"):
-        err(where, "fonte senza url valido")
+        err(where, "source without a valid url")
     if not DATE.match(str(src.get("verified", ""))):
-        err(where, "fonte senza data di verifica (YYYY-MM-DD)")
+        err(where, "source without a verification date (YYYY-MM-DD)")
 
 
 def check_tz(where, tz):
@@ -39,16 +39,16 @@ def check_tz(where, tz):
     try:
         ZoneInfo(tz)
     except Exception:
-        err(where, f"fuso orario non valido: {tz!r} (usa AoE, UTC o un nome IANA)")
+        err(where, f"invalid time zone: {tz!r} (use AoE, UTC or an IANA name)")
 
 
 def check_deadline(where, d, need_source=True):
     if d.get("phase") not in PHASES:
-        err(where, f"phase non valida: {d.get('phase')!r}")
+        err(where, f"invalid phase: {d.get('phase')!r}")
     if not DATE.match(str(d.get("date", ""))):
-        err(where, f"data non valida: {d.get('date')!r}")
+        err(where, f"invalid date: {d.get('date')!r}")
     if "time" in d and not TIME.match(str(d["time"])):
-        err(where, f"ora non valida: {d['time']!r}")
+        err(where, f"invalid time: {d['time']!r}")
     check_tz(where, d.get("tz", "AoE"))
     if need_source:
         check_source(where, d.get("source"))
@@ -64,20 +64,20 @@ def main():
     for v in venues:
         w = v.get("id", "?")
         if w in seen:
-            err(w, "id duplicato")
+            err(w, "duplicate id")
         seen.add(w)
         for f in ("type", "name", "tags", "website", "topics"):
             if not v.get(f):
-                err(w, f"campo obbligatorio mancante: {f}")
+                err(w, f"missing required field: {f}")
         for t in v.get("tags", []):
             if t not in tags:
-                err(w, f"tag sconosciuto: {t}")
+                err(w, f"unknown tag: {t}")
         check_source(f"{w}.topics", (v.get("topics") or {}).get("source"))
 
         if v.get("type") == "conference":
             c = v.get("conference") or {}
             if c.get("recurrence") not in (1, 2):
-                err(w, "recurrence deve essere 1 (annuale) o 2 (biennale)")
+                err(w, "recurrence must be 1 (annual) or 2 (biennial)")
             for i, d in enumerate(c.get("deadlines") or []):
                 check_deadline(f"{w}.deadlines[{i}]", d)
             for i, d in enumerate(((c.get("previousCycle") or {}).get("deadlines")) or []):
@@ -89,15 +89,15 @@ def main():
             e = c.get("edition") or {}
             for k in ("start", "end"):
                 if e.get(k) and not DATE.match(e[k]):
-                    err(w, f"edition.{k} non valida")
+                    err(w, f"invalid edition.{k}")
             if not (c.get("rank") or {}).get("core"):
-                warnings.append(f"{w}: rank CORE assente")
+                warnings.append(f"{w}: no CORE rank")
         elif v.get("type") == "journal":
             j = v.get("journal") or {}
             if not (j.get("issn") or {}).get("print") and not (j.get("issn") or {}).get("online"):
-                err(w, "ISSN mancante")
+                err(w, "missing ISSN")
             if j.get("access") not in ("open", "hybrid", "subscription"):
-                err(w, "access deve essere open | hybrid | subscription")
+                err(w, "access must be open | hybrid | subscription")
             for kind in ("sjr", "jif", "citescore"):
                 for i, m in enumerate((j.get("metrics") or {}).get(kind) or []):
                     check_source(f"{w}.metrics.{kind}[{i}]", m.get("source"))
@@ -107,14 +107,14 @@ def main():
                     dl = dict(si["deadline"], phase="paper")
                     check_deadline(f"{w}.specialIssues[{i}].deadline", dl, need_source=False)
         else:
-            err(w, f"type non valido: {v.get('type')!r}")
+            err(w, f"invalid type: {v.get('type')!r}")
 
     for x in warnings:
-        print("ATTENZIONE", x)
+        print("WARNING", x)
     for x in errors:
-        print("ERRORE", x)
+        print("ERROR", x)
     n_c = sum(1 for v in venues if v.get("type") == "conference")
-    print(f"{n_c} conferenze, {len(venues) - n_c} journal, {len(errors)} errori, {len(warnings)} avvisi")
+    print(f"{n_c} conferences, {len(venues) - n_c} journals, {len(errors)} errors, {len(warnings)} warnings")
     sys.exit(1 if errors else 0)
 
 

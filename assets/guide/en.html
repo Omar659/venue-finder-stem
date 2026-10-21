@@ -1,0 +1,166 @@
+<h1>How publishing works</h1>
+<p class="lead">A practical introduction for anyone new to scientific publishing in STEM, with a focus on computer science and engineering.</p>
+
+<nav class="toc" aria-label="Contents">
+  <strong>Contents</strong>
+  <ol>
+    <li><a href="#conf-vs-journal">Conference or journal?</a></li>
+    <li><a href="#track">Main track and workshops</a></li>
+    <li><a href="#proceedings">Proceedings</a></li>
+    <li><a href="#phases">The phases of a conference submission</a></li>
+    <li><a href="#extension">From conference paper to journal article</a></li>
+    <li><a href="#metrics">Ranks, quartiles and metrics</a></li>
+    <li><a href="#special">Special issues</a></li>
+    <li><a href="#oa">Open access and APCs</a></li>
+    <li><a href="#predatory">Spotting a predatory journal</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#app">How to read the data in this app</a></li>
+  </ol>
+</nav>
+
+<section id="conf-vs-journal">
+  <h2>1. Conference or journal?</h2>
+  <p>A <strong>conference</strong> is a recurring event (usually yearly) with <em>fixed deadlines</em>: you submit by a date, get a decision a few months later and, if accepted, present the work at the event. A <strong>journal</strong> accepts submissions <em>at any time</em>, and its review process can involve several rounds of revision before a final decision.</p>
+  <table class="data">
+    <thead><tr><th></th><th>Conference</th><th>Journal</th></tr></thead>
+    <tbody>
+      <tr><td>Timing</td><td>Fixed calendar, decision usually within 2–5 months</td><td>Continuous submission; variable times (weeks to over a year), several revision rounds</td></tr>
+      <tr><td>Review</td><td>Usually one round, sometimes with a rebuttal or revise &amp; resubmit</td><td>Several rounds (minor/major revision) until acceptance</td></tr>
+      <tr><td>Format</td><td>Strict page limit</td><td>Longer, more complete articles</td></tr>
+      <tr><td>Visibility</td><td>Live presentation, networking</td><td>Archival, in-depth version</td></tr>
+    </tbody>
+  </table>
+  <h3>Prestige depends on the field</h3>
+  <p>In <strong>computer science</strong> the most selective conferences are often the main outlet for research results, to the point that the Computing Research Association has recommended not to evaluate researchers in the field on journal publications alone. In many other STEM disciplines (and parts of engineering) the journal remains the main reference. Before choosing, look at where the strongest groups in your sub-field publish and at the criteria your institution uses.</p>
+  <p class="refs">Source: <a href="https://cra.org/resources/best-practice-memos/evaluating-computer-scientists-and-engineers-for-promotion-and-tenure/" target="_blank" rel="noopener">CRA – Evaluating Computer Scientists and Engineers for Promotion and Tenure</a>.</p>
+</section>
+
+<section id="track">
+  <h2>2. Main track and workshops</h2>
+  <p>The <strong>main track</strong> (or <em>research track</em>, <em>technical track</em>) is the conference's main programme: it is what ranks, acceptance rates and the venue's prestige refer to. <strong>Workshops</strong> are smaller, themed events co-located with the conference (often on the days before or after), with their own calls, committees and deadlines, usually later than the main track's.</p>
+  <ul>
+    <li><strong>Prestige:</strong> a main-track paper at an A* conference counts much more than a paper at one of its workshops. Rankings such as CORE rate conferences, not individual workshops.</li>
+    <li><strong>When a workshop makes sense:</strong> for preliminary or ongoing work, niche ideas, getting feedback from a specific community, or as a first publishing experience.</li>
+    <li><strong>Archival vs non-archival:</strong> some workshops publish official proceedings (archival), others do not. A non-archival workshop usually does not prevent you from later submitting an extended version elsewhere; an archival one may count as prior publication. Always read the workshop's call and the policy of the next venue.</li>
+  </ul>
+  <p>Many conferences also have other tracks (short papers, demos, posters, industry, datasets &amp; benchmarks, position papers, doctoral consortium): they are useful, but should be distinguished from the main track.</p>
+</section>
+
+<section id="proceedings">
+  <h2>3. Proceedings</h2>
+  <p>The <strong>proceedings</strong> are the official collection of the papers accepted at a conference, published by a publisher or organization: ACM Digital Library, IEEE Xplore, Springer (e.g. the <em>Lecture Notes in Computer Science</em> series), PMLR (Proceedings of Machine Learning Research), the ACL Anthology, USENIX, and so on. They matter because they:</p>
+  <ul>
+    <li>make the paper an <strong>archival, citable publication</strong> (with a DOI or another stable identifier);</li>
+    <li>determine where the paper will be <strong>indexed</strong> and found (DBLP, Scopus, Web of Science depend on the series and the publisher);</li>
+    <li>can affect evaluations and hiring, which often require indexing in specific databases.</li>
+  </ul>
+  <p>Some conferences publish papers directly in a journal (e.g. <em>Proceedings of the ACM on …</em>, PVLDB for VLDB, IEEE TVCG for IEEE VIS full papers): each conference's detail panel shows the publisher and series.</p>
+</section>
+
+<section id="phases">
+  <h2>4. The phases of a conference submission</h2>
+  <ol>
+    <li><strong>Abstract / registration</strong> — many conferences ask you to register title, abstract and authors a few days before the paper, to organize reviewers and avoid conflicts of interest. Without this step you often cannot submit.</li>
+    <li><strong>Full paper</strong> — the main deadline, almost always in <em>AoE</em>. Supplementary material may have a later deadline.</li>
+    <li><strong>Review</strong> — reviewers (often double-blind) assess the work. Some conferences have an <em>early reject</em> after a first stage.</li>
+    <li><strong>Rebuttal / author response</strong> — a window of a few days to reply to the reviews, correcting factual errors and answering questions. Some venues (e.g. CHI, SIGMOD, IEEE S&amp;P) instead have a <em>revise &amp; resubmit</em> or <em>major revision</em> phase with a new version of the paper.</li>
+    <li><strong>Notification</strong> — acceptance or rejection, sometimes distinguishing oral, spotlight and poster, or with an acceptance conditional on <em>shepherding</em>.</li>
+    <li><strong>Camera-ready</strong> — the final version, revised according to the reviews and in the publisher's format, due by a precise date (often together with the registration of at least one author for the event).</li>
+  </ol>
+  <div class="callout">
+    <strong>Special models.</strong> Many venues have <em>several cycles</em> per year (USENIX Security, IEEE S&amp;P, NDSS, SIGMOD, KDD, NSDI…). In NLP, ACL conferences use <a href="https://aclrollingreview.org/" target="_blank" rel="noopener">ACL Rolling Review (ARR)</a>: you submit to an ARR cycle and then <em>commit</em> the reviewed submission to the conference of your choice. VLDB uses monthly deadlines through PVLDB, and CSCW uses a rolling model.
+  </div>
+</section>
+
+<section id="extension">
+  <h2>5. From conference paper to journal article</h2>
+  <p>Extending a conference paper into a journal article is common practice: you add experiments, proofs, analysis or discussion. The rules, however, <strong>vary from journal to journal</strong>: there is no universal threshold.</p>
+  <ul>
+    <li>IEEE Transactions on Cloud Computing accepts extended versions with at least 35% additional technical material, citing the original paper and changing the title.</li>
+    <li>IEEE Transactions on Computers asks for at least 40% new technical/scientific material.</li>
+    <li>IEEE Transactions on Artificial Intelligence sets no percentage, but limits similarity to 25% and states that adding experiments on new datasets or expanding the background is not enough.</li>
+  </ul>
+  <p>Golden rule: always cite the conference version, say so in the cover letter and read the journal's policy on prior publication. Some venues also offer dedicated paths (journal-first, journal-to-conference, special issues with the best papers of a conference).</p>
+  <p class="refs">Sources (author pages, read via a search index): <a href="https://www.computer.org/csdl/journal/cc/write-for-us/15064" target="_blank" rel="noopener">IEEE TCC</a> · <a href="https://www.computer.org/digital-library/journals/tc/call-for-papers-general-submissions" target="_blank" rel="noopener">IEEE TC</a> · <a href="https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence/information-for-authors-tai" target="_blank" rel="noopener">IEEE TAI</a>.</p>
+</section>
+
+<section id="metrics">
+  <h2>6. Ranks, quartiles and metrics: what they mean and their limits</h2>
+  <dl>
+    <dt>CORE rank (conferences)</dt>
+    <dd>Computer-science conference ranking maintained by CORE (Australia/New Zealand), now in its ICORE2026 edition: <strong>A*</strong> = flagship conference of an area; <strong>A</strong> = excellent and highly respected; <strong>B</strong> = good to very good; <strong>C</strong> = other conferences meeting basic peer-review standards. The rank combines indicators such as citations, acceptance rates and the track record of the organizers. <em>Limits:</em> it mainly covers computer science, is updated every few years, and some important venues are not ranked (e.g. RSS) or have national categories.</dd>
+    <dt>SJR – SCImago Journal Rank (journals)</dt>
+    <dd>The average number of <em>weighted</em> citations received in a year by documents published in the previous three years: citations from more prestigious and thematically closer journals count more. Based on Scopus data, updated every year (usually in June).</dd>
+    <dt>Quartile (Q1–Q4)</dt>
+    <dd>Within each SCImago <em>subject category</em>, journals are ranked by SJR and split into four equal groups: Q1 is the top 25%, Q4 the bottom 25%. A journal can have different quartiles in different categories: this app shows the <strong>best</strong> one. There are also JCR (Clarivate) quartiles, computed differently.</dd>
+    <dt>CiteScore (Scopus/Elsevier)</dt>
+    <dd>Citations received over a four-year window by articles, reviews, conference papers, book chapters and data papers, divided by the number of those documents published in the same four years.</dd>
+    <dt>Impact Factor (JIF, Clarivate)</dt>
+    <dd>Citations received in the JCR year by items published in the two previous years, divided by the number of "citable" items (articles and reviews) of those two years. It is computed only for journals indexed in Web of Science; the "2025 JIF" is released in June 2026.</dd>
+    <dt>Acceptance rate</dt>
+    <dd>The percentage of accepted papers over those submitted. It indicates selectivity, but read it with care: the denominator differs between venues (with or without desk rejects and withdrawals; for ARR it counts commitments), it changes with the number of submissions, and it says nothing about the quality of a single paper.</dd>
+  </dl>
+  <div class="callout"><strong>General limits.</strong> Journal metrics describe the journal, not the individual article. The <a href="https://sfdora.org/read/" target="_blank" rel="noopener">San Francisco Declaration on Research Assessment (DORA)</a> recommends not using metrics such as the Impact Factor as a surrogate for the quality of individual articles or researchers: citation distributions are highly skewed and values depend on the field and article types. Never compare metrics across fields or across different scales (CORE vs quartiles).</div>
+  <p class="refs">Sources: <a href="https://www.core.edu.au/conference-portal" target="_blank" rel="noopener">CORE Conference Portal</a> · <a href="https://www.scimagojr.com/methodology.php" target="_blank" rel="noopener">SCImago – SJR methodology</a> and <a href="https://www.scimagojr.com/help.php" target="_blank" rel="noopener">help</a> · <a href="https://www.elsevier.com/products/scopus/metrics/citescore" target="_blank" rel="noopener">Elsevier – CiteScore</a> and <a href="https://service.elsevier.com/app/answers/detail/a_id/30562/supporthub/scopus/related/1/" target="_blank" rel="noopener">CiteScore FAQ</a> · <a href="https://clarivate.com/academia-government/essays/impact-factor/" target="_blank" rel="noopener">Clarivate – The Clarivate Impact Factor</a> · <a href="https://sfdora.org/read/" target="_blank" rel="noopener">DORA</a>.</p>
+</section>
+
+<section id="special">
+  <h2>7. Special issues</h2>
+  <p>A <strong>special issue</strong> (or special section) is a themed issue of a journal, run by guest editors, with a dedicated call and its <strong>own deadline</strong>. It is useful when your work matches the theme, and sometimes collects extended versions of the best papers of a conference. Review and standards should be the same as the journal's: be wary of "special issues" with unrealistic timelines or generic email invitations. In this app special-issue deadlines are shown only when officially published: they are never estimated.</p>
+</section>
+
+<section id="oa">
+  <h2>8. Open access and APCs</h2>
+  <dl>
+    <dt>Gold / fully open access</dt><dd>All articles are free to read; costs are often covered by an <strong>APC</strong> (Article Processing Charge) paid by the authors or their institution.</dd>
+    <dt>Diamond open access</dt><dd>Open access with no fees for readers or authors (e.g. JMLR, JAIR, TACL, Computational Linguistics).</dd>
+    <dt>Hybrid</dt><dd>A subscription journal where authors can pay an APC to make a single article open (e.g. many IEEE Transactions).</dd>
+    <dt>Green open access</dt><dd>Depositing a version of the article (preprint or accepted manuscript) in an open repository, following the publisher's rules.</dd>
+  </dl>
+  <p>Before paying an APC, check your institution's agreements (transformative agreements, programmes such as ACM Open): since 1 January 2026 all ACM publications are open access, with costs covered by participating institutions or by an APC. <a href="https://doaj.org/" target="_blank" rel="noopener">DOAJ</a> lists open-access journals that meet quality criteria, including transparency about peer review, editorial board and fees.</p>
+  <p class="refs">Sources: <a href="https://iui.acm.org/2027/call-for-papers/" target="_blank" rel="noopener">ACM (open-access transition notice, as reported in 2026–2027 calls)</a> · <a href="https://doaj.org/apply/guide/" target="_blank" rel="noopener">DOAJ – guide for journals</a> · <a href="https://www.jair.org/index.php/jair/about" target="_blank" rel="noopener">JAIR</a> · <a href="https://transacl.org/index.php/tacl/about" target="_blank" rel="noopener">TACL</a>.</p>
+</section>
+
+<section id="predatory">
+  <h2>9. Spotting a predatory journal</h2>
+  <p>Predatory journals collect APCs without offering real peer review or serious editorial services. Warning signs and checks (based on the <a href="https://thinkchecksubmit.org/journals/" target="_blank" rel="noopener">Think. Check. Submit.</a> checklist):</p>
+  <ul>
+    <li><strong>Name and identity:</strong> does the name imitate a well-known journal? Can the ISSN be verified on the ISSN portal? Can the publisher be identified and contacted (email, address)?</li>
+    <li><strong>Peer review:</strong> is the type of peer review stated? Promises of acceptance within a few days are a very bad sign.</li>
+    <li><strong>Editorial board:</strong> made of real researchers in the field, with verifiable affiliations?</li>
+    <li><strong>Indexing:</strong> is the journal really in Scopus, Web of Science or DOAJ? Check on the official sites, not on the journal's site (which may claim fake metrics or invented "impact factors").</li>
+    <li><strong>Fees:</strong> are fees clear, with amount, currency and when they are charged?</li>
+    <li><strong>Unsolicited invitations:</strong> generic emails inviting you to publish "in your field" are a classic sign.</li>
+    <li><strong>Ethics:</strong> is the publisher a member of bodies such as COPE? Is the journal in DOAJ (for open access)?</li>
+  </ul>
+  <p>This app only includes journals indexed in Scopus and/or Web of Science and published by recognized publishers.</p>
+</section>
+
+<section id="glossary">
+  <h2>10. Glossary</h2>
+  <dl>
+    <dt>AoE (Anywhere on Earth)</dt><dd>The UTC−12 time zone: a "23:59 AoE" deadline has not passed as long as that day has not ended somewhere on Earth. In practice it corresponds to noon UTC of the following day. <span class="refs">Source: <a href="https://www.ieee802.org/16/aoe.html" target="_blank" rel="noopener">IEEE 802.16 – AOE</a>.</span></dd>
+    <dt>Double-blind / single-blind</dt><dd>In double-blind review neither authors nor reviewers know each other's identity: the paper must be anonymized (no names, self-citations in the third person, no links to identifiable repositories). In single-blind review the reviewers know the authors but not vice versa.</dd>
+    <dt>Long paper / short paper</dt><dd>Formats with different page limits: a long paper presents a complete contribution; a short paper a focused contribution, a preliminary or negative result. Page limits vary by venue (e.g. ACL conferences have long and short papers).</dd>
+    <dt>Desk reject</dt><dd>Rejection without full review, for violations of format, anonymity, scope or policy (e.g. on the number of submissions per author).</dd>
+    <dt>Rebuttal / author response</dt><dd>The authors' reply to the reviews before the decision.</dd>
+    <dt>Revise &amp; resubmit / major revision</dt><dd>The paper is not accepted right away but can be revised and resubmitted by a date.</dd>
+    <dt>Shepherding</dt><dd>Conditional acceptance: a committee member checks that the requested changes are made.</dd>
+    <dt>Camera-ready</dt><dd>The final version for publication.</dd>
+    <dt>Findings (ACL)</dt><dd>Companion volume of ACL conferences for solid papers not selected for the main conference.</dd>
+    <dt>Oral / spotlight / poster</dt><dd>Presentation formats of accepted papers; they usually do not change the publication status.</dd>
+    <dt>Commitment (ARR)</dt><dd>The act of "committing" a submission already reviewed in ARR to a specific conference.</dd>
+  </dl>
+</section>
+
+<section id="app">
+  <h2>11. How to read the data in this app</h2>
+  <ul>
+    <li><span class="badge badge-official">official</span> a deadline published on the official website, with a link to the source and the verification date.</li>
+    <li><span class="badge badge-est">estimated</span> only for recurring conferences whose official date is not out yet: the previous cycle's date shifted by one or two years (biennial conferences). It is not an official date.</li>
+    <li><span class="badge badge-na">n/a</span> data that could not be verified: left empty rather than estimated.</li>
+    <li>Deadlines are shown in the original time zone (AoE, UTC or the conference's local time zone) and in yours. When the source does not state the time zone, the app says so and assumes end of day AoE.</li>
+    <li>CORE ranks and SJR quartiles are different scales: when sorting by rank with both types visible, conferences and journals are shown in two separate groups.</li>
+    <li>The data is a snapshot verified on the date shown at the bottom of the main page: always check the official website before submitting.</li>
+  </ul>
+</section>

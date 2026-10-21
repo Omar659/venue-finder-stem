@@ -13,7 +13,7 @@ Usage (from the project root):
    impact factor/CiteScore and special-issue deadline, the cited page (or PDF)
    is downloaded and the value is searched in its text, in several formats
    ("2026-11-16", "Nov 16", "16 November", "16,092", "25.8"...).
-   "NON TROVATO" does not necessarily mean the value is wrong: the source may
+   "NOT FOUND" does not necessarily mean the value is wrong: the source may
    write it differently (e.g. a range "3 - 7 May 2027") or serve an anti-bot
    page. Every such case must be checked by hand.
 
@@ -129,7 +129,7 @@ def collect_checks(venues):
                     checks.append((vid, f"deadline {d['phase']} {d['date']}", d["source"]["url"], date_variants(d["date"])))
             e = c.get("edition") or {}
             if e.get("start") and e.get("source"):
-                checks.append((vid, f"inizio evento {e['start']}", e["source"]["url"], date_variants(e["start"])))
+                checks.append((vid, f"event start {e['start']}", e["source"]["url"], date_variants(e["start"])))
             for a in c.get("acceptance") or []:
                 vals = [x for x in (a.get("submitted"), a.get("accepted")) if x] or ([a["rate"]] if a.get("rate") is not None else [])
                 for x in vals:
@@ -161,7 +161,7 @@ def ieee_check(venues):
             if st == "200":
                 break
         if st != "200":
-            print(f"  {v['acronym']}: IEEE Xplore non raggiungibile ({st})")
+            print(f"  {v['acronym']}: IEEE Xplore not reachable ({st})")
             continue
         d, j = json.loads(raw), v["journal"]
         latest = lambda lst: max(lst, key=lambda m: m.get("year") or 0)["value"] if lst else None
@@ -176,59 +176,59 @@ def ieee_check(venues):
                 ok += 1
             else:
                 bad += 1
-                print(f"  DIVERSO {v['acronym']} {name}: IEEE Xplore={api!r} dati={ours!r}  (IEEE aggiorna IF/CiteScore ogni giugno)")
-    print(f"IEEE: {ok} valori coincidenti, {bad} differenze")
+                print(f"  DIFFERENT {v['acronym']} {name}: IEEE Xplore={api!r} data={ours!r}  (IEEE updates IF/CiteScore every June)")
+    print(f"IEEE: {ok} matching values, {bad} differences")
     return bad
 
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--links", action="store_true", help="solo controllo dei link")
-    ap.add_argument("--ieee", action="store_true", help="confronta anche i journal IEEE con IEEE Xplore")
+    ap.add_argument("--links", action="store_true", help="link check only")
+    ap.add_argument("--ieee", action="store_true", help="also compare IEEE journals with IEEE Xplore")
     ap.add_argument("--workers", type=int, default=12)
     args = ap.parse_args()
 
     venues = load_venues()
     urls = collect_urls(venues)
-    print(f"1) Controllo link: {len(urls)} URL unici…")
+    print(f"1) Link check: {len(urls)} unique URLs…")
     with cf.ThreadPoolExecutor(args.workers) as ex:
         results = dict(zip(urls, ex.map(fetch, urls)))
     # Second, sequential attempt for timeouts/network errors (often caused by too many parallel requests to one host).
     retry = [u for u, r in results.items() if r[0].startswith("ERR")]
     if retry:
-        print(f"   nuovo tentativo sequenziale per {len(retry)} URL con errori di rete…")
+        print(f"   sequential retry for {len(retry)} URLs with network errors…")
         for u in retry:
             results[u] = fetch(u, timeout=60)
             time.sleep(1)
     status = {u: r[0] for u, r in results.items()}
-    print("   esiti:", dict(collections.Counter("bloccato (anti-bot)" if s in BLOCKED else s for s in status.values())))
+    print("   results:", dict(collections.Counter("blocked (anti-bot)" if s in BLOCKED else s for s in status.values())))
     broken = [u for u, s in status.items() if s not in BLOCKED and not s.startswith(("2", "3"))]
     for u in sorted(broken):
-        print(f"   NON RAGGIUNGIBILE [{status[u]}] {u}  <- {', '.join(sorted(urls[u]))}")
+        print(f"   UNREACHABLE [{status[u]}] {u}  <- {', '.join(sorted(urls[u]))}")
     problems = len(broken)
 
     if not args.links:
         checks = collect_checks(venues)
-        print(f"2) Controllo contenuti: {len(checks)} valori…")
+        print(f"2) Content check: {len(checks)} values…")
         texts = {u: to_text(r[1]) for u, r in results.items() if r[0] == "200"}
         stat, missing = collections.Counter(), []
         for vid, what, url, variants in checks:
             t = texts.get(url)
             if t is None:
-                stat["fonte non leggibile (bloccata, errore o PDF senza pypdf)"] += 1
+                stat["source not readable (blocked, error or PDF without pypdf)"] += 1
             elif any(x in t for x in variants):
                 stat["OK"] += 1
             else:
-                stat["NON TROVATO"] += 1
+                stat["NOT FOUND"] += 1
                 missing.append((vid, what, url))
-        print("   esiti:", dict(stat))
+        print("   results:", dict(stat))
         for vid, what, url in missing:
-            print(f"   NON TROVATO {vid} | {what} | {url}")
-        print("   (verifica a mano i casi NON TROVATO: spesso il valore è scritto come intervallo o in altro formato)")
+            print(f"   NOT FOUND {vid} | {what} | {url}")
+        print("   (check NOT FOUND cases by hand: the value is often written as a range or in another format)")
         problems += len(missing)
 
     if args.ieee:
-        print("3) Confronto con IEEE Xplore…")
+        print("3) Comparison with IEEE Xplore…")
         problems += ieee_check(venues)
 
     sys.exit(1 if problems else 0)

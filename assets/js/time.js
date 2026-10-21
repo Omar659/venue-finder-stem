@@ -1,5 +1,5 @@
 /*
- * Deadline and timezone logic (deterministic, browser-only).
+ * Deadline and time-zone logic (deterministic, browser-only).
  *
  * A deadline in the data looks like:
  *   { "phase": "paper", "date": "2026-05-06", "time": "23:59", "tz": "AoE" }
@@ -11,17 +11,24 @@
 
   const SUBMISSION_PHASES = ["abstract", "paper", "commitment"];
 
-  const PHASE_LABELS = {
-    abstract: "Abstract",
-    paper: "Full paper",
-    supplementary: "Materiale supplementare",
-    reviews: "Review agli autori",
-    rebuttal: "Rebuttal / revisione",
-    commitment: "Commitment",
-    notification: "Notifica",
-    camera_ready: "Camera-ready",
-    special_issue: "Special issue",
-  };
+  let locale = "en-GB";
+  let fmtDate, fmtDateTimeLocal;
+  let dayUnit = "d";
+  let expiredLabel = "passed";
+  let tzNames = {};
+
+  function setLocale(loc, opts) {
+    locale = loc;
+    opts = opts || {};
+    dayUnit = opts.dayUnit || "d";
+    expiredLabel = opts.expired || "passed";
+    tzNames = opts.tzNames || {};
+    fmtDate = new Intl.DateTimeFormat(locale, { day: "numeric", month: "short", year: "numeric" });
+    fmtDateTimeLocal = new Intl.DateTimeFormat(locale, {
+      day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
+    });
+  }
+  setLocale(locale);
 
   // Offset (minutes) between a zone's wall clock and UTC at instant ts.
   function zoneOffsetMinutes(ts, tz) {
@@ -51,12 +58,7 @@
   function tzLabel(tz) {
     if (!tz || tz === "AoE") return "AoE (UTC−12)";
     if (tz === "UTC") return "UTC";
-    const names = {
-      "America/Los_Angeles": "Pacific Time (USA)",
-      "America/New_York": "Eastern Time (USA)",
-      "Pacific/Honolulu": "Hawaii (HST)",
-    };
-    return names[tz] || tz;
+    return tzNames[tz] || tz;
   }
 
   function deadlineUtc(dl) {
@@ -65,17 +67,12 @@
 
   function shiftYears(dateStr, years) {
     const [y, m, d] = dateStr.split("-").map(Number);
-    let ny = y + years;
+    const ny = y + years;
     // 29 Feb -> 28 Feb on non-leap years
     let nd = d;
     if (m === 2 && d === 29 && !((ny % 4 === 0 && ny % 100 !== 0) || ny % 400 === 0)) nd = 28;
     return `${ny}-${String(m).padStart(2, "0")}-${String(nd).padStart(2, "0")}`;
   }
-
-  const fmtDate = new Intl.DateTimeFormat("it-IT", { day: "numeric", month: "short", year: "numeric" });
-  const fmtDateTimeLocal = new Intl.DateTimeFormat("it-IT", {
-    day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit", timeZoneName: "short",
-  });
 
   function formatDateStr(dateStr) {
     if (!dateStr) return "";
@@ -91,29 +88,27 @@
     return `${formatDateStr(dl.date)}, ${dl.time || "23:59"} ${tzLabel(dl.tz)}`;
   }
 
-  function countdownParts(ms) {
-    const s = Math.max(0, Math.floor(ms / 1000));
-    return { d: Math.floor(s / 86400), h: Math.floor((s % 86400) / 3600), m: Math.floor((s % 3600) / 60), s: s % 60 };
-  }
-
   function formatCountdown(ms, withSeconds) {
-    if (ms <= 0) return "scaduta";
-    const p = countdownParts(ms);
-    const hh = String(p.h).padStart(2, "0");
-    const mm = String(p.m).padStart(2, "0");
-    if (p.d > 0) return withSeconds ? `${p.d}g ${hh}h ${mm}m ${String(p.s).padStart(2, "0")}s` : `${p.d}g ${hh}h ${mm}m`;
-    return `${hh}h ${mm}m ${String(p.s).padStart(2, "0")}s`;
+    if (ms <= 0) return expiredLabel;
+    const s = Math.floor(ms / 1000);
+    const d = Math.floor(s / 86400);
+    const hh = String(Math.floor((s % 86400) / 3600)).padStart(2, "0");
+    const mm = String(Math.floor((s % 3600) / 60)).padStart(2, "0");
+    const ss = String(s % 60).padStart(2, "0");
+    if (d > 0) return withSeconds ? `${d}${dayUnit} ${hh}h ${mm}m ${ss}s` : `${d}${dayUnit} ${hh}h ${mm}m`;
+    return `${hh}h ${mm}m ${ss}s`;
   }
 
   /*
    * Resolves the deadline situation of a conference at instant `now`:
-   *  - official: list of official deadlines (with utc + past flag)
-   *  - next: next useful submission deadline ({...dl, utc, estimated, basis})
-   *  - status: "open" (official future submission deadline),
+   *  - official: official deadlines (with utc + past flag)
+   *  - next: next useful submission deadline ({...dl, utc, estimated})
+   *  - status: "open" (official upcoming submission deadline),
    *            "estimated" (only an estimate from the previous cycle),
-   *            "rolling", "closed-unknown" (all past and nothing to estimate),
+   *            "rolling", "closed-unknown" (all past, nothing to estimate),
    *            "unknown" (no data at all)
-   *  - estimated: list of estimated deadlines for the next cycle (if any)
+   *  - estimated: estimated deadlines for the next cycle (if any)
+   *  - basis: label of the cycle the estimate is based on
    */
   function resolveConference(v, now) {
     const c = v.conference || {};
@@ -143,7 +138,6 @@
     }
     if (!base) { res.status = official.length ? "closed-unknown" : "unknown"; return res; }
 
-    // Shift the whole cycle by `rec` years until its first submission deadline is in the future.
     const subs = base.filter((d) => SUBMISSION_PHASES.includes(d.phase));
     if (!subs.length) { res.status = "closed-unknown"; return res; }
     // Smallest shift (multiple of the recurrence) such that at least one
@@ -168,7 +162,7 @@
     return res;
   }
 
-  // Special issues: never estimated. Returns sorted list with utc/past flags.
+  // Special issues: never estimated. Returns a sorted list with utc/past flags.
   function resolveSpecialIssues(v, now) {
     const j = v.journal || {};
     return (j.specialIssues || []).map((si) => {
@@ -179,7 +173,7 @@
   }
 
   window.VT = {
-    SUBMISSION_PHASES, PHASE_LABELS,
+    SUBMISSION_PHASES, setLocale,
     zonedToUtc, deadlineUtc, tzLabel, shiftYears,
     formatDateStr, formatLocal, formatOriginal, formatCountdown,
     resolveConference, resolveSpecialIssues,

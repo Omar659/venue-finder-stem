@@ -1,66 +1,74 @@
 # Venue Finder STEM
 
-Web app per scegliere **dove pubblicare** in area STEM, con particolare attenzione a informatica e ingegneria: cerca e confronta conferenze e journal, con ranking, deadline e topic.
+A web app to help choose **where to publish** in STEM, with a focus on computer science and engineering: search and compare conferences and journals by ranking, deadlines and topics.
 
-È un sito completamente statico (HTML, CSS e JavaScript, senza build né dipendenze) pensato per GitHub Pages.
+It is a fully static site (HTML, CSS and JavaScript, no build step, no dependencies) designed for GitHub Pages.
 
-## Funzionalità
+**Live site:** <https://omar659.github.io/venue-finder-stem/>
 
-- Ricerca per nome, acronimo, ISSN, area o topic.
-- Filtri per tipo (conferenze/journal), area di ricerca (tag gerarchici), paese, rank CORE, deadline aperta/chiusa, quartile, open access e special issue aperte.
-- Ordinamento per prossima deadline, rank/quartile, acceptance rate o nome.
-- Countdown live delle deadline in AoE e nell'ora locale, con distinzione tra date **ufficiali** e **stimate**.
-- Scheda di dettaglio con:
-  - per le conferenze: topic della main track, workshop, proceedings e storico dell'acceptance rate;
-  - per i journal: aims & scope, metriche (SJR, Impact Factor, CiteScore), indicizzazione, APC e special issue.
-- Confronto affiancato fino a 4 venue.
-- Guida introduttiva al mondo delle pubblicazioni (`guide.html`).
-- Tema chiaro/scuro, layout responsive.
+## Features
 
-## Avvio in locale
+- Search by name, acronym, ISSN, research area or topic.
+- Filters by type (conferences/journals), research area (hierarchical tags), country, CORE rank, open/closed deadline, quartile, open access and open special issues.
+- Sorting by next deadline, rank/quartile, acceptance rate or name.
+- Live deadline countdowns in AoE and local time, clearly distinguishing **official** from **estimated** dates.
+- Detail panel with:
+  - conferences: main-track topics, workshops, proceedings and acceptance-rate history;
+  - journals: aims & scope, metrics (SJR, Impact Factor, CiteScore), indexing, APCs and special issues.
+- Side-by-side comparison of up to 4 venues.
+- A beginner's guide to scientific publishing (`guide.html`).
+- Interface in English (default), Italian, Spanish, French, German, Portuguese and Chinese.
+- Light/dark theme, responsive layout.
 
-I dati vengono caricati via `fetch`, quindi serve un server statico (aprire `index.html` con `file://` non funziona):
+## Running locally
+
+Data is loaded with `fetch`, so the site needs a static web server (opening `index.html` via `file://` does not work):
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Poi apri <http://localhost:8000/>.
+Then open <http://localhost:8000/>.
 
-## Struttura
+## Project structure
 
 ```
-index.html          app principale
-guide.html          guida
-assets/             CSS e JavaScript
-data/               dati (conferenze, journal, tag, metadati)
-docs/               documentazione del formato dei dati
-tools/              script di controllo dei dati
+index.html          main app
+guide.html          publishing guide
+assets/css/         styles
+assets/js/          app logic (time zones and deadlines, i18n, charts, UI)
+assets/i18n/        UI translations
+assets/guide/       guide content per language
+data/               data (conferences, journals, tags, metadata)
+docs/               data format documentation
+tools/              data checking scripts
 ```
 
-## Dati
+## Data
 
-I dati sono in `data/*.json` e si possono aggiornare senza toccare il codice. Ogni informazione rilevante riporta il link alla fonte e la data di verifica, visibili anche nell'app. I dati non verificabili sono lasciati vuoti e mostrati come "non disponibile".
+The data lives in `data/*.json` and can be updated without touching the code. Every relevant data point links to its source and verification date, which are also shown in the app. Values that could not be verified are left empty and shown as "not available".
 
-Fonti principali:
+The data is a snapshot: it is not fetched live from the venues' websites. Deadlines move automatically from "open" to "closed" and, for recurring conferences, the next deadline is estimated from the previous cycle until the official one is added to the data.
 
-- ranking delle conferenze: [CORE](https://portal.core.edu.au/conf-ranks/) (edizione ICORE2026);
-- date, deadline e topic: siti ufficiali delle conferenze;
-- metriche dei journal: [SCImago](https://www.scimagojr.com/) (SJR e quartili) e siti degli editori (Impact Factor, CiteScore, APC).
+Main sources:
 
-Formato dei file e istruzioni per aggiungere o aggiornare una venue: [docs/formato-dati.md](docs/formato-dati.md).
+- conference rankings: [CORE](https://portal.core.edu.au/conf-ranks/) (ICORE2026 edition);
+- dates, deadlines and topics: official conference websites;
+- journal metrics: [SCImago](https://www.scimagojr.com/) (SJR and quartiles) and publishers' websites (Impact Factor, CiteScore, APCs).
 
-Controlli sui dati (Python 3.9+, nessuna dipendenza obbligatoria):
+File format and instructions for adding or updating a venue: [docs/data-format.md](docs/data-format.md).
+
+Data checks (Python 3.9+, no required dependencies):
 
 ```bash
-python3 tools/validate.py          # struttura e formato dei JSON
-python3 tools/verify_sources.py    # link e valori confrontati con le fonti citate
+python3 tools/validate.py          # structure and format of the JSON files
+python3 tools/verify_sources.py    # links and values checked against the cited sources
 ```
 
-## Pubblicazione
+## Deployment
 
-Il sito usa solo percorsi relativi e funziona su GitHub Pages anche da una sottocartella (`utente.github.io/nome-repo/`): basta pubblicare il branch principale dalla root del repository.
+The site only uses relative paths, so it works on GitHub Pages from a project subpath (`user.github.io/repo-name/`): publish the default branch from the repository root.
 
-## Avvertenze
+## Disclaimer
 
-Deadline, ranking e metriche cambiano nel tempo: prima di sottomettere verifica sempre le informazioni sul sito ufficiale della venue. Le deadline stimate sono un'indicazione basata sul ciclo precedente, non date ufficiali.
+Deadlines, rankings and metrics change over time: always check the venue's official website before submitting. Estimated deadlines are a hint based on the previous cycle, not official dates.

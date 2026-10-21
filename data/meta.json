@@ -12,14 +12,14 @@
     "B",
     "C"
    ],
-   "note": "Ranking ICORE2026 esportato dal portale ufficiale CORE il 2026-10-21."
+   "note": "ICORE2026 ranking exported from the official CORE portal on 2026-10-21."
   },
   "sjr": {
    "label": "SCImago Journal Rank (SJR 2025)",
    "url": "https://www.scimagojr.com/"
   },
   "jif": {
-   "label": "Journal Impact Factor (Clarivate JCR, release giugno 2026 = JIF 2025)"
+   "label": "Journal Impact Factor (Clarivate JCR, June 2026 release = JIF 2025)"
   },
   "citescore": {
    "label": "CiteScore (Scopus)"

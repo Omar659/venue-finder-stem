@@ -1,0 +1,166 @@
+<h1>如何发表论文</h1>
+<p class="lead">面向刚接触 STEM 领域学术发表的读者的实用入门，重点关注计算机科学与工程。</p>
+
+<nav class="toc" aria-label="目录">
+  <strong>目录</strong>
+  <ol>
+    <li><a href="#conf-vs-journal">会议还是期刊？</a></li>
+    <li><a href="#track">主会场与研讨会</a></li>
+    <li><a href="#proceedings">会议论文集</a></li>
+    <li><a href="#phases">会议投稿的各个阶段</a></li>
+    <li><a href="#extension">从会议论文到期刊论文</a></li>
+    <li><a href="#metrics">等级、分区与指标</a></li>
+    <li><a href="#special">专刊</a></li>
+    <li><a href="#oa">开放获取与 APC</a></li>
+    <li><a href="#predatory">如何识别掠夺性期刊</a></li>
+    <li><a href="#glossary">术语表</a></li>
+    <li><a href="#app">如何解读本应用中的数据</a></li>
+  </ol>
+</nav>
+
+<section id="conf-vs-journal">
+  <h2>1. 会议还是期刊？</h2>
+  <p><strong>会议</strong>是定期举办（通常每年一次）、有<em>固定截止日期</em>的活动：在截止日期前投稿，几个月后收到结果，若被录用则在会上报告。<strong>期刊</strong>则<em>随时</em>接受投稿，审稿可能在最终决定前经历多轮修改。</p>
+  <table class="data">
+    <thead><tr><th></th><th>会议</th><th>期刊</th></tr></thead>
+    <tbody>
+      <tr><td>时间</td><td>日程固定，通常 2–5 个月内出结果</td><td>持续投稿；时间不定（数周到一年以上），多轮修改</td></tr>
+      <tr><td>审稿</td><td>通常只有一轮，有时有作者回复或“修改后重投”</td><td>多轮（小修/大修）直至录用</td></tr>
+      <tr><td>篇幅</td><td>页数限制严格</td><td>文章更长、更完整</td></tr>
+      <tr><td>影响</td><td>现场报告、交流</td><td>存档性、更深入的版本</td></tr>
+    </tbody>
+  </table>
+  <h3>声望取决于领域</h3>
+  <p>在<strong>计算机科学</strong>中，最严格的会议往往是发布研究成果的主要渠道，以至于美国计算研究协会（CRA）建议不要只根据期刊论文来评价该领域的研究人员。在许多其他 STEM 学科（以及部分工程领域）中，期刊仍是主要标准。做选择前，先看看你所在细分领域的顶尖团队在哪里发表，以及你所在机构采用什么评价标准。</p>
+  <p class="refs">来源：<a href="https://cra.org/resources/best-practice-memos/evaluating-computer-scientists-and-engineers-for-promotion-and-tenure/" target="_blank" rel="noopener">CRA – Evaluating Computer Scientists and Engineers for Promotion and Tenure</a>。</p>
+</section>
+
+<section id="track">
+  <h2>2. 主会场与研讨会</h2>
+  <p><strong>主会场</strong>（main track，也称 <em>research track</em> 或 <em>technical track</em>）是会议的主体议程：会议的等级、录用率和声望都指的是主会场。<strong>研讨会</strong>（workshop）是与会议同期举办（通常在会议前后几天）的较小型主题活动，有自己的征稿、委员会和截止日期，一般晚于主会场。</p>
+  <ul>
+    <li><strong>声望：</strong>A* 会议主会场的论文远比其研讨会论文更有分量。CORE 等排名评价的是会议本身，而不是单个研讨会。</li>
+    <li><strong>何时适合投研讨会：</strong>初步或进行中的工作、小众想法、希望获得特定社区的反馈，或作为第一次发表的经历。</li>
+    <li><strong>存档与非存档：</strong>有些研讨会出版正式论文集（archival），有些则不出版。非存档研讨会通常不妨碍日后在别处投稿扩展版本；存档研讨会则可能被视为已发表。务必阅读研讨会的征稿说明以及下一个投稿目标的政策。</li>
+  </ul>
+  <p>许多会议还设有其他分会场（短文、演示、海报、工业、数据集与基准、立场论文、博士生论坛）：它们很有用，但应与主会场区分开。</p>
+</section>
+
+<section id="proceedings">
+  <h2>3. 会议论文集</h2>
+  <p><strong>论文集</strong>（proceedings）是会议录用论文的正式汇编，由出版方或组织出版，例如 ACM Digital Library、IEEE Xplore、Springer（如 <em>Lecture Notes in Computer Science</em> 丛书）、PMLR（Proceedings of Machine Learning Research）、ACL Anthology、USENIX 等。它们之所以重要，是因为：</p>
+  <ul>
+    <li>使论文成为<strong>可引用的存档出版物</strong>（具有 DOI 或其他稳定标识）；</li>
+    <li>决定论文在哪里被<strong>收录</strong>和检索（DBLP、Scopus、Web of Science 的收录取决于丛书和出版方）；</li>
+    <li>可能影响考核与招聘，这些往往要求被特定数据库收录。</li>
+  </ul>
+  <p>有些会议直接把论文发表在期刊上（例如 <em>Proceedings of the ACM on …</em>、VLDB 的 PVLDB、IEEE VIS 全文发表于 IEEE TVCG）：每个会议的详情面板中都列出了出版方和丛书。</p>
+</section>
+
+<section id="phases">
+  <h2>4. 会议投稿的各个阶段</h2>
+  <ol>
+    <li><strong>摘要 / 注册</strong> — 许多会议要求在全文截止前几天先登记题目、摘要和作者，以便分配审稿人并避免利益冲突。跳过这一步通常就无法投稿。</li>
+    <li><strong>全文</strong> — 主要截止日期，几乎总是按 <em>AoE</em> 计算。补充材料的截止日期可能更晚。</li>
+    <li><strong>审稿</strong> — 审稿人（通常为双盲）评审论文。有些会议在第一阶段后会有<em>提前拒稿</em>（early reject）。</li>
+    <li><strong>作者回复（rebuttal）</strong> — 几天的时间窗口，用来回应审稿意见、纠正事实性错误并回答问题。有些会议（如 CHI、SIGMOD、IEEE S&amp;P）则设有<em>修改后重投</em>或<em>大修</em>阶段，需要提交新版本。</li>
+    <li><strong>录用通知</strong> — 录用或拒稿，有时区分口头报告、spotlight 和海报，或以 <em>shepherding</em> 为条件录用。</li>
+    <li><strong>最终版（camera-ready）</strong> — 根据审稿意见修改、符合出版方格式的最终版本，须在指定日期前提交（通常还要求至少一位作者注册参会）。</li>
+  </ol>
+  <div class="callout">
+    <strong>特殊模式。</strong>许多会议每年有<em>多个投稿周期</em>（USENIX Security、IEEE S&amp;P、NDSS、SIGMOD、KDD、NSDI 等）。在自然语言处理领域，ACL 系列会议使用 <a href="https://aclrollingreview.org/" target="_blank" rel="noopener">ACL Rolling Review（ARR）</a>：先投稿到某个 ARR 周期，再把已审稿的投稿“提交”（commitment）到所选会议。VLDB 通过 PVLDB 按月截稿，CSCW 采用滚动投稿模式。
+  </div>
+</section>
+
+<section id="extension">
+  <h2>5. 从会议论文到期刊论文</h2>
+  <p>把会议论文扩展为期刊论文是常见做法：补充实验、证明、分析或讨论。但各期刊的规定<strong>各不相同</strong>，并没有统一的标准。</p>
+  <ul>
+    <li>IEEE Transactions on Cloud Computing 接受至少新增 35% 技术内容的扩展版本，须引用原论文并更换标题。</li>
+    <li>IEEE Transactions on Computers 要求至少 40% 的新技术/科学内容。</li>
+    <li>IEEE Transactions on Artificial Intelligence 不设百分比，但要求相似度不超过 25%，并明确仅在新数据集上补充实验或扩充背景是不够的。</li>
+  </ul>
+  <p>基本原则：始终引用会议版本，在投稿信中说明，并阅读期刊关于已发表内容的政策。有些期刊和会议还提供专门途径（journal-first、journal-to-conference、收录会议最佳论文的专刊）。</p>
+  <p class="refs">来源（作者须知页面，通过搜索索引读取）：<a href="https://www.computer.org/csdl/journal/cc/write-for-us/15064" target="_blank" rel="noopener">IEEE TCC</a> · <a href="https://www.computer.org/digital-library/journals/tc/call-for-papers-general-submissions" target="_blank" rel="noopener">IEEE TC</a> · <a href="https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence/information-for-authors-tai" target="_blank" rel="noopener">IEEE TAI</a>。</p>
+</section>
+
+<section id="metrics">
+  <h2>6. 等级、分区与指标：含义与局限</h2>
+  <dl>
+    <dt>CORE 等级（会议）</dt>
+    <dd>由 CORE（澳大利亚/新西兰）维护的计算机科学会议排名，目前为 ICORE2026 版：<strong>A*</strong> = 领域内的旗舰会议；<strong>A</strong> = 优秀且备受尊重；<strong>B</strong> = 良好至很好；<strong>C</strong> = 满足同行评审基本标准的其他会议。等级综合了引用、录用率和组织者的学术声誉等指标。<em>局限：</em>主要覆盖计算机科学，每隔几年才更新一次，一些重要会议未被评级（如 RSS）或属于国家类别。</dd>
+    <dt>SJR – SCImago Journal Rank（期刊）</dt>
+    <dd>前三年发表的文献在某一年获得的<em>加权</em>引用的平均数：来自更有声望、主题更接近的期刊的引用权重更高。基于 Scopus 数据，每年更新一次（通常在六月）。</dd>
+    <dt>分区（Q1–Q4）</dt>
+    <dd>在每个<em>学科类别</em>内，SCImago 按 SJR 对期刊排序并平均分为四组：Q1 为前 25%，Q4 为后 25%。同一期刊在不同类别中可能有不同分区：本应用显示的是<strong>最佳</strong>分区。另有 JCR（Clarivate）分区，计算方式不同。</dd>
+    <dt>CiteScore（Scopus/Elsevier）</dt>
+    <dd>四年窗口内期刊的论文、综述、会议论文、书籍章节和数据论文所获得的引用数，除以同期发表的这些文献的数量。</dd>
+    <dt>影响因子（JIF，Clarivate）</dt>
+    <dd>JCR 年度内对前两年发表内容的引用数，除以这两年“可引用”内容（论文和综述）的数量。仅针对 Web of Science 收录的期刊计算；“2025 年 JIF”于 2026 年 6 月发布。</dd>
+    <dt>录用率</dt>
+    <dd>录用论文占投稿论文的百分比。它反映选择性，但需谨慎解读：不同会议的分母不同（是否计入直接拒稿和撤稿；ARR 以 commitment 计），会随投稿量变化，也不能说明单篇论文的质量。</dd>
+  </dl>
+  <div class="callout"><strong>总体局限。</strong>期刊指标描述的是期刊，而不是单篇文章。《<a href="https://sfdora.org/read/" target="_blank" rel="noopener">旧金山科研评价宣言（DORA）</a>》建议不要用影响因子等指标替代对单篇文章或研究人员质量的评价：引用分布高度偏斜，数值也取决于学科和文章类型。切勿跨学科比较指标，也不要比较不同尺度（CORE 与分区）。</div>
+  <p class="refs">来源：<a href="https://www.core.edu.au/conference-portal" target="_blank" rel="noopener">CORE Conference Portal</a> · <a href="https://www.scimagojr.com/methodology.php" target="_blank" rel="noopener">SCImago – SJR 方法</a>与<a href="https://www.scimagojr.com/help.php" target="_blank" rel="noopener">帮助</a> · <a href="https://www.elsevier.com/products/scopus/metrics/citescore" target="_blank" rel="noopener">Elsevier – CiteScore</a>与<a href="https://service.elsevier.com/app/answers/detail/a_id/30562/supporthub/scopus/related/1/" target="_blank" rel="noopener">CiteScore 常见问题</a> · <a href="https://clarivate.com/academia-government/essays/impact-factor/" target="_blank" rel="noopener">Clarivate – The Clarivate Impact Factor</a> · <a href="https://sfdora.org/read/" target="_blank" rel="noopener">DORA</a>。</p>
+</section>
+
+<section id="special">
+  <h2>7. 专刊</h2>
+  <p><strong>专刊</strong>（special issue 或 special section）是期刊的主题刊，由客座编辑负责，有专门的征稿和<strong>独立的截止日期</strong>。如果你的工作与主题契合，专刊很有价值；有时专刊还会收录某会议最佳论文的扩展版本。其审稿和标准应与期刊一致：对时间安排不切实际的“专刊”或泛泛的邮件邀请要保持警惕。在本应用中，专刊截止日期只在正式公布后显示，从不进行估计。</p>
+</section>
+
+<section id="oa">
+  <h2>8. 开放获取与 APC</h2>
+  <dl>
+    <dt>金色 / 完全开放获取</dt><dd>所有文章均可免费阅读；费用通常由作者或其机构支付的<strong>文章处理费（APC）</strong>承担。</dd>
+    <dt>钻石开放获取</dt><dd>对读者和作者均不收费的开放获取（如 JMLR、JAIR、TACL、Computational Linguistics）。</dd>
+    <dt>混合模式</dt><dd>订阅制期刊，作者可支付 APC 使单篇文章开放获取（如许多 IEEE Transactions）。</dd>
+    <dt>绿色开放获取</dt><dd>按照出版方的规定，将文章的某个版本（预印本或录用稿）存放在开放存储库中。</dd>
+  </dl>
+  <p>支付 APC 之前，先了解你所在机构的协议（转换协议、ACM Open 等项目）：自 2026 年 1 月 1 日起，所有 ACM 出版物均为开放获取，费用由参与机构承担或通过 APC 支付。<a href="https://doaj.org/" target="_blank" rel="noopener">DOAJ</a> 收录符合质量标准的开放获取期刊，标准包括审稿、编委会和费用的透明度。</p>
+  <p class="refs">来源：<a href="https://iui.acm.org/2027/call-for-papers/" target="_blank" rel="noopener">ACM（2026–2027 年征稿中转述的开放获取转型通知）</a> · <a href="https://doaj.org/apply/guide/" target="_blank" rel="noopener">DOAJ – 期刊指南</a> · <a href="https://www.jair.org/index.php/jair/about" target="_blank" rel="noopener">JAIR</a> · <a href="https://transacl.org/index.php/tacl/about" target="_blank" rel="noopener">TACL</a>。</p>
+</section>
+
+<section id="predatory">
+  <h2>9. 如何识别掠夺性期刊</h2>
+  <p>掠夺性期刊收取 APC，却不提供真正的同行评审或严肃的编辑服务。警示信号与核查要点（参考 <a href="https://thinkchecksubmit.org/journals/" target="_blank" rel="noopener">Think. Check. Submit.</a> 清单）：</p>
+  <ul>
+    <li><strong>名称与身份：</strong>名称是否模仿知名期刊？ISSN 能否在 ISSN 门户网站上核实？出版方是否可识别、可联系（邮箱、地址）？</li>
+    <li><strong>审稿：</strong>是否说明了同行评审的类型？承诺几天内录用是非常糟糕的信号。</li>
+    <li><strong>编委会：</strong>是否由该领域真实的研究人员组成，且单位可核实？</li>
+    <li><strong>收录情况：</strong>期刊是否真的被 Scopus、Web of Science 或 DOAJ 收录？请在官方网站核实，而不是看期刊自己的网站（可能宣称虚假的指标或编造的“影响因子”）。</li>
+    <li><strong>费用：</strong>费用是否清楚，包括金额、币种和收费时间？</li>
+    <li><strong>主动邀稿：</strong>邀请你“在你的领域”发表的泛泛邮件是典型信号。</li>
+    <li><strong>伦理：</strong>出版方是否加入了 COPE 等组织？期刊是否被 DOAJ 收录（针对开放获取）？</li>
+  </ul>
+  <p>本应用只收录被 Scopus 和/或 Web of Science 收录、由公认出版方出版的期刊。</p>
+</section>
+
+<section id="glossary">
+  <h2>10. 术语表</h2>
+  <dl>
+    <dt>AoE（Anywhere on Earth，地球上任何地方）</dt><dd>UTC−12 时区：只要地球上某处的这一天还没结束，“23:59 AoE” 的截止时间就还没过。实际上相当于次日 UTC 中午 12 点。<span class="refs">来源：<a href="https://www.ieee802.org/16/aoe.html" target="_blank" rel="noopener">IEEE 802.16 – AOE</a>。</span></dd>
+    <dt>双盲 / 单盲</dt><dd>双盲评审中作者和审稿人互不知道对方身份：论文必须匿名（不写姓名、以第三人称自引、不链接可识别身份的代码库）。单盲评审中审稿人知道作者身份，反之则不然。</dd>
+    <dt>长文 / 短文</dt><dd>页数限制不同的两种形式：长文呈现完整的贡献；短文呈现更聚焦的贡献、初步结果或负面结果。最大页数因会议而异（如 ACL 系列会议设有长文和短文）。</dd>
+    <dt>直接拒稿（desk reject）</dt><dd>因违反格式、匿名、范围或政策（如每位作者的投稿数量限制）而未经完整审稿即被拒。</dd>
+    <dt>作者回复（rebuttal / author response）</dt><dd>作者在做出决定前对审稿意见的回应。</dd>
+    <dt>修改后重投 / 大修</dt><dd>论文未被直接录用，但可以在规定日期前修改并重新提交。</dd>
+    <dt>Shepherding</dt><dd>有条件录用：由一名委员会成员核查是否完成了要求的修改。</dd>
+    <dt>最终版（camera-ready）</dt><dd>用于出版的最终版本。</dd>
+    <dt>Findings（ACL）</dt><dd>ACL 系列会议的配套卷，收录未入选主会但质量扎实的论文。</dd>
+    <dt>口头报告 / spotlight / 海报</dt><dd>录用论文的展示形式；一般不改变其发表状态。</dd>
+    <dt>Commitment（ARR）</dt><dd>将已在 ARR 中完成审稿的投稿“提交”给某个具体会议的操作。</dd>
+  </dl>
+</section>
+
+<section id="app">
+  <h2>11. 如何解读本应用中的数据</h2>
+  <ul>
+    <li><span class="badge badge-official">官方</span> 在官网公布的截止日期，附来源链接和核实日期。</li>
+    <li><span class="badge badge-est">估计</span> 仅用于官方日期尚未公布的周期性会议：将上一周期的日期顺延一年或两年（每两年举办的会议）。这不是官方日期。</li>
+    <li><span class="badge badge-na">暂无</span> 无法核实的数据：留空，而不是估计。</li>
+    <li>截止日期同时以原始时区（AoE、UTC 或会议当地时区）和你所在的时区显示。来源未注明时区时，应用会提示并按 AoE 当天结束计算。</li>
+    <li>CORE 等级与 SJR 分区是不同的尺度：在同时显示两类时按等级排序，会议和期刊会分成两组显示。</li>
+    <li>数据是在主页底部所示日期核实的快照：投稿前请务必查看官方网站。数据中的描述性文字（备注、主题）为英文。</li>
+  </ul>
+</section>

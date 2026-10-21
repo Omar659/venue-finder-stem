@@ -10,7 +10,8 @@
    * History chart: optional bars (submitted vs accepted) plus a line for a value
    * (e.g. acceptance rate %, SJR, IF).
    *  points: [{ x: 2024, y: 25.8, submitted?: 15671, accepted?: 4037 }]
-   *  opts:   { unit: "%", label: "Acceptance rate", decimals: 1 }
+   *  opts:   { unit: "%", label: "Acceptance rate", decimals: 1, locale: "en-GB",
+   *            submittedLabel: "submitted", acceptedLabel: "accepted" }
    */
   function history(points, opts) {
     opts = opts || {};
@@ -29,29 +30,32 @@
     const bAt = (v) => padT + ih - (v / bMax) * ih;
     const bw = Math.min(34, iw / n / 2.4);
     const dec = opts.decimals != null ? opts.decimals : 1;
-    let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.label || "Andamento")}">`;
+    const nf = new Intl.NumberFormat(opts.locale || "en-GB");
+    const nfDec = new Intl.NumberFormat(opts.locale || "en-GB", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+    const nfAxis = (v) => new Intl.NumberFormat(opts.locale || "en-GB", { maximumFractionDigits: v < 10 ? 1 : 0 }).format(v);
+    let s = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.label || "Trend")}">`;
     for (let k = 0; k <= 4; k++) {
       const v = yMin + ((yMax - yMin) * k) / 4;
       const y = yAt(v);
       s += `<line class="grid" x1="${padL}" x2="${W - padR}" y1="${y}" y2="${y}"/>`;
-      s += `<text x="${padL - 6}" y="${y + 4}" text-anchor="end">${v.toFixed(v < 10 ? 1 : 0)}${opts.unit || ""}</text>`;
-      if (hasBars) s += `<text x="${W - padR + 6}" y="${bAt((bMax * k) / 4) + 4}">${Math.round((bMax * k) / 4).toLocaleString("it-IT")}</text>`;
+      s += `<text x="${padL - 6}" y="${y + 4}" text-anchor="end">${nfAxis(v)}${opts.unit || ""}</text>`;
+      if (hasBars) s += `<text x="${W - padR + 6}" y="${bAt((bMax * k) / 4) + 4}">${nf.format(Math.round((bMax * k) / 4))}</text>`;
     }
     pts.forEach((p, i) => {
       const x = xAt(i);
       if (hasBars && p.submitted) {
-        s += `<rect class="bar-sub" x="${x - bw}" y="${bAt(p.submitted)}" width="${bw}" height="${padT + ih - bAt(p.submitted)}"><title>${p.x}: ${p.submitted.toLocaleString("it-IT")} sottomessi</title></rect>`;
+        s += `<rect class="bar-sub" x="${x - bw}" y="${bAt(p.submitted)}" width="${bw}" height="${padT + ih - bAt(p.submitted)}"><title>${p.x}: ${nf.format(p.submitted)} ${esc(opts.submittedLabel || "submitted")}</title></rect>`;
       }
       if (hasBars && p.accepted) {
-        s += `<rect class="bar-acc" x="${x}" y="${bAt(p.accepted)}" width="${bw}" height="${padT + ih - bAt(p.accepted)}"><title>${p.x}: ${p.accepted.toLocaleString("it-IT")} accettati</title></rect>`;
+        s += `<rect class="bar-acc" x="${x}" y="${bAt(p.accepted)}" width="${bw}" height="${padT + ih - bAt(p.accepted)}"><title>${p.x}: ${nf.format(p.accepted)} ${esc(opts.acceptedLabel || "accepted")}</title></rect>`;
       }
       s += `<text x="${x}" y="${H - 8}" text-anchor="middle">${p.x}</text>`;
     });
     const lp = pts.map((p, i) => (p.y == null ? null : [xAt(i), yAt(p.y), p])).filter(Boolean);
     if (lp.length >= 2) s += `<polyline class="line" points="${lp.map((q) => q[0] + "," + q[1]).join(" ")}"/>`;
     lp.forEach((q) => {
-      s += `<circle class="pt" cx="${q[0]}" cy="${q[1]}" r="4"><title>${q[2].x}: ${q[2].y.toFixed(dec)}${opts.unit || ""}</title></circle>`;
-      s += `<text x="${q[0]}" y="${q[1] - 9}" text-anchor="middle">${q[2].y.toFixed(dec)}${opts.unit || ""}</text>`;
+      s += `<circle class="pt" cx="${q[0]}" cy="${q[1]}" r="4"><title>${q[2].x}: ${nfDec.format(q[2].y)}${opts.unit || ""}</title></circle>`;
+      s += `<text x="${q[0]}" y="${q[1] - 9}" text-anchor="middle">${nfDec.format(q[2].y)}${opts.unit || ""}</text>`;
     });
     s += "</svg>";
     return s;
